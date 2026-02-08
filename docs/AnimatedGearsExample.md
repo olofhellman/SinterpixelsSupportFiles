@@ -4,84 +4,71 @@
 
 Here's an example of a simple animation of two gears, producing this movie:
 
-![image](../images/TwoGearsRotating.mov "Animation of two gears")
+![image](../images/AnimatedGears.mov "Animation of two gears")
 
-First let's understand how to make a single gear. Each gear in our example is a polygon, where the outer edge is roughly a circle, but with notches for each tooth.
+Do make a gear shape, see the example here:
+[Making A Gear Shape](GearShapeExample.md) 
 
-A polygon can be defined by a sequence of radii, so for example, the sequence {50, 50, 50} just creates a triangle:
-
-```
-tell application "SinterPixels"
-	tell document 1
-		make new polygon with properties {radii:{50, 50, 50}, position:{0, 0}}
-	end tell
-end tell
-```
-
-![image](../images/SimpleTriangle.png "A simple triangle")
-
-Let's alternate the radii larger and smaller to make a star:
+In this example, we've made the gear teeth a little round.  Here's the script for our gear radius generation:
 
 ```
-tell application "SinterPixels"
-	tell document 1
-		make new polygon with properties {radii:{50, 22, 50, 22, 50, 22, 50, 22, 50, 22}, position:{0, 0}}
-	end tell
-end tell
-```
-
-![image](../images/SimpleStar.png "A simple star")
-
-Now make the points of the star into teeth by repeating the higher number.  This creates a simple asterisk shape:
-
-```
-tell application "SinterPixels"
-	tell document 1
-		make new polygon with properties {radii:{50, 50, 22, 50, 50, 22, 50, 50, 22, 50, 50, 22, 50, 50, 22}, position:{0, 0}}
-	end tell
-end tell
-```
-
-![image](../images/SimpleAsterisk.png "A simple asterisk")
-
-So, to make our gear, we'll need to make a list of the radii.  In that list, we'll have a repeating sequence of higher and lower numbers, one repetition for each tooth.  We'll want to specify the radius of the gear, and also the amount which each tooth sticks out.  Here's a script which produces such a list:
-
-```
-to gearRadii(numberOfTeeth, rad, depth)
+to gearList(teeth, notchDepth, depth)
 	set gList to {}
-	repeat with s from 1 to numberOfTeeth
-		set gList to gList & rad
-		set gList to gList & rad
-		set gList to gList & (rad - depth)
-		set gList to gList & (rad - depth)
-		set gList to gList & (rad - depth)
-		set gList to gList & rad
-		set gList to gList & rad
+	repeat with s from 1 to teeth
+		set gList to gList & notchDepth
+		set gList to gList & (notchDepth - depth / 4)
+		set gList to gList & (notchDepth - depth)
+		set gList to gList & (notchDepth - depth)
+		set gList to gList & (notchDepth - depth / 4)
+		set gList to gList & notchDepth
 	end repeat
 	return gList
-end gearRadii
-
--- make a list of radii for a gear with 7 teeth, radius of 50, notch depth of 12
-gearRadii(7, 50, 12)
+end gearList
 ```
-
-The result of this function is 
+ 
+The first thing our script does is make two gears and positions them just the right amount apart:
 
 ```
-{50, 50, 38, 38, 38, 50, 50, 50, 50, 38, 38, 38, 50, 50, 50, 50, 38, 38, 38, 50, 50, 50, 50, 38, 38, 38, 50, 50, 50, 50, 38, 38, 38, 50, 50, 50, 50, 38, 38, 38, 50, 50, 50, 50, 38, 38, 38, 50, 50}
-```
+set s1 to 7
+set s2 to 9
+set gList to gearList(s1, 50, 14)
+set fList to gearList(s2, 50, 14)
+set initialRotation1 to -6.28 / (s1 * 12)
+set initialRotation2 to -6.28 / (s2 * 12)
 
-Now, making a gear is a bit easier:
-
-
-```
-set getRadiiList to gearRadii(7, 50, 12)
 tell application "SinterPixels"
 	tell document 1
-		make new polygon with properties {radii:getRadiiList, position:{0, 0}}
-	end tell
+		
+		set p1 to make new polygon with properties {radii:gList}
+		set p2 to make new polygon with properties {radii:fList}
+		set position of p1 to {44, 0}
+		set position of p2 to {-44, 0}
+		set rotation of p1 to initialRotation1
+		set rotation of p2 to initialRotation2
+```
+
+One gear has 7 teeth and the other has nine.  With a radius of 50 and a notch depth of 14, you'd expect that the separation between the gears should be about 50 + 50 - 14, or about 86. In this example, we've placed them apart by 88 (there's the 44 and -44 values for the x coordinate when we set the position), because that seems to look a bit better.
+
+We also adjust the initial rotation so that the teeth are aligned.
+
+```
+		start filming
+		repeat with n from 0 to 200
+			set rotation of p1 to initialRotation1 + n / (s1 * 4)
+			set rotation of p2 to initialRotation2 - (n / (s2 * 4))
+			record movie frame
+		end repeat
+		stop filming saving in "AnimatedGears.mov"
 end tell
 ```
+
+In the movie section of the script, we loop 200 times.  For each movie frame, we adjust the rotation of each gear a bit. The amount of the rotation depends on the number of teeth of each gear. The 7 tooth gear is going to rotate faster than the 9 tooth gear, because that's how gears work.  One of the gears rotates clockwise, and the other rotates counterclockwise.  That's why there's a minus sign in the line
+
+```
+            set rotation of p2 to initialRotation2 - (n / (s2 * 4))
+```
+
+Try adjusting the s1 and s2 values to change the number of teeth on each gear to see if the animation still looks good
 
 ![image](../images/Simple7ToothGear.png "A gear with seven teeth")
 
