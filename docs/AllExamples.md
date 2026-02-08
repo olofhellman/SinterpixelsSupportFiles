@@ -2,8 +2,13 @@
 
 ## A Catalog of all the example pages
 
-# [A Gear Shape](GearShapeExample.md)   ![image](../images/Simple7ToothGear.png "A gear with seven teeth")
+![image](../images/Simple7ToothGear.png "A gear with seven teeth")
+[A Gear Shape](GearShapeExample.md)   
 
-# [Punch Though a Layer](BlendCopyPunchThrough.md)   ![image](../images/RedTintLayerWithPunchHoleSmall.png "Punch through of a tint layer") 
+![image](../images/RedTintLayerWithPunchHoleSmall.png "Punch through of a tint layer") 
+[Punch Though a Layer](BlendCopyPunchThrough.md)   
+
+![image](../images/GreenMagentaGradient.png "A green and magenta gradient on the canvas")
+[Pixel Gradient](PixelGradientExample.md)   
 
 #### next topic: 

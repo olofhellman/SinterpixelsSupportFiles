@@ -1,4 +1,4 @@
-#### previous topic: [Opening a File](OpeningAFile.md)  next topic: [Defining Mass Ranges](DefiningMassRanges.md)
+#### previous topic: [Opening a File](OpeningAFile.md)  next topic: [Shapes](SinterpixelsShapes.md)
 
 ## Using the Scripting Interface
 
@@ -17,7 +17,7 @@ If you open the Script Editor application, you should be able to create an empty
 Let's write a very simple script.  Type the following in the script editor window:
 
 ```
-tell app "Sinterapt"
+tell app "Sinterpixels"
     count documents
 end 
 ```
@@ -47,23 +47,29 @@ If you haven't yet opened a .pos file, open one now, so that the script returns 
 Now lets try getting some information from the document.  try the following scripts:
 
 ```
-tell app "Sinterapt"
+tell app "Sinterpixels"
     get name of document 1
 end 
 ```
 
 ```
-tell app "Sinterapt"
-    count ions of document 1
+tell app "Sinterpixels"
+    make new circle in document 1
 end 
 ```
 
 ```
-tell app "Sinterapt"
-    get {mass, coordinates} of ion 7 of document 1
+tell app "Sinterpixels"
+    count circles of document 1
 end 
 ```
 
-If you successfully get the data you were expecting as results from these scripts, you are ready to define mass ranges
+```
+tell app "Sinterpixels"
+    get {radius, color} of circle 2 of document 1
+end 
+```
 
-#### previous topic: [Opening a File](OpeningAFile.md)   next topic: [Defining Mass Ranges](DefiningMassRanges.md)
+If you successfully get the data you were expecting as results from these scripts, you are ready to explore shapes
+
+#### previous topic: [Opening a File](OpeningAFile.md)  next topic: [Shapes](SinterpixelsShapes.md)

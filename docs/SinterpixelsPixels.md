@@ -6,6 +6,8 @@ Every document starts with a canvas, and every canvas has a background of pixels
 
 The individual components of the colors of each pixel can be manipulated by a script.  Here's a script that fills in the whole canvas with a yellow/blue gradient:
 
+[Pixel Gradient Example](PixelGradientExample.md)
+
 ```
 tell application "SinterPixels"
 	tell document 1
@@ -23,6 +25,7 @@ tell application "SinterPixels"
 end tell
 ```
 
+![image](../images/GreenMagentaGradient.png "A green and magenta gradient on the canvas")
 
 
 #### previous topic: [Shapes](SinterpixelsShapes.md)  next topic: [Layers](SinterpixelsLayers.md)
