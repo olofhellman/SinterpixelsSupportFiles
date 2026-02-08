@@ -24,7 +24,7 @@ end
 
 after typing this, click the "compile" button in the toolbar of the script editor window.  It's the one that looks like a hammer, highlighted here in red:
 
-![image](../images/TheCompileButton.png "The compile button")
+![image](../images/ScriptEditorCompileButton.png "The compile button")
 
 After clicking the button, if all has gone well, you'll notice a few things changed:
 
@@ -32,7 +32,7 @@ After clicking the button, if all has gone well, you'll notice a few things chan
 2. The word "app" in the first line changed to "application"
 3. The last line changed from "end" to "end tell"
 
-![image](../images/ACompiledScript.png "A compiled script")
+![image](../images/ScriptEditorCompiledScript.png "A compiled script")
 
 All of these are signs that Script Editor was able to successfully compile the script -- that is, it understands what should happen when the script is run.
 
@@ -40,9 +40,9 @@ Now it is time to run the script.
 
 Tap the run button in the toolbar.  That's the triangle next to the "Compile" button. When the script runs, it communicates with the "Sinterapt" application and asks it how many documents it currently has open.  "Sinterapt" responds and the result is displayed in the bottom half of the Script Editor window.  If you've been following along and have already opened a .pos file, the answer should be 1, or more if you've opened more than one .pos file.
 
-![image](../images/AScriptWithAResult.png "A script with a result")
+![image](../images/ScriptEditorScriptWithAResult.png "A script with a result")
 
-If you haven't yet opened a .pos file, open one now, so that the script returns "1".  
+If you haven't yet opened a file, make a new one now, so that the script returns "1".  
 
 Now lets try getting some information from the document.  try the following scripts:
 
