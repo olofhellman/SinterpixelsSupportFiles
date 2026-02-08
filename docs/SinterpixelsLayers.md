@@ -8,6 +8,9 @@ A layer is essentially another canvas, which can have its own size, its own bitm
 
 If multiple layers are defined, they stack on top of each other.
  
+ 
+Examples: 
+[Using blendCopy to punch through a layer](BlendCopyPunchThroughExample.md) 
 
 
 #### previous topic: [Pixels](SinterpixelsPixels.md)  next topic: [Movies](Movies.md)

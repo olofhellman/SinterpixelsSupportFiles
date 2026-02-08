@@ -1,4 +1,4 @@
-#### Containing topic: [Shapes](SinterpixelsShapes.md) 
+#### Containing topic: [Movies](Movies.md) 
 
 ## Animating Gears
 
@@ -85,4 +85,4 @@ end tell
 
 ![image](../images/Simple7ToothGear.png "A gear with seven teeth")
 
-#### Containing topic: [Shapes](SinterpixelsShapes.md) 
+#### Containing topic: [Movies](Movies.md) 
