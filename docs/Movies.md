@@ -55,6 +55,6 @@ When filming a sequence, it is sometimes useful to pause for a bit to let the ap
 
 Examples:
 
-![image](AnimatedGearsExample.md "Two gears rotating together")
+[Animated Gears](AnimatedGearsExample.md)  
 
 #### previous topic: [Layers](SinterpixelsLayers.md)   next topic: [Scripting In Depth A: Script Editor](ScriptEditor.md)
