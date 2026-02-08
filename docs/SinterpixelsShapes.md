@@ -22,6 +22,7 @@ And, lastly, **blend mode** determines how a shape is composited on top of its b
  
  
 Examples: 
+[Color Spirals](ColorSpiralsExample.md) 
 [A Gear-shaped Polygon](GearShapeExample.md) 
 
 
