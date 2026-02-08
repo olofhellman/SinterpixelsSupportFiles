@@ -21,4 +21,5 @@ Here's a tour of some of the features of the app:  If you are new to the app, it
 - [Scripting In Depth C: References](docs/UsingReferences.md)
 - [Scripting In Depth D: Communicating with Other 
 Apps](docs/ScriptingOtherApps.md)
+- [Examples Catalog](docs/AllExamples.md)
  
