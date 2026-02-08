@@ -53,7 +53,8 @@ However, if this script is run, the file may not actually be saved in the Docume
 
 When filming a sequence, it is sometimes useful to pause for a bit to let the app catch up before proceeding.  In this case, some drawing commands can be done asynchronously, so that the app can continue working while a drawing operation is in progress.  Without the delay, it is possible the app will already be trying to apply the next rotation before the previous one is finished, and in this case, it is uncertain which view will be captured when a movie frame is recorded. 
 
-Known issues:
-A) The app will crash if the script is run a second time -- i.e. when trying to save a second movie.  I hope to fix this one soon.
+Examples:
+
+![image](AnimatedGeatsExample.md "Two gears rotating together")
 
 #### previous topic: [Layers](SinterpixelsLayers.md)   next topic: [Scripting In Depth A: Script Editor](ScriptEditor.md)

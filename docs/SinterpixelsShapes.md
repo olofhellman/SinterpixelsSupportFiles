@@ -20,6 +20,6 @@ Colors can also be specified by enumeration.  For example, "green" or "yellow" a
 
 And, lastly, **blend mode** determines how a shape is composited on top of its background.  The default blend mode is "paintOver".  A particularly interesting blend mode is **blendCopy** when used with a shape with a clear fill color.  This can be used to create transparent regions in an image or in a layer.
   
-[Using blendCopy to punch through a layer](BlendCopyPunchThrough.md) 
+[Using blendCopy to punch through a layer](BlendCopyPunchThroughExample.md) 
 
 #### previous topic: [The Scripting Interface](TheScriptingInterface.md)  next topic: [Pixels](SinterpixelsPixels.md)
