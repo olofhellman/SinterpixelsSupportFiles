@@ -5,7 +5,7 @@
 ![image](../images/Simple7ToothGear.png "A gear with seven teeth")
 [A Gear Shape](GearShapeExample.md)   
 
-![image](../images/ColorSpirals.png "Color Spirals")
+![image](../images/ColorSpiral.png "Color Spirals")
 [Color Spirals](ColorSpiralsExample.md)   
 
 ![image](../images/RedTintLayerWithPunchHoleSmall.png "Punch through of a tint layer") 
