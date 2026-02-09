@@ -8,7 +8,7 @@ if the phrase "document 1" is used in a script, that means "the front document",
 
 "document 1" is an example of a reference by absolute index.  There are other ways to refer to objects.
 
-For example, you can refer to a document by name.  Using 'document "FeCr"' will always refer to the same document if there is only one document with that name.
+For example, you can refer to a document by name.  Using 'document "My Clock"' will always refer to the same document if there is only one document with that name.
 
 You can also refer to a document by id.  Run this script to find out the document ids you can use:
 
@@ -18,7 +18,7 @@ tell application "Sinterpixels"
 end tell
 ```
 
-if this script returned {3, 11}  that means there are two documents open, and you could use either 
+if this script returned {3, 11}  that means there are two documents open, and you could use either.  The id of each object will change if you close a document and reopen it.
 ```
   document id 3
 ```
@@ -28,12 +28,21 @@ or
 ```
 as a reference.
 
-"every document" is another kind of reference. 
+"every document" is another kind of reference. One can use "every" as a way to apply a command to may objects at the same time:
+
+
+```
+tell application "Sinterpixels"
+	set the radius of every circle of document to 12
+end tell
+``` 
+
+
 
 It is possible to apply a test as well.  For example,
 
 ```
-every mass range whose lower bound is less than 40
+every circle whose radius in less than 12
 ``` 
 is valid.
 
@@ -41,10 +50,10 @@ Using negative indices is also valid.  For example,
 
 
 ```
-mass of ion -2 of document -1
+radius of circle -2 of document -1
 ``` 
 
-gets the mass of the second to last ion of the last document.
+gets the mass of the second to last circle of the last document.
 
 
 #### next topic: [Scripting In Depth D: Communicating with Other Apps](ScriptingOtherApps.md)
