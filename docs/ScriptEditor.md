@@ -28,28 +28,5 @@ By default, Script Editor shows the result of the last command in the lower part
 
 Then, select the "Replies" button to see the full transaction between Script Editor and the app.  The lower panel should show each command it sent to the app, and each reply it received.
 
-### Syntax Coloring
-
-when a script is compiled, different parts of the script get different formatting, depending on how script editir has interpreted the script.  So, in this example:
-
-![image](../images/ScriptEditorSyntaxHighlighting.png "A Script Editor window showing syntax highlighting")
-
-there are six different text formats.  
-
-- bold black, for words like "set", "to", "if", "end if", "tell", "end tell".  These are AppleScript primitive terms, part of the intrinsic AppleScript language
-
-- bold blue, for "exists" and "count".  These are commands (i.e. verbs) that appear in the application dictionary.  
-
-- italic blue, for "application", "document", "ions" and "name".  These are nouns that appear in the application dictionary.  
-
-- bold purple, for "display dialog". This is a command which isn't part of the core AppleScript language, but which also isn't part of the Application dictionary.  
-
-- plain green, for "theCount", "theText", "theName". These are local variable names.  I've used camel case with 'the' for these to differentiate them from other terms, but even if I didn't do that, Script Editor would format them this way.
-
-- plain black, for simple data types like integers and strings - "", "Sinterpixels", 1, " has ", " ions".  This format is also used for simple operators like + and & 
-
-Getting used to the different formats can help when you are writing a script, to make sure Script Editor has interpreted your script correctly.
-
-
 
 #### previous topic: [Exporting Movies](Movies.md)  next topic: [Scripting In Depth B: Scripts Menu](ScriptsMenu.md)
