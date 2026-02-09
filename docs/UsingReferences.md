@@ -13,7 +13,7 @@ For example, you can refer to a document by name.  Using 'document "FeCr"' will 
 You can also refer to a document by id.  Run this script to find out the document ids you can use:
 
 ```
-tell application "Sinterapt"
+tell application "Sinterpixels"
 	get id of every document
 end tell
 ```

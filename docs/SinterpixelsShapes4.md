@@ -1,4 +1,4 @@
-#### previous topic: [Shapes Part Three](SinterpixelsPolygons3.md)  next topic: [Pixels](Pixels.md)
+#### previous topic: [Shapes Part Three](SinterpixelsPolygons3.md)  next topic: [Pixels](SinterpixelsPixels.md)
 
 ## Shapes Part Four: Blend Mode
 
@@ -40,4 +40,4 @@ A particularly interesting blend mode is **blendCopy** when used with a shape wi
 See the [Punch Though a Layer Example](BlendCopyPunchThrough.md) for a trick on using a blend mode to get a different effect when drawing a circle.
  
 
-#### previous topic: [Shapes Part Three](SinterpixelsPolygons3.md)  next topic: [Pixels](Pixels.md)
+#### previous topic: [Shapes Part Three](SinterpixelsPolygons3.md)  next topic: [Pixels](SinterpixelsPixels.md)

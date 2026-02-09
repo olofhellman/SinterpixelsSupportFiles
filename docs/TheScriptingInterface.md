@@ -38,7 +38,7 @@ All of these are signs that Script Editor was able to successfully compile the s
 
 Now it is time to run the script.
 
-Tap the run button in the toolbar.  That's the triangle next to the "Compile" button. When the script runs, it communicates with the "Sinterapt" application and asks it how many documents it currently has open.  "Sinterapt" responds and the result is displayed in the bottom half of the Script Editor window.  If you've been following along and have already opened a .pos file, the answer should be 1, or more if you've opened more than one .pos file.
+Tap the run button in the toolbar.  That's the triangle next to the "Compile" button. When the script runs, it communicates with the "Sinterpixels" application and asks it how many documents it currently has open.  "Sinterpixels" responds and the result is displayed in the bottom half of the Script Editor window.  If you've been following along and have already opened a .pos file, the answer should be 1, or more if you've opened more than one .pos file.
 
 ![image](../images/ScriptEditorScriptWithAResult.png "A script with a result")
 

@@ -3,7 +3,7 @@
 
 ## Movies
 
-Sinterapt supports exporting a sequence of images taken from a graphics window as a QuickTime movie -- the .mov format
+Sinterpixels supports exporting a sequence of images taken from a graphics window as a QuickTime movie -- the .mov format
 
 This is accomplished using the scripting interface.  There are three basic commands.
 

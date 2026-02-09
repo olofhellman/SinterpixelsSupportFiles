@@ -7,16 +7,16 @@ Script Editor is a fairly simple app, but there are some features which are usef
 
 ### Recording
 
-Sinterapt supports a feature called AppleScript recording, but there is currently an issue where trying to record a script breaks almost everything in the application.
+Sinterpixels supports a feature called AppleScript recording, but there is currently an issue where trying to record a script breaks almost everything in the application.
 
 So, please do not open a ScriptEditor document press the record button.  I am working to resolve this issue.
 
 
 ### App Dictionaries
 
-The terminology understood by each application is presented in its scripting dictionary.  To open an app's dictionary, choose "Open Dictionary..." from Script Editor's File menu, and select the app you want to inspect.  Sinterapt's dictionary looks like this
+The terminology understood by each application is presented in its scripting dictionary.  To open an app's dictionary, choose "Open Dictionary..." from Script Editor's File menu, and select the app you want to inspect.  Sinterpixels's dictionary looks like this
 
-![image](../images/ScriptingDictionary.png "The Sinterapt scripting dictionary open in Script Editor")
+![image](../images/ScriptingDictionary.png "The Sinterpixels scripting dictionary open in Script Editor")
 
 Most helpfully, the scripting dictionary documents the various properties available for each object type, and defines the various parameters available for each command.
 
@@ -46,7 +46,7 @@ there are six different text formats.
 
 - plain green, for "theCount", "theText", "theName". These are local variable names.  I've used camel case with 'the' for these to differentiate them from other terms, but even if I didn't do that, Script Editor would format them this way.
 
-- plain black, for simple data types like integers and strings - "", "Sinterapt", 1, " has ", " ions".  This format is also used for simple operators like + and & 
+- plain black, for simple data types like integers and strings - "", "Sinterpixels", 1, " has ", " ions".  This format is also used for simple operators like + and & 
 
 Getting used to the different formats can help when you are writing a script, to make sure Script Editor has interpreted your script correctly.
 

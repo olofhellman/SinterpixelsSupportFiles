@@ -1,4 +1,4 @@
-#### previous topic: [Shapes](SinterpixelsShapes.md)  next topic: [Layers](SinterpixelsLayers.md)
+#### previous topic: [Shapes Part Four](SinterpixelsShapes4.md)  next topic: [Layers](SinterpixelsLayers.md)
 
 ##  Pixels
 
@@ -28,4 +28,4 @@ end tell
 ![image](../images/GreenMagentaGradient.png "A green and magenta gradient on the canvas")
 
 
-#### previous topic: [Shapes](SinterpixelsShapes.md)  next topic: [Layers](SinterpixelsLayers.md)
+#### previous topic: [Shapes Part Four](SinterpixelsShapes4.md)  next topic: [Layers](SinterpixelsLayers.md)
