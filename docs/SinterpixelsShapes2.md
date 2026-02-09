@@ -1,4 +1,4 @@
-#### previous topic: [Shapes](SinterpixelsShapes.md)  next topic: [Pixels](SinterpixelsPixels.md)
+#### previous topic: [Shapes Part 1](SinterpixelsShapes.md)  next topic: [Shapes Part 3](SinterpixelsShapes3.md)
 
 ## Shapes Part Two: Colors
 
@@ -97,8 +97,5 @@ Colors can also be specified by enumeration.  For example, "green" or "yellow" a
 And, lastly, **blend mode** determines how a shape is composited on top of its background.  The default blend mode is "paintOver".  A particularly interesting blend mode is **blendCopy** when used with a shape with a clear fill color.  This can be used to create transparent regions in an image or in a layer.
  
 See the [Punch Though a Layer Example](BlendCopyPunchThrough.md) for a trick on using a blend mode to get a different effect when drawing a circle.
- 
-Examples: 
-[Color Spirals](ColorSpiralsExample.md) 
 
-#### previous topic: [Shapes](SinterpixelsShapes.md)  next topic: [Pixels](SinterpixelsPixels.md)
+#### previous topic: [Shapes Part 1](SinterpixelsShapes.md)  next topic: [Shapes Part 3](SinterpixelsShapes3.md)
