@@ -12,7 +12,7 @@ Here's a tour of some of the features of the app:  If you are new to the app, it
 
 - [Opening a File](docs/OpeningAFile.md)
 - [Using the Scripting Interface](docs/TheScriptingInterface.md)
-- [Shapes Part 1](docs/SinterpixelsShapes1.md)
+- [Shapes Part 1](docs/SinterpixelsShapes.md)
 - [Shapes Part 2](docs/SinterpixelsShapes2.md)
 - [Shapes Part 3](docs/SinterpixelsShapes3.md)
 - [Circles](docs/SinterpixelsCircles.md)
