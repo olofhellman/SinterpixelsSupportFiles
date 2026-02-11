@@ -2,11 +2,14 @@
 
 ## A Catalog of all the example pages
 
-![image](../images/Simple7ToothGear.png "A gear with seven teeth")
-[A Gear Shape](GearShapeExample.md)   
-
 ![image](../images/ColorSpiral.png "Color Spirals")
 [Color Spirals](ColorSpiralsExample.md)   
+ 
+![image](../images/AnimatedGears.mov "movie with two gears")
+[A Gear Shape](AnimatedGearExample.md)   
+
+![image](../images/Simple7ToothGear.png "A gear with seven teeth")
+[A Gear Shape](GearShapeExample.md)   
 
 ![image](../images/RedTintLayerWithPunchHoleSmall.png "Punch through of a tint layer") 
 [Punch Though a Layer](BlendCopyPunchThrough.md)   
