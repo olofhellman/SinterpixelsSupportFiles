@@ -24,7 +24,7 @@ As log as document 1 exists, this should return something like this:
 
 Interestingly, that's all the information you need to correlate the position of a pixel with the position of shapes on the convas.  Let's do something interesting with that information: create a pixellated version of an image by drawing shapes.  Load an interesting image into a document by opening a .png or jpeg.  Then run this script to create an interesting distorted version of the original composed only of circles, where the colors of the circles reflect the colors of the the original:
 
-![image](../images/PredistortedChalkHorse.png "The Uffington Chalk Horse") ![image](../images/ChalkHorseInCircles.png "A chalk horse drawn only in corcles")
+![image](../images/PredistortedChalkHorse.jpg "The Uffington Chalk Horse") ![image](../images/ChalkHorseInCircles.jpg "A chalk horse drawn only in corcles")
 
 ```
 
