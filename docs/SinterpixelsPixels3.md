@@ -46,4 +46,39 @@ end tell
 
 But that script is really slow! AppleScript isn't very performant, and if you can avoid setting each pixel individually like that, you probably should.
 
+But there are some cases where setting a color pixel by pixel is interesting.  Here's a script which shows a random walk over the canvas:
+
+![image](../images/RandomWalk.jpg "Results of the random walk script below")
+
+
+```
+set {dx, dy} to {0.0, 0.0} -- this is the speed
+set drag to 1.1
+set randList to {-1, -0.7, 0, 0.7, 1.0}
+tell application "SinterPixels"
+	tell document 1
+		set the color of every pixel of the canvas to black
+		set {ht, wt} to {height, width} of canvas
+		set {maxx, maxy} to {wt, ht}
+		set {minx, miny} to {0, 0}
+		set {x, y} to {maxx / 2, maxy / 2} -- this is the current location
+		repeat 1000 times
+			set dx to dx / drag + (some item of randList)
+			set dy to dy / drag + (some item of randList)
+			set x to x + dx
+			set y to y + dy
+			set green component of pixel id {x, y} of the canvas to 1.0
+			if y > maxy or y < miny then
+				set dy to dy * -1.0
+			end if
+			if x > maxx or x < minx then
+				set dx to dx * -1.0
+			end if
+		end repeat
+	end tell
+end tell
+```
+
+Try playing with different values of "drag"
+
 #### previous topic: [Pixels Part 2](SinterpixelsPixels2.md)  next topic: [Layers](SinterpixelsLayers.md)
