@@ -1,7 +1,7 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Polygons Part 2](SinterpixelsPolygons2.md)  next topic: [Blend Mode](SinterpixelsShapes4.md)
+#### previous topic: [Polygons Part 2](SinterpixelsPolygons2.md)  next topic: [Specifying Colors](Colors1.md)
 
-## Polygons Part Three: 
+## Polygons Part Three: Irregular Vertices
 
 There are other ways to specify vertices of a polygon.  Although radial coordinates are often convenient, using x and y coordinates works fine as well: This makes a nice golden rectangle
 
@@ -33,4 +33,4 @@ which makes a very nice looking bowtie:
 
 Note:  Although this looks like two seoarate triangles, it is a single rectangle.  We've taken a regular golden rectangle ABCD and instead drawn it as ACBD.  Because it is a golden rectangle, the resulting triangle shapes are regular equilateral.
 
-#### previous topic: [Polygons Part 2](SinterpixelsPolygons2.md)  next topic: [Blend Mode](SinterpixelsShapes4.md)
+#### previous topic: [Polygons Part 2](SinterpixelsPolygons2.md)  next topic: [Specifying Colors](Colors1.md)

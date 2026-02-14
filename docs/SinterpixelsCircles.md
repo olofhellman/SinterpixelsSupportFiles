@@ -21,5 +21,17 @@ tell application "SinterPixels"
 	end tell
 end tell
 ```
+
+Like all shapes, circles also have a property **line width**. This specifies how thick the perimeter should be:
+
+```
+tell application "SinterPixels"
+	tell document 1
+	    make new circle with properties {line width: 10, radius: 25, color: green, fill color: white }
+	end tell
+end tell
+```
+
+Note that the radius is measured to the middle of the perimeter line.  This means that a circle with a thicker line width will actually be larger on screen that a circle with a narrower one. 
  
 #### previous topic: [Shapes Part 3](SinterpixelsShapes3.md)  next topic:  [Polygons Part One](SinterpixelsPolygons1.md)

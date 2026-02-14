@@ -1,7 +1,7 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Shapes Part Three](SinterpixelsPolygons3.md)  next topic: [Pixels Part 1](SinterpixelsPixels.md)
+#### previous topic: [Specifying Colors](Colors1.md)  next topic: [Pixels Part 1](SinterpixelsPixels.md)
 
-## Shapes Part Four: Blend Mode
+## Colors Part 2: Blend Mode
 
 One more property that all shapes have is **blend mode**, The blend mode determines how a shape is composited on top of its background.  The default blend mode is "paintOver".  The blend mode must be one of the following:
 
@@ -41,4 +41,4 @@ A particularly interesting blend mode is **blendCopy** when used with a shape wi
 See the [Punch Though a Layer Example](BlendCopyPunchThrough.md) for a trick on using a blend mode to get a different effect when drawing a circle.
  
 
-#### previous topic: [Shapes Part Three](SinterpixelsPolygons3.md)  next topic: [Pixels Part 1](SinterpixelsPixels.md)
+#### previous topic: [Specifying Colors](Colors1.md)  next topic: [Pixels Part 1](SinterpixelsPixels.md)

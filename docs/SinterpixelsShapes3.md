@@ -1,7 +1,7 @@
 ####  [Table of Contents](TableOfContents.md) 
 #### previous topic: [Shapes Part Two](SinterpixelsShapes2.md)  next topic: [Circles](SinterpixelsCircles.md)
 
-## Shapes Part Three:  
+## Shapes Part Three:  Radial Coordinates
 
 The position of a shape can also be expressed in radial coordinates.  That is, with a **radius** and an **angle**.  The radius means the distance from the center point x=0, y=0.  The **angle** means the number of radians around a circle (going counterclockwise) from the direction towards the right (the positive x axis).
 
