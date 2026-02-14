@@ -1,3 +1,4 @@
+####  [Table of Contents](TableOfContents.md) 
 #### previous topic: [Layers](SinterpixelsLayers.md)   next topic: [Scripting In Depth A: Script Editor](ScriptEditor.md)
 
 
@@ -35,7 +36,6 @@ tell application "SinterPixels"
 		stop filming saving in POSIX file thepath
 	end tell
 end tell
-
 ```
 
 You'll notice a few interesting things about this script:

@@ -1,3 +1,4 @@
+####  [Table of Contents](TableOfContents.md) 
 #### previous topic: [Exporting Movies](Movies.md)  next topic: [Scripting In Depth B: Scripts Menu](ScriptsMenu.md)
 
 ## The Script Editor

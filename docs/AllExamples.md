@@ -1,3 +1,4 @@
+####  [Table of Contents](TableOfContents.md)   
 #### previous topic: [Scripting In Depth D: Communicating with Other Apps](ScriptingOtherApps.md)
 
 ## A Catalog of all the example pages
@@ -17,4 +18,4 @@
 ![image](../images/GreenMagentaGradient.png "A green and magenta gradient on the canvas")
 [Pixel Gradient](PixelGradientExample.md)   
 
-#### next topic: 
+####  [Table of Contents](TableOfContents.md)   

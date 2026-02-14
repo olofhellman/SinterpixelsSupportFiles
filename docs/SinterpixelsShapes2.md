@@ -1,3 +1,4 @@
+####  [Table of Contents](TableOfContents.md) 
 #### previous topic: [Shapes Part 1](SinterpixelsShapes.md)  next topic: [Shapes Part 3](SinterpixelsShapes3.md)
 
 ## Shapes Part Two: Colors

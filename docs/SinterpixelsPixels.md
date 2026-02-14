@@ -1,3 +1,4 @@
+####  [Table of Contents](TableOfContents.md) 
 #### previous topic: [Shapes Part Four](SinterpixelsShapes4.md)  next topic: [Pixels Part 2](SinterpixelsPixels2.md)
 
 ##  Pixels Part One: IDs and positions
@@ -53,6 +54,8 @@ tell app "Sinterpixels"
     get position of pixel id {1,1} of canvas of myDoc
 end tell
 ```
+
+Unlike for circles and polygons, you can't set the position of a pixel.  Its position is fixed because it is part of the canvas.
 
 In Pixels part 2, we'll use these pixel specifiers to get the colors of pixels. 
 

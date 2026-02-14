@@ -1,3 +1,4 @@
+####  [Table of Contents](TableOfContents.md) 
 #### Containing topic: [Shapes](SinterpixelsShapes.md) 
 
 ## Using blendCopy to punch through a layer

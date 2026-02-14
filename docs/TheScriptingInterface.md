@@ -1,3 +1,4 @@
+####  [Table of Contents](TableOfContents.md) 
 #### previous topic: [Opening a File](OpeningAFile.md)  next topic: [Shapes](SinterpixelsShapes.md)
 
 ## Using the Scripting Interface

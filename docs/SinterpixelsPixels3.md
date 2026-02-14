@@ -1,3 +1,4 @@
+####  [Table of Contents](TableOfContents.md) 
 #### previous topic: [Pixels Part 2](SinterpixelsPixels2.md)  next topic: [Layers](SinterpixelsLayers.md)
 
 ##  Pixels part 3: Setting colors
