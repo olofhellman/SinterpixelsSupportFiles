@@ -26,4 +26,10 @@
 ⋅⋅⋅⋅* [Scripts Menu](docs/ScriptsMenu.md)
 ⋅⋅⋅⋅* [References](docs/UsingReferences.md)
 ⋅⋅⋅⋅* [Communicating with Other Apps](docs/ScriptingOtherApps.md)
-- [Examples Catalog](docs/AllExamples.md)
+- [Examples](docs/AllExamples.md)
+⋅⋅⋅⋅* [Color Spirals](ColorSpiralsExample.md)   
+⋅⋅⋅⋅* [Animated Gears](AnimatedGearExample.md)   
+⋅⋅⋅⋅* [A Gear Shape](GearShapeExample.md)   
+⋅⋅⋅⋅* [Punch Though a Layer](BlendCopyPunchThrough.md)   
+⋅⋅⋅⋅* [Pixel Gradient](PixelGradientExample.md)   
+

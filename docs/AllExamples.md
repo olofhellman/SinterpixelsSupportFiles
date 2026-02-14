@@ -1,13 +1,13 @@
 ####  [Table of Contents](TableOfContents.md)   
 #### previous topic: [Scripting In Depth D: Communicating with Other Apps](ScriptingOtherApps.md)
 
-## A Catalog of all the example pages
+## A Catalog of many of the examples and where to find them  
 
 ![image](../images/ColorSpiral.png "Color Spirals")
 [Color Spirals](ColorSpiralsExample.md)   
  
 ![image](../images/AnimatedGears.mov "movie with two gears")
-[A Gear Shape](AnimatedGearExample.md)   
+[Animated Gears](AnimatedGearExample.md)   
 
 ![image](../images/Simple7ToothGear.png "A gear with seven teeth")
 [A Gear Shape](GearShapeExample.md)   
