@@ -31,6 +31,6 @@ which makes a very nice looking bowtie:
 
 ![image](../images/Polygons-BowtieRectangle.png "A rectangle the resembles a bowtie")
 
-Note:  Although this looks like two seoarate triangles, it is a single rectangle.  We've taken a regular golden rectangle ABCD and instead drawn it as ACBD.  Because it is a golden rectangle, the resulting triangle shapes are regular equilateral.
+Note:  Although this looks like two separate triangles, it is instead a single rectangle.  We've taken a regular golden rectangle ABCD and instead drawn it as ACBD.  Because it is a golden rectangle, the resulting triangle shapes are regular equilateral triangles.
 
 #### previous topic: [Polygons Part 2](SinterpixelsPolygons2.md)  next topic: [Specifying Colors](Colors1.md)

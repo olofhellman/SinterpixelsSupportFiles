@@ -14,8 +14,8 @@ tell application "SinterPixels"
 				set h to (ang / twoPi)
 				set b to (radLoop / shellThickness)
 				
-				set aColor to {hue component:h, saturation component:1.0, brightness component:b}
-				set bColor to {hue component:h, saturation component:0.5, brightness component:b}
+				set aColor to {hue:h, saturation:1.0, brightness:b}
+				set bColor to {hue:h, saturation:0.5, brightness:b}
 				set c1 to make new circle with properties {fill color:aColor, color:bColor, radius:radLoop + 2, position:{angle:ang, radius:rad}}
 			end repeat
 		end repeat
