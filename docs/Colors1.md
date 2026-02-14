@@ -13,11 +13,13 @@ Sinterpixels allows multiple ways of specifying color, but the default way is to
 
 ### Hue, Saturation, and Brightness
 
-To use Hue, Saturation, and Brightness, the HSB color model, you can write a script like this:
+Hue, Saturation, and Brightness is the [HSV color model](https://en.wikipedia.org/wiki/HSL_and_HSV).  Sinterpixels uses *brightness* instead of *value* because the word *value* is used in other places and *brightness* is less confusing
+
+To use HSB, you can write a script like this:
 
 ```
 tell application "SinterPixels"
-    set hsbColor to {hue component:0.6, saturation component:1.0, brightness component:0.8}
+    set hsbColor to {hue:0.6, saturation:1.0, brightness:0.8}
 	tell document 1
 		set the fill color of circle 1 to hsbColor
 	end tell

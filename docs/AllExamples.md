@@ -18,4 +18,11 @@
 ![image](../images/GreenMagentaGradient.png "A green and magenta gradient on the canvas")
 [Pixel Gradient](PixelGradientExample.md)   
 
+![image](../images/ChalkHorseInCircles.jpg "Image distorted by drawing only shapes")
+[Distorted Image: Part of the Pixels Part 2: Getting Colors](SinterpixelsPixels2.md)   
+
+![image](../images/RandomWalk.jpg "Random Walk")
+[Random Walk: Pixels Part 3: Setting Colors](SinterpixelsPixels3.md)   
+
+
 ####  [Table of Contents](TableOfContents.md)   

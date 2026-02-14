@@ -55,7 +55,7 @@ tell app "Sinterpixels"
 end tell
 ```
 
-Unlike for circles and polygons, you can't set the position of a pixel.  Its position is fixed because it is part of the canvas.
+Unlike for circles and polygons, you can't set the position of a pixel.  Its position is fixed because it is part of the canvas, part of a regular grid that doesn't change.
 
 In Pixels part 2, we'll use these pixel specifiers to get the colors of pixels. 
 
