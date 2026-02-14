@@ -45,7 +45,7 @@ or
 ```
   document id 11
 ```
-as a reference. The id of each object will change if you close a document and reopen it.  You can refer to multiple objects this way.  Running this script in the situation above
+as a reference. You can refer to multiple objects this way.  Running this script in the situation above
 
 ```
   name of document id {3, 11)  
@@ -56,8 +56,9 @@ should return a list of the names of the two documents.  Some objects, most nota
   pixel id {{6, 6}, {6, 5}, {5, 6}, {5, 5}} of canvas of document 1 
 ```
 
-refers to 4 pixels close to the top left of the canvas
+refers to 4 pixels close to the top left of the canvas.
 
+WARNING: The id of each object might change if you close a document and reopen it.  
 
 ### Every
 
