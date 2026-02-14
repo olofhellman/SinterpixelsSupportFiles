@@ -1,5 +1,5 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Shapes Part Four](SinterpixelsShapes4.md)  next topic: [Pixels Part 2](SinterpixelsPixels2.md)
+#### previous topic: [Blend Modes](SinterpixelsColors2.md)  next topic: [Pixels Part 2](SinterpixelsPixels2.md)
 
 ##  Pixels Part One: IDs and positions
 
@@ -59,4 +59,4 @@ Unlike for circles and polygons, you can't set the position of a pixel.  Its pos
 
 In Pixels part 2, we'll use these pixel specifiers to get the colors of pixels. 
 
-#### previous topic: [Shapes Part Four](SinterpixelsShapes4.md)  next topic: [Pixels Part 2](SinterpixelsPixels2.md)
+#### previous topic: [Blend Modes](SinterpixelsColors2.md)  next topic: [Pixels Part 2](SinterpixelsPixels2.md)
