@@ -29,12 +29,18 @@ tell application "SinterPixels"
 	end repeat
 end tell
 ```
- 
-In this script, the line
+
+What does this script do?  It loops from 1 to 60, and each time through the loop, it draws a circle.  The angle in the radial coordinates is defined by the line 
+```
+set ang to n * twoPi / 60
+```
+So that each step in the loop is 1/60th the way around the circle.
+
+For each circle, the script checks to see if n is divisible by 5, and if so, it draws an extra, bigger circle. This line checks to see if the number n is divisible by 5, using the "modulo" operation:
 ```
 if n mod 5 is equal to 0 
 ```
-checks to see if the number n is divisible by 5.  If it is, the script draws an extra, bigger circle
+ 
 
 Examples: 
 [Color Spirals](ColorSpiralsExample.md) 

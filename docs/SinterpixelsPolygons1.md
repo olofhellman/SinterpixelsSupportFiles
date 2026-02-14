@@ -39,7 +39,7 @@ The result should show something like this (reformatted for easier reading here)
 }
 ```
 
-The first four properties, "container", "class", "id" and "name" are shared by many types of objects.  You are free to set the name of a shape, and then use that later to identify it, as in:
+The first four properties, *container*, *class*, *id* and *name* are shared by many types of objects.  You are free to set the name of a shape, and then use that later to identify it, as in:
 
 ```
 tell application "SinterPixels"
@@ -52,9 +52,9 @@ end tell
 
 Although if you give multiple shapes the same name, you may not get what you expect.
 
-The next five properties are common to all shapes: "position", "blend mode",  "line width", "fill paint", "color".
+The next five properties are common to all shapes: *position*, *blend mode*,  *line width*, *fill paint*, *color*.
 
-Only three properties are unique to polygons: "closed", "rotation" and "vertex count".  
+Only three properties are unique to polygons: *closed*, *rotation* and *vertex count*.  
 
 Try running this script to spin a polygon:
 
@@ -70,11 +70,15 @@ tell application "SinterPixels"
 end tell
 ```
  
-**rotation** is specified in degrees.  If you want to specify in radians, use **radians rotation**
+**rotation** is specified in degrees.  If you want to specify in radians, use **radians rotation**, as in 
+
+```
+set radians rotation of p to  r + 0.05
+```
 
 **closed** means is there a line drawn from the last vertex to the first
 
-**vertex count** means how many vertices there are.  Despite what you might think, you can't write a script to set the vertex count.  We'll see why on the next page.
+**vertex count** means how many vertices there are.  Despite what you might expect, you can't write a script to set the vertex count.  We'll see why on the next page.
 
  
 #### previous topic: [Circles](SinterpixelsCircles.md)  next topic:  [Polygons Part Two](SinterpixelsPolygons2.md)

@@ -29,7 +29,7 @@ See the [Color Spirals Example](ColorSpiralsExample.md) for a lesson how HSB is 
 
 ### Enumerations
 
-The names of many simply colors, like "blue", "black", "green" are understood by Sinterpixels:
+The names of many simply colors, like *blue*, *black*, *green* are understood by Sinterpixels:
 
 ```
 tell application "SinterPixels"
@@ -39,7 +39,7 @@ tell application "SinterPixels"
 end tell
 ```
 
-This is especially useful for specifying a color as "clear", so that it is transparent. In this case only the perimeter is drawn.
+This is especially useful for specifying a color as *clear*, so that it is transparent. In this case only the perimeter is drawn.
 
 ```
 tell application "SinterPixels"

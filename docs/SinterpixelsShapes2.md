@@ -3,9 +3,7 @@
 
 ## Shapes Part Two: Colors
 
-Just like position, if we don't specify a color when making a new circle, one gets chosen automatically. Actually, there are two colors that get chose,
-
-There is a **color**, which is used to draw the perimeter of the circle, and the **fill color**, which is used to draw the interior.  Lets see how Sinterpixels specifies colors by running this script:
+Just like position, if we don't specify a color when making a new circle, colors get chosen automatically. There are two colors involved: there is a **color**, which is used to draw the perimeter of the circle, and there is a **fill color**, which is used to draw the interior of the circle.  Lets see how Sinterpixels specifies colors by running this script:
 
 ```
 tell application "SinterPixels"
@@ -21,7 +19,7 @@ You should see something like this in the ScriptEditor result window:
 {red component:0.12027516216, green component:0.983362913132, blue component:0.465224981308, alpha component:1.0}
 ```
 
-These are the four components of the [RGBA color model](https://en.wikipedia.org/wiki/RGBA_color_model).  All of these values are in the range from 0.0 and 1.0. The red green and blue values roughly correspond to how bright the red green and blue emitters on a monitor should be. The alpha value is a special "transparency" value, that matters when the color is combined with another color.  If the alpha is 0, none of the color will get transferred to a surface. If the values are all 1.0, that's white. If the ed green and blue values are all zero, that's black.
+These are the four components of the [RGBA color model](https://en.wikipedia.org/wiki/RGBA_color_model).  All of these values are in the range from 0.0 and 1.0. The red, green, and blue values roughly correspond to how bright the red, green, and blue emitters on a monitor should be. The alpha value is a special "transparency" value, that matters when the color is combined with another color.  If the alpha is 0, none of the color will get transferred to a surface. If the values are all 1.0, that's white. If the red, green, and blue values are all zero, that's black.
 
 Try setting the color of one of the circles using an RBGA value, and set the radius of the circle to something larger so we can see the color better:
 
@@ -43,11 +41,11 @@ The **fill color** is the color of the interior of a shape, and the ** color** i
 
 **alpha component**, **red component**, **green component**, and **blue component** can be used to access the individual components of a color.  Or, colors can be expressed as a list of values :  {0.5, 1.0, 0.5, 0.9} would be used to specify a fairly green color that is just a tiny bit transparent.
 
-Colors can also be specified by enumeration.  For example, "green" or "yellow" are valid colors.  "clear" means a color with an alpha component of 0.0.
+Colors can also be specified by enumeration.  For example, *green* or *yellow* are valid colors.  *clear* means a color with an alpha component of 0.0.
 
 **line width** determines the thickness of the perimeter.
 
-And, lastly, **blend mode** determines how a shape is composited on top of its background.  The default blend mode is "paintOver".  A particularly interesting blend mode is **blendCopy** when used with a shape with a clear fill color.  This can be used to create transparent regions in an image or in a layer.
+And, lastly, **blend mode** determines how a shape is composited on top of its background.  The default blend mode is *paintOver*.  A particularly interesting blend mode is **blendCopy** when used with a shape with a clear fill color.  This can be used to create transparent regions in an image or in a layer.
  
 See the [Punch Though a Layer Example](BlendCopyPunchThrough.md) for a trick on using a blend mode to get a different effect when drawing a circle.
 

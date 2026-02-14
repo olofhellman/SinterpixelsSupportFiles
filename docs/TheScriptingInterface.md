@@ -39,11 +39,13 @@ All of these are signs that Script Editor was able to successfully compile the s
 
 Now it is time to run the script.
 
-Tap the run button in the toolbar.  That's the triangle next to the "Compile" button. When the script runs, it communicates with the "Sinterpixels" application and asks it how many documents it currently has open.  "Sinterpixels" responds and the result is displayed in the bottom half of the Script Editor window.  If you've been following along and have already opened a .pos file, the answer should be 1, or more if you've opened more than one .pos file.
+Tap the run button in the toolbar.  That's the triangle next to the "Compile" button. When the script runs, it communicates with the "Sinterpixels" application and asks it how many documents it currently has open.  "Sinterpixels" responds and the result is displayed in the bottom half of the Script Editor window.  
+
+If you've been following along and have already opened a file, the result of the script shown there should be 1, or more if you've opened more than one file.
 
 ![image](../images/ScriptEditorScriptWithAResult.png "A script with a result")
 
-If you haven't yet opened a file, make a new one now, so that the script returns "1".  
+If you haven't yet opened a file, do that now and run the script again, so that the script returns "1".  
 
 Now lets try getting some information from the document.  try the following scripts:
 
@@ -71,6 +73,6 @@ tell app "Sinterpixels"
 end 
 ```
 
-If you successfully get the data you were expecting as results from these scripts, you are ready to explore shapes
+If you successfully get the data you were expecting as results from these scripts, you are ready to explore shapes.
 
 #### previous topic: [Opening a File](OpeningAFile.md)  next topic: [Shapes](SinterpixelsShapes.md)

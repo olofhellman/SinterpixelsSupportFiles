@@ -5,7 +5,7 @@
 
 There are currently two kinds of shapes in Sinterpixels: the circle and the polygon
 
-Circles and polygons have a few properties in common.  Lets do these examples with circles, which are a bit simpler. If you don't already have a document open, make a new one now.  And if the document doesn't contain a circle, make one now with the following script:
+Circles and polygons have a few properties in common.  These examples use circles, which are a bit simpler, but feel free to substitute "polygon" for circle" if you'd like. If you don't already have a document open, make a new one now.  And if the document doesn't contain a circle, make one now with the following script:
 
 ```
 tell application "SinterPixels"
@@ -35,13 +35,13 @@ In this example, the position is returned as
 {y coordinate:85.145322779688, x coordinate:76.631601651293}
 ```
 
-This is an AppleScript record.  Enclosed in curly braces is a sequence of key-value pairs.  Here, "y coordinate" is a key and 85.145322779688 is its value. "x coordinate" is another key and 76.631601651293 is its value.
+This is an AppleScript **record**.  Enclosed in curly braces is a sequence of key-value pairs.  Here, "y coordinate" is a key and 85.145322779688 is its value. "x coordinate" is another key and 76.631601651293 is its value.
 
 In the Script Editor result, you'll notice "x coordinate" and "y coordinate" appear in blue.  This is a hint that these words are part of the Sinterpixels vocabulary.
 
 In your example, you likely have different values for these coordinates, as they were chosen at random.
 
-Now lets make the position less random bu setting the position of the circle to a new value.  Run the following script (Note that the order of "x coordinate" and "y coordinate" here don't matter):
+Now lets make the position less random by setting the position of the circle to a new value.  Run the following script (Note that the order of "x coordinate" and "y coordinate" here doesn't matter):
 
 ```
 tell application "SinterPixels"
@@ -81,7 +81,7 @@ The **position** determines where a shape is drawn in its container.  In general
 **x coordinate** and **y coordinate** can be used to access the individual components of the position.
 
 
-Handy Tip:
+### Handy Tip:
 
 If you are tired of writing out "x coordinate" and "y coordinate" all the time, you can just use a list without keys, but in this case the order does matter.  x is always first, and y is second.  go ahead and try:
 
