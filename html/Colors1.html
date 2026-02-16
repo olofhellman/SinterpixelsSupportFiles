@@ -1,0 +1,64 @@
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="SinterpixelsPolygons3.html">Shapes Part Three</a>  next topic: <a href="Colors2.html">Blend Modes</a></h4>
+
+<h2 id="toc_2">Colors Part 1: Specifying Colors</h2>
+
+<h3 id="toc_3">The default: RGBA</h3>
+
+<p>Sinterpixels allows multiple ways of specifying color, but the default way is to use red, green, blue and alpha components like this:</p>
+
+<div><pre><code class="language-none">{red component:0.5, green component:0.5, blue component:0, alpha component:1.0}</code></pre></div>
+
+<h3 id="toc_4">Hue, Saturation, and Brightness</h3>
+
+<p>Hue, Saturation, and Brightness is the <a href="https://en.wikipedia.org/wiki/HSL_and_HSV">HSV color model</a>.  Sinterpixels uses <em>brightness</em> instead of <em>value</em> because the word <em>value</em> is used in other places and <em>brightness</em> is less confusing</p>
+
+<p>To use HSB, you can write a script like this:</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    set hsbColor to {hue:0.6, saturation:1.0, brightness:0.8}
+    tell document 1
+        set the fill color of circle 1 to hsbColor
+    end tell
+end tell</code></pre></div>
+
+<p>See the <a href="ColorSpiralsExample.html">Color Spirals Example</a> for a lesson how HSB is a useful color model.</p>
+
+<h3 id="toc_5">Enumerations</h3>
+
+<p>The names of many simply colors, like <em>blue</em>, <em>black</em>, <em>green</em> are understood by Sinterpixels:</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    tell document 1
+        set the fill color of circle 1 to blue
+    end tell
+end tell</code></pre></div>
+
+<p>This is especially useful for specifying a color as <em>clear</em>, so that it is transparent. In this case only the perimeter is drawn.</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    tell document 1
+        set the fill color of circle 1 to clear
+        set the color of circle 1 to green
+        set the line width of circle 1 to 10
+    end tell
+end tell</code></pre></div>
+
+<p>Note that the perimeter is drawn centering on the radius, so specifying a larger line width increases the apparent size of the circle</p>
+
+<h3 id="toc_6">Just a List of Numbers</h3>
+
+<p>If you want the shortest possible way to specify colors, use a list to specify RGB (and optionally A) in that order:</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    tell document 1
+        set the fill color of circle 1 to {1.0, 0.8, 0.6}
+    end tell
+end tell</code></pre></div>
+
+<p>If you only specify 3 values for a color, it is assumed that the alpha component is 1.0</p>
+
+<p>Other color models (HSL, CMYK) will be supported soon. </p>
+
+<h4 id="toc_7">previous topic: <a href="SinterpixelsPolygons3.html">Shapes Part Three</a>  next topic: <a href="Colors2.html">Blend Modes</a></h4>

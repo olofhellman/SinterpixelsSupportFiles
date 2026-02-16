@@ -1,0 +1,32 @@
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">Containing topic: <a href="SinterpixelsPixels.html">Pixels</a></h4>
+
+<h2 id="toc_2">Pixels</h2>
+
+<p>This script makes a color gradient on the canvas.</p>
+
+<p>First it goes row by row and set the red and blue components of the colors to a continuously varying value between 0 and 1.</p>
+
+<p>Then, it goes column by column and sets the green component to a continuously varying value between 0 and 1.</p>
+
+<p>The result is a gradient of green and magenta.</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    tell document 1
+        set alpha component of every pixel to 1.0
+        set ht to height of canvas
+        set wt to width of canvas
+        repeat with h from 1 to ht
+            set red component of every pixel of row h to h / ht
+            set blue component of every pixel of row h to h / ht
+        end repeat
+        repeat with w from 1 to wt
+            set green component of every pixel of column w to w / wt
+        end repeat
+    end tell
+end tell</code></pre></div>
+
+<p><img src="../images/GreenMagentaGradient.png" alt="image" title="A green and magenta gradient on the canvas"></p>
+
+<h4 id="toc_3">Containing topic: <a href="SinterpixelsPixels.html">Pixels</a></h4>

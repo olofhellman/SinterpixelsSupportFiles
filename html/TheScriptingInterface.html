@@ -1,0 +1,71 @@
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="OpeningAFile.html">Opening a File</a>  next topic: <a href="SinterpixelsShapes.html">Shapes</a></h4>
+
+<h2 id="toc_2">Using the Scripting Interface</h2>
+
+<p>Currently, definition of mass ranges is best done via the scripting interface.  Application of .rrng files is a feature I&#39;m working on, but for now, scripting is the best way to accomplish this.</p>
+
+<p>Before diving in to mass ranges, familiarize yourself with using the scripting interface:</p>
+
+<p>First locate and open the ScriptEditor application.  It is usually located in the the Utilities folder of the Applications Folder:</p>
+
+<p><img src="../images/LocatingScriptEditor.png" alt="image" title="Locating the Script Editor application"></p>
+
+<p>If you open the Script Editor application, you should be able to create an empty script window, like this:</p>
+
+<p><img src="../images/EmptyScriptEditorWindow.png" alt="image" title="An empty Script Editor window"></p>
+
+<p>Let&#39;s write a very simple script.  Type the following in the script editor window:</p>
+
+<div><pre><code class="language-none">tell app &quot;Sinterpixels&quot;
+    count documents
+end </code></pre></div>
+
+<p>after typing this, click the &quot;compile&quot; button in the toolbar of the script editor window.  It&#39;s the one that looks like a hammer, highlighted here in red:</p>
+
+<p><img src="../images/ScriptEditorCompileButton.png" alt="image" title="The compile button"></p>
+
+<p>After clicking the button, if all has gone well, you&#39;ll notice a few things changed:</p>
+
+<ol>
+<li>The text formatting has changed.</li>
+<li>The word &quot;app&quot; in the first line changed to &quot;application&quot;</li>
+<li>The last line changed from &quot;end&quot; to &quot;end tell&quot;</li>
+</ol>
+
+<p><img src="../images/ScriptEditorCompiledScript.png" alt="image" title="A compiled script"></p>
+
+<p>All of these are signs that Script Editor was able to successfully compile the script -- that is, it understands what should happen when the script is run.</p>
+
+<p>Now it is time to run the script.</p>
+
+<p>Tap the run button in the toolbar.  That&#39;s the triangle next to the &quot;Compile&quot; button. When the script runs, it communicates with the &quot;Sinterpixels&quot; application and asks it how many documents it currently has open.  &quot;Sinterpixels&quot; responds and the result is displayed in the bottom half of the Script Editor window.  </p>
+
+<p>If you&#39;ve been following along and have already opened a file, the result of the script shown there should be 1, or more if you&#39;ve opened more than one file.</p>
+
+<p><img src="../images/ScriptEditorScriptWithAResult.png" alt="image" title="A script with a result"></p>
+
+<p>If you haven&#39;t yet opened a file, do that now and run the script again, so that the script returns &quot;1&quot;.  </p>
+
+<p>Now lets try getting some information from the document.  try the following scripts:</p>
+
+<div><pre><code class="language-none">tell app &quot;Sinterpixels&quot;
+    get name of document 1
+end </code></pre></div>
+
+<div><pre><code class="language-none">tell app &quot;Sinterpixels&quot;
+    make new circle in document 1
+end </code></pre></div>
+
+<div><pre><code class="language-none">tell app &quot;Sinterpixels&quot;
+    count circles of document 1
+end </code></pre></div>
+
+<div><pre><code class="language-none">tell app &quot;Sinterpixels&quot;
+    get {radius, color} of circle 2 of document 1
+end </code></pre></div>
+
+<p>If you successfully get the data you were expecting as results from these scripts, you are ready to explore shapes.</p>
+
+<h4 id="toc_3">previous topic: <a href="OpeningAFile.html">Opening a File</a>  next topic: <a href="SinterpixelsShapes.html">Shapes</a></h4>

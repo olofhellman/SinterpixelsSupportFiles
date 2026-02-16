@@ -1,0 +1,74 @@
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="SinterpixelsCircles.html">Circles</a>  next topic:  <a href="SinterpixelsPolygons2.html">Polygons Part Two</a></h4>
+
+<h2 id="toc_2">Polygons Part One:</h2>
+
+<p>Let&#39;s explore what makes a polygon a polygon.  First run the following script to make a new one, then get is properties to see what it knows about itself:</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    tell document 1
+        set p to make new polygon
+        get properties of p
+    end tell
+end tell</code></pre></div>
+
+<p>The result should show something like this (reformatted for easier reading here):</p>
+
+<div><pre><code class="language-none">{
+ container:canvas id 4 of application &quot;SinterPixels&quot;, 
+ id:57, 
+ class:polygon,
+ position:{x coordinate:107.59364, 
+           y coordinate:96.01183}, 
+ blend mode:paintOver, 
+ closed:true, 
+ line width:1.0, 
+ fill paint:{red component:0.904275, 
+             green component:0.042626, 
+             blue component:0.455397, 
+             alpha component:1.0}, 
+ color:{red component:0.883484, 
+        green component:0.51492, 
+        blue component:0.28979, 
+        alpha component:1.0},
+ rotation:0.01624, 
+ vertex count:5
+}</code></pre></div>
+
+<p>The first four properties, <em>container</em>, <em>class</em>, <em>id</em> and <em>name</em> are shared by many types of objects.  You are free to set the name of a shape, and then use that later to identify it, as in:</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    tell document 1
+        set p to make new polygon with properties {name: &quot;Eric&quot;}
+        get properties of polygon &quot;Eric&quot;
+    end tell
+end tell</code></pre></div>
+
+<p>Although if you give multiple shapes the same name, you may not get what you expect.</p>
+
+<p>The next five properties are common to all shapes: <em>position</em>, <em>blend mode</em>,  <em>line width</em>, <em>fill paint</em>, <em>color</em>.</p>
+
+<p>Only three properties are unique to polygons: <em>closed</em>, <em>rotation</em> and <em>vertex count</em>.  </p>
+
+<p>Try running this script to spin a polygon:</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    tell document 1
+        set p to make new polygon with properties {vertex count:5, radius 20}
+        repeat 100 times
+            set r to get rotation of p
+            set rotation of p to  r + 0.05
+        end
+    end tell
+end tell</code></pre></div>
+
+<p><strong>rotation</strong> is specified in degrees.  If you want to specify in radians, use <strong>radians rotation</strong>, as in </p>
+
+<div><pre><code class="language-none">set radians rotation of p to  r + 0.05</code></pre></div>
+
+<p><strong>closed</strong> means is there a line drawn from the last vertex to the first</p>
+
+<p><strong>vertex count</strong> means how many vertices there are.  Despite what you might expect, you can&#39;t write a script to set the vertex count.  We&#39;ll see why on the next page.</p>
+
+<h4 id="toc_3">previous topic: <a href="SinterpixelsCircles.html">Circles</a>  next topic:  <a href="SinterpixelsPolygons2.html">Polygons Part Two</a></h4>

@@ -1,0 +1,53 @@
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="Colors2.html">Blend Modes</a>  next topic: <a href="SinterpixelsPixels2.html">Pixels Part 2</a></h4>
+
+<h2 id="toc_2">Pixels Part One: IDs and positions</h2>
+
+<p>Every document starts with a canvas, and every canvas has a background of pixels. If a new document is created, the background of pixels is transparent, but if a document is created from a PNG file, mast of the pixels will probably be filled in.</p>
+
+<p>Unlike polygons and circles, pixels don&#39;t have a position, although we can get their coordinates.  Instead, pixels are part of the canvas, and they can be accessed by id, or by index in their container.</p>
+
+<p>So, both of these reference statements will work:</p>
+
+<div><pre><code class="language-none">    pixel 40 of canvas of document 1</code></pre></div>
+
+<div><pre><code class="language-none">    pixel 40 of row 1 of canvas of document 1</code></pre></div>
+
+<p>But, these may not be the same.  If the width of the canvas is more than 40 pixels, &quot;pixel 40 of canvas&quot; will mean the &quot;pixel 40 of row 1 of canvas&quot;, but if the canvas has a width of 25, &quot;pixel id 40 of canvas&quot; will mean &quot;pixel 15 of row 2 of canvas&quot;.</p>
+
+<p>Pixels can also be addressed by an id as a list of 2 items:</p>
+
+<div><pre><code class="language-none">    pixel id {25,2} of canvas of document 1</code></pre></div>
+
+<p>will refer to the &quot;pixel 25 of row 2&quot;, no matter how wide the canvas is.  Of course, if the canvas is narrower than 25 pixels, &quot;pixel id {25,2}&quot; will not exist.</p>
+
+<h3 id="toc_3">Pixel ids and pixel coordinates are completely different</h3>
+
+<p>Indexing in AppleScript with positive integers always means count from the front.  So, &quot;Pixel id {1,1}&quot; means the first pixel of the first row.  AppleScript indexing can also use negative numbers, in which case they mean &#39;relative to the back&#39;.  So, &quot;pixel id {-1,-1}&quot;  means &quot;the last pixel of the last row&quot;.  For a canvas with a width of 640 and a height of 480, &quot;pixel id {640,480} means the exact same pixel as &quot;pixel id {-1,-1}&quot;</p>
+
+<p>And, to make things slightly more complicated, images are usually indexed with the first row at the top, and the last row at the bottom.  This is the opposite of how we measure positions of shapes, where a bigger y coordinate means further up, and a lesser y coordinate means further down.</p>
+
+<p>Each pixel does have x and y coordinates, which is the pixel position.  So, if we have a canvas of with a width of 640 and a height of 480, and we run this script:</p>
+
+<div><pre><code class="language-none">tell app &quot;Sinterpixels&quot;
+     get position of pixel id {1,1} of canvas of document 1
+end tell</code></pre></div>
+
+<p>the result should be </p>
+
+<div><pre><code class="language-none">{x coordinate: -319.5, y coordinate: 239.5}</code></pre></div>
+
+<p>try for yourself:
+<code>
+tell app &quot;Sinterpixels&quot;
+    set myDoc to make new document with properties {height: 480, width: 640}
+    get position of pixel id {1,1} of canvas of myDoc
+end tell
+</code></p>
+
+<p>Unlike for circles and polygons, you can&#39;t set the position of a pixel.  Its position is fixed because it is part of the canvas, part of a regular grid that doesn&#39;t change.</p>
+
+<p>In Pixels part 2, we&#39;ll use these pixel specifiers to get the colors of pixels. </p>
+
+<h4 id="toc_4">previous topic: <a href="Colors2.html">Blend Modes</a>  next topic: <a href="SinterpixelsPixels2.html">Pixels Part 2</a></h4>

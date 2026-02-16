@@ -1,0 +1,33 @@
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="SinterpixelsPolygons2.html">Polygons Part 2</a>  next topic: <a href="Colors1.html">Specifying Colors</a></h4>
+
+<h2 id="toc_2">Polygons Part Three: Irregular Vertices</h2>
+
+<p>There are other ways to specify vertices of a polygon.  Although radial coordinates are often convenient, using x and y coordinates works fine as well: This script makes a nice golden rectangle</p>
+
+<div><pre><code class="language-none">set yc to 20
+set xc to yc * 1.61
+tell application &quot;SinterPixels&quot;
+    tell document 1
+        set p to make new polygon with properties {position: {0,0}, vertices:{{xc,yc},{-xc,yc},{-xc,-yc},{xc,-yc}} }
+    end tell
+end tell</code></pre></div>
+
+<p>Being able to specify the vertices individually means there no need for them to go smoothly around a circle.  Here&#39;s the same script with the order of the vertices jumbled:</p>
+
+<div><pre><code class="language-none">set yc to 
+set xc to yc * 1.61
+tell application &quot;SinterPixels&quot;
+    tell document 1
+        set p to make new polygon with properties      {vertices:{{xc,yc},{-xc,-yc},{-xc,yc},{xc,-yc}}
+    end tell
+end tell</code></pre></div>
+
+<p>which makes a very nice looking bowtie:</p>
+
+<p><img src="../images/Polygons-BowtieRectangle.png" alt="image" title="A rectangle the resembles a bowtie"></p>
+
+<p>Note:  Although this looks like two separate triangles, it is instead a single rectangle.  We&#39;ve taken a regular golden rectangle ABCD and instead drawn it as ACBD.  Because it is a golden rectangle, the resulting triangle shapes are regular equilateral triangles.</p>
+
+<h4 id="toc_3">previous topic: <a href="SinterpixelsPolygons2.html">Polygons Part 2</a>  next topic: <a href="Colors1.html">Specifying Colors</a></h4>

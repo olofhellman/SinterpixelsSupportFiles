@@ -1,4 +1,4 @@
-# Table of Contents
+## Sinterpixels User Documentation - Table of Contents
 
 - [About the Name](AboutTheName.md)
 - [Opening a File](OpeningAFile.md)

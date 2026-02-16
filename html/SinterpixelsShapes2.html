@@ -1,0 +1,46 @@
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="SinterpixelsShapes.html">Shapes Part 1</a>  next topic: <a href="SinterpixelsShapes3.html">Shapes Part 3</a></h4>
+
+<h2 id="toc_2">Shapes Part Two: Colors</h2>
+
+<p>Just like position, if we don&#39;t specify a color when making a new circle, colors get chosen automatically. There are two colors involved: there is a <strong>color</strong>, which is used to draw the perimeter of the circle, and there is a <strong>fill color</strong>, which is used to draw the interior of the circle.  Lets see how Sinterpixels specifies colors by running this script:</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    tell document 1
+        get the fill color of circle 1
+    end tell
+end tell</code></pre></div>
+
+<p>You should see something like this in the ScriptEditor result window:</p>
+
+<div><pre><code class="language-none">{red component:0.12027516216, green component:0.983362913132, blue component:0.465224981308, alpha component:1.0}</code></pre></div>
+
+<p>These are the four components of the <a href="https://en.wikipedia.org/wiki/RGBA_color_model">RGBA color model</a>.  All of these values are in the range from 0.0 and 1.0. The red, green, and blue values roughly correspond to how bright the red, green, and blue emitters on a monitor should be. The alpha value is a special &quot;transparency&quot; value, that matters when the color is combined with another color.  If the alpha is 0, none of the color will get transferred to a surface. If the values are all 1.0, that&#39;s white. If the red, green, and blue values are all zero, that&#39;s black.</p>
+
+<p>Try setting the color of one of the circles using an RBGA value, and set the radius of the circle to something larger so we can see the color better:</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    tell document 1
+        set the fill color of circle 1 to {red component:0.5, green component:1.0, blue component:0.8, alpha component:1.0}
+        set the radius of circle 1 to 50
+    end tell
+end tell</code></pre></div>
+
+<p>Sinterpixels also allows other ways of specifying color  See <a href="Colors1.html">Specifying Colors</a> for an overview</p>
+
+<p>To summarize:</p>
+
+<p>The <strong>fill color</strong> is the color of the interior of a shape, and the ** color** is the color used to draw the perimeter.  Colors are defined in the RGBA color space. </p>
+
+<p><strong>alpha component</strong>, <strong>red component</strong>, <strong>green component</strong>, and <strong>blue component</strong> can be used to access the individual components of a color.  Or, colors can be expressed as a list of values :  {0.5, 1.0, 0.5, 0.9} would be used to specify a fairly green color that is just a tiny bit transparent.</p>
+
+<p>Colors can also be specified by enumeration.  For example, <em>green</em> or <em>yellow</em> are valid colors.  <em>clear</em> means a color with an alpha component of 0.0.</p>
+
+<p><strong>line width</strong> determines the thickness of the perimeter.</p>
+
+<p>And, lastly, <strong>blend mode</strong> determines how a shape is composited on top of its background.  The default blend mode is <em>paintOver</em>.  A particularly interesting blend mode is <strong>blendCopy</strong> when used with a shape with a clear fill color.  This can be used to create transparent regions in an image or in a layer.</p>
+
+<p>See the <a href="BlendCopyPunchThrough.html">Punch Though a Layer Example</a> for a trick on using a blend mode to get a different effect when drawing a circle.</p>
+
+<h4 id="toc_3">previous topic: <a href="SinterpixelsShapes.html">Shapes Part 1</a>  next topic: <a href="SinterpixelsShapes3.html">Shapes Part 3</a></h4>

@@ -1,7 +1,7 @@
 ####  [Table of Contents](TableOfContents.md) 
 #### previous topic: [Pixels Part 1](SinterpixelsPixels.md) next topic: [Pixels Part 3](SinterpixelsPixels3.md)
 
-##  Pixels part 2: Getting colors
+##  Pixels Part 2: Getting Colors
 
 Lets explore what properties are available for pixels:
 
@@ -23,7 +23,7 @@ As log as document 1 exists, this should return something like this:
 }
 ```
 
-Interestingly, that's all the information you need to correlate the position of a pixel with the position of shapes on the canvas.  Let's do something interesting with that information: create a pixellated version of an image by drawing shapes.  Load an interesting image into a document by opening a .png or jpeg.  Then run this script to create an interesting distorted version of the original composed only of circles, where the colors of the circles reflect the colors of the the original:
+Interestingly, that's all the information one needs to correlate the position of a pixel with the position of shapes on the canvas.  Let's do something interesting with that information: create a pixellated version of an image by drawing shapes.  Load an interesting image into a document by opening a .png or jpeg.  Then run this script to create an interesting distorted version of the original composed only of circles, where the colors of the circles reflect the colors of the the original:
 
 ![image](../images/PredistortedChalkHorse.jpg "The Uffington Chalk Horse") ![image](../images/ChalkHorseInCircles.jpg "The chalk horse drawn only in circles")
 

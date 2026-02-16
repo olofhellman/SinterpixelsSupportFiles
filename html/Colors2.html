@@ -1,0 +1,44 @@
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="Colors1.html">Specifying Colors</a>  next topic: <a href="SinterpixelsPixels.html">Pixels Part 1</a></h4>
+
+<h2 id="toc_2">Colors Part 2: Blend Mode</h2>
+
+<p>One more property that all shapes have is <strong>blend mode</strong>, The blend mode determines how a shape is composited on top of its background.  The default blend mode is &quot;paintOver&quot;.  The blend mode must be one of the following:</p>
+
+<ul>
+<li><strong>paintOver</strong> : Paints the source image samples over the background image samples.  This is CGBlendMode.normal, and is the default</li>
+<li><strong>multiply</strong> : Multiplies the source image samples with the background image samples. This results in colors that are at least as dark as either of the two contributing sample colors.</li>
+<li><strong>screen</strong> : Multiplies the inverse of the source image samples with the inverse of the background image samples, resulting in colors that are at least as light as either of the two contributing sample colors.</li>
+<li><strong>overlay</strong> : CGBlendMode.overlay</li>
+<li><strong>darken</strong> : CGBlendMode.darken</li>
+<li><strong>lighten</strong> : CGBlendMode.lighten</li>
+<li><strong>colorDodge</strong> : Brightens the background image samples to reflect the source image samples.</li>
+<li><strong>colorBurn</strong> : Darkens the background image samples to reflect the source image samples.</li>
+<li><strong>softLight</strong> : CGBlendMode.softLight</li>
+<li><strong>hardLight</strong> : CGBlendMode.hardLight</li>
+<li><strong>difference</strong> : CGBlendMode.difference</li>
+<li><strong>exclusion</strong> : similar to difference, but with lower contrast.</li>
+<li><strong>hue</strong> : Uses the luminance and saturation values of the background with the hue of the source image.</li>
+<li><strong>saturation</strong> : Uses the luminance and hue values of the background with the saturation of the source image.</li>
+<li><strong>sourceColor</strong> : Uses the luminance values of the background with the hue and saturation values of the source image.</li>
+<li><strong>luminosity</strong> : Uses the hue and saturation of the background with the luminance of the source image.</li>
+<li><strong>blendClear</strong> : erases the destination</li>
+<li><strong>blendCopy</strong> : replaces destination with source - CGBlendMode.copy</li>
+<li><strong>sourceIn</strong> : result is source * destination alpha, i.e. R = S*Da</li>
+<li><strong>sourceOut</strong> : R = S*(1 - Da)</li>
+<li><strong>sourceAtop</strong> : R = S<em>Da + D</em>(1 - Sa)</li>
+<li><strong>destinationOver</strong> : R = S*(1 - Da) + D</li>
+<li><strong>destinationOut</strong> : R = D*(1 - Sa)</li>
+<li><strong>destinationIn</strong> : R = D*Sa</li>
+<li><strong>destinationAtop</strong> : R = S<em>(1 - Da) + D</em>Sa</li>
+<li><strong>xor</strong> : R = S<em>(1 - Da) + D</em>(1 - Sa)</li>
+<li><strong>plusDarker</strong> : R = MAX(0, 1 - ((1 - D) + (1 - S)))</li>
+<li><strong>plusLighter</strong> : R = MIN(1, S + D)</li>
+</ul>
+
+<p>A particularly interesting blend mode is <strong>blendCopy</strong> when used with a shape with a clear fill color.  This can be used to create transparent regions in an image or in a layer.</p>
+
+<p>See the <a href="BlendCopyPunchThrough.html">Punch Though a Layer Example</a> for a trick on using a blend mode to get a different effect when drawing a circle.</p>
+
+<h4 id="toc_3">previous topic: <a href="Colors1.html">Specifying Colors</a>  next topic: <a href="SinterpixelsPixels.html">Pixels Part 1</a></h4>

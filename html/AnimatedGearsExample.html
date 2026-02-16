@@ -1,0 +1,69 @@
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">Containing topic: <a href="Movies.html">Movies</a></h4>
+
+<h2 id="toc_2">Animating Gears</h2>
+
+<p>Here&#39;s an example of a simple animation of two gears, producing this movie:</p>
+
+<p><img src="../images/AnimatedGears.mov" alt="image" title="Animation of two gears"></p>
+
+<p>Do make a gear shape, see the example here:
+<a href="GearShapeExample.html">Making A Gear Shape</a> </p>
+
+<p>In this example, we&#39;ve made the gear teeth a little round.  Here&#39;s the script for our gear radius generation:</p>
+
+<div><pre><code class="language-none">to gearList(teeth, notchDepth, depth)
+    set gList to {}
+    repeat with s from 1 to teeth
+        set gList to gList &amp; notchDepth
+        set gList to gList &amp; (notchDepth - depth / 4)
+        set gList to gList &amp; (notchDepth - depth)
+        set gList to gList &amp; (notchDepth - depth)
+        set gList to gList &amp; (notchDepth - depth / 4)
+        set gList to gList &amp; notchDepth
+    end repeat
+    return gList
+end gearList</code></pre></div>
+
+<p>The first thing our script does is make two gears and positions them just the right amount apart:</p>
+
+<div><pre><code class="language-none">set s1 to 7
+set s2 to 9
+set gList to gearList(s1, 50, 14)
+set fList to gearList(s2, 50, 14)
+set initialRotation1 to -6.28 / (s1 * 12)
+set initialRotation2 to -6.28 / (s2 * 12)
+
+tell application &quot;SinterPixels&quot;
+    tell document 1
+        
+        set p1 to make new polygon with properties {radii:gList}
+        set p2 to make new polygon with properties {radii:fList}
+        set position of p1 to {44, 0}
+        set position of p2 to {-44, 0}
+        set rotation of p1 to initialRotation1
+        set rotation of p2 to initialRotation2</code></pre></div>
+
+<p>One gear has 7 teeth and the other has nine.  With a radius of 50 and a notch depth of 14, you&#39;d expect that the separation between the gears should be about 50 + 50 - 14, or about 86. In this example, we&#39;ve placed them apart by 88 (there&#39;s the 44 and -44 values for the x coordinate when we set the position), because that seems to look a bit better.</p>
+
+<p>We also adjust the initial rotation so that the teeth are aligned.</p>
+
+<div><pre><code class="language-none">        start filming
+        repeat with n from 0 to 200
+            set rotation of p1 to initialRotation1 + n / (s1 * 4)
+            set rotation of p2 to initialRotation2 - (n / (s2 * 4))
+            record movie frame
+        end repeat
+        stop filming saving in &quot;AnimatedGears.mov&quot;
+end tell</code></pre></div>
+
+<p>In the movie section of the script, we loop 200 times.  For each movie frame, we adjust the rotation of each gear a bit. The amount of the rotation depends on the number of teeth of each gear. The 7 tooth gear is going to rotate faster than the 9 tooth gear, because that&#39;s how gears work.  One of the gears rotates clockwise, and the other rotates counterclockwise.  That&#39;s why there&#39;s a minus sign in the line</p>
+
+<div><pre><code class="language-none">            set rotation of p2 to initialRotation2 - (n / (s2 * 4))</code></pre></div>
+
+<p>Try adjusting the s1 and s2 values to change the number of teeth on each gear to see if the animation still looks good</p>
+
+<p><img src="../images/Simple7ToothGear.png" alt="image" title="A gear with seven teeth"></p>
+
+<h4 id="toc_3">Containing topic: <a href="Movies.html">Movies</a></h4>
