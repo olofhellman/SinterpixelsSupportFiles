@@ -22,6 +22,6 @@ tell application "Acorn"
 end tell
 ```
 
-By the way, Acorn is great app and totally worth it. See [Acorns scripting examples](https://flyingmeat.com/acorn/docs/example_applescript_and_javascript_scripts.html) for a variety of features like image resizing, applying filters, and changing file formats.
+By the way, Acorn is great app and totally worth it. See [Acorn's scripting examples](https://flyingmeat.com/acorn/docs/example_applescript_and_javascript_scripts.html) for a variety of features like image resizing, applying filters, and changing file formats.
 
 #### [Scripting In Depth C: References](UsingReferences.md)   next topic: [Examples Catalog](AllExamples.md)
