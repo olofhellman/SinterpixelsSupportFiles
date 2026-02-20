@@ -32,5 +32,9 @@
     * [Animated Gears](AnimatedGearExample.md)   
     * [A Gear Shape](GearShapeExample.md)   
     * [Punch Though a Layer](BlendCopyPunchThrough.md)   
+    * [Hello World text](TextShapes.md)
+    * [Random Walk: Pixels Part 3: Setting Colors](SinterpixelsPixels3.md)   
+    * [A star thats really just a pentagon](Pentastar.md)
     * [Pixel Gradient](PixelGradientExample.md)   
 
+ 
