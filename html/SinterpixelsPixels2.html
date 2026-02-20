@@ -7,6 +7,7 @@
 <p>Lets explore what properties are available for pixels:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         get properties of pixel {1,1}
     end tell

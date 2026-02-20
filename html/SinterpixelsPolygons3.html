@@ -9,6 +9,7 @@
 <div><pre><code class="language-none">set yc to 20
 set xc to yc * 1.61
 tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         set p to make new polygon with properties {position: {0,0}, vertices:{{xc,yc},{-xc,yc},{-xc,-yc},{xc,-yc}} }
     end tell
@@ -19,6 +20,7 @@ end tell</code></pre></div>
 <div><pre><code class="language-none">set yc to 
 set xc to yc * 1.61
 tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         set p to make new polygon with properties      {vertices:{{xc,yc},{-xc,-yc},{-xc,yc},{xc,-yc}}
     end tell

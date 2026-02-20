@@ -9,6 +9,7 @@
 <p>run the following script to see the effect of a changing radius</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         set c to make new circle
         set originalRadius to radius of c
@@ -24,6 +25,7 @@ end tell</code></pre></div>
 <p>Like all shapes, circles also have a property <strong>line width</strong>. This specifies how thick the perimeter should be:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         make new circle with properties {line width: 10, radius: 25, color: green, fill color: white }
     end tell
