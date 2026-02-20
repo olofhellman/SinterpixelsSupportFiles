@@ -9,6 +9,7 @@ run the following script to see the effect of a changing radius
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		set c to make new circle
 		set originalRadius to radius of c
@@ -26,6 +27,7 @@ Like all shapes, circles also have a property **line width**. This specifies how
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 	    make new circle with properties {line width: 10, radius: 25, color: green, fill color: white }
 	end tell

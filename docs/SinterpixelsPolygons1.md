@@ -7,6 +7,7 @@ Let's explore what makes a polygon a polygon.  First run the following script to
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		set p to make new polygon
         get properties of p
@@ -43,6 +44,7 @@ The first four properties, *container*, *class*, *id* and *name* are shared by m
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		set p to make new polygon with properties {name: "Eric"}
         get properties of polygon "Eric"
@@ -60,6 +62,7 @@ Try running this script to spin a polygon:
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		set p to make new polygon with properties {vertex count:5, radius 20}
         repeat 100 times

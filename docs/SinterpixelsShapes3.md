@@ -18,7 +18,8 @@ set twoPi to 6.283
 
 tell application "SinterPixels"
 	repeat with n from 1 to 60
-		tell document 1
+	    if not (exists document 1) then make new document
+	    tell document 1
 			set ang to n * twoPi / 60
 			if n mod 5 is equal to 0 then
 				set theCircle to make new circle with properties {radius:hoursSize, line width:0, position:{angle:ang, radius:rad}}

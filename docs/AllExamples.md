@@ -15,6 +15,12 @@
 ![image](../images/RedTintLayerWithPunchHoleSmall.png "Punch through of a tint layer") 
 [Punch Though a Layer](BlendCopyPunchThrough.md)   
 
+![image](../images/HelloWorld.png "Hello World text shapes") 
+[Hello World text](TextShapes.md)
+
+![image](../images/PentastarC.png "A ACEBD pentagon") 
+[A star thats really just a pentagon](Pentastar.md)
+
 ![image](../images/GreenMagentaGradient.png "A green and magenta gradient on the canvas")
 [Pixel Gradient](PixelGradientExample.md)   
 

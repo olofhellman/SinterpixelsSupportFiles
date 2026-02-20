@@ -14,6 +14,7 @@ but it will still be a regular polygon.  What if we don't want a regular polygon
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		set p to make new polygon with properties {vertex count:5, radius:20}
 		get vertices of p

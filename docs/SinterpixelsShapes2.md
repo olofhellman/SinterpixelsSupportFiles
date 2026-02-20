@@ -7,7 +7,9 @@ Just like position, if we don't specify a color when making a new circle, colors
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
+	    if not (exists circle 1) then make new circle
 		get the fill color of circle 1
 	end tell
 end tell

@@ -12,6 +12,7 @@
     * [Part 1: Basics](SinterpixelsPolygons1.md)
     * [Part 2: Vertices](SinterpixelsPolygons2.md)
     * [Part 3: Irregular Vertices](SinterpixelsPolygons3.md)
+- [Text Shapes](TextShapes.md)
 - Colors
     * [Part 1: Ways of Specifying Color](Colors1.md)
     * [Part 2: Blend Modes](Colors2.md)

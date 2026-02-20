@@ -6,9 +6,10 @@
 
 <p>There are currently two kinds of shapes in Sinterpixels: the circle and the polygon</p>
 
-<p>Circles and polygons have a few properties in common.  These examples use circles, which are a bit simpler, but feel free to substitute &quot;polygon&quot; for circle&quot; if you&#39;d like. If you don&#39;t already have a document open, make a new one now.  And if the document doesn&#39;t contain a circle, make one now with the following script:</p>
+<p>Circles and polygons have a few properties in common.  These examples use circles, which are a bit simpler, but feel free to substitute &quot;polygon&quot; for circle&quot; if you&#39;d like. We;ll start by making a new circle with the following script, and if there&#39;s no document, this script will make one for you as well:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         make new circle
     end tell

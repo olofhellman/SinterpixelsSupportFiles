@@ -9,6 +9,7 @@
 <p>A polygon can be defined by a sequence of radii, so for example, the sequence {50, 50, 50} just creates a triangle, three points each with a radius from the center of 50:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         make new polygon with properties {radii:{50, 50, 50}, position:{0, 0}}
     end tell
@@ -19,6 +20,7 @@ end tell</code></pre></div>
 <p>Let&#39;s alternate the radii larger and smaller to make a star.  In this case, 5 repetitions of 50 and 22 to make a five-pointed star:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         make new polygon with properties {radii:{50, 22, 50, 22, 50, 22, 50, 22, 50, 22}, position:{0, 0}}
     end tell
@@ -29,6 +31,7 @@ end tell</code></pre></div>
 <p>Now make the points of the star into teeth by repeating the higher number.  This creates a simple asterisk shape:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         make new polygon with properties {radii:{50, 50, 22, 50, 50, 22, 50, 50, 22, 50, 50, 22, 50, 50, 22}, position:{0, 0}}
     end tell
@@ -63,7 +66,8 @@ gearRadii(7, 50, 12)</code></pre></div>
 
 <div><pre><code class="language-none">set getRadiiList to gearRadii(7, 50, 12)
 tell application &quot;SinterPixels&quot;
-    tell document 1
+    set newDoc to make new document with properties {height:300, width:420}
+    tell newDoc
         make new polygon with properties {radii:getRadiiList, position:{0, 0}}
     end tell
 end tell</code></pre></div>

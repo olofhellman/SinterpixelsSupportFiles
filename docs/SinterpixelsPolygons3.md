@@ -1,5 +1,5 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Polygons Part 2](SinterpixelsPolygons2.md)  next topic: [Specifying Colors](Colors1.md)
+#### previous topic: [Polygons Part 2](SinterpixelsPolygons2.md)  next topic: [Text Shapes](TextShapes.md)
 
 ## Polygons Part Three: Irregular Vertices
 
@@ -9,6 +9,7 @@ There are other ways to specify vertices of a polygon.  Although radial coordina
 set yc to 20
 set xc to yc * 1.61
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		set p to make new polygon with properties {position: {0,0}, vertices:{{xc,yc},{-xc,yc},{-xc,-yc},{xc,-yc}} }
 	end tell
@@ -21,6 +22,7 @@ Being able to specify the vertices individually means there no need for them to 
 set yc to 
 set xc to yc * 1.61
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		set p to make new polygon with properties      {vertices:{{xc,yc},{-xc,-yc},{-xc,yc},{xc,-yc}}
 	end tell
@@ -33,4 +35,4 @@ which makes a very nice looking bowtie:
 
 Note:  Although this looks like two separate triangles, it is instead a single rectangle.  We've taken a regular golden rectangle ABCD and instead drawn it as ACBD.  Because it is a golden rectangle, the resulting triangle shapes are regular equilateral triangles.
 
-#### previous topic: [Polygons Part 2](SinterpixelsPolygons2.md)  next topic: [Specifying Colors](Colors1.md)
+#### previous topic: [Polygons Part 2](SinterpixelsPolygons2.md)  next topic: [Text Shapes](TextShapes.md)

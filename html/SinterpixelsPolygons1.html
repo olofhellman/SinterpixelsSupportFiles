@@ -7,6 +7,7 @@
 <p>Let&#39;s explore what makes a polygon a polygon.  First run the following script to make a new one, then get is properties to see what it knows about itself:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         set p to make new polygon
         get properties of p
@@ -39,6 +40,7 @@ end tell</code></pre></div>
 <p>The first four properties, <em>container</em>, <em>class</em>, <em>id</em> and <em>name</em> are shared by many types of objects.  You are free to set the name of a shape, and then use that later to identify it, as in:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         set p to make new polygon with properties {name: &quot;Eric&quot;}
         get properties of polygon &quot;Eric&quot;
@@ -54,6 +56,7 @@ end tell</code></pre></div>
 <p>Try running this script to spin a polygon:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         set p to make new polygon with properties {vertex count:5, radius 20}
         repeat 100 times

@@ -1,5 +1,5 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Shapes Part Three](SinterpixelsPolygons3.md)  next topic: [Blend Modes](Colors2.md)
+#### previous topic: [Text Shapes](TextShapes.md)  next topic: [Blend Modes](Colors2.md)
 
 ## Colors Part 1: Specifying Colors
 
@@ -20,6 +20,7 @@ To use HSB, you can write a script like this:
 ```
 tell application "SinterPixels"
     set hsbColor to {hue:0.6, saturation:1.0, brightness:0.8}
+	if not (exists document 1) then make new document
 	tell document 1
 		set the fill color of circle 1 to hsbColor
 	end tell
@@ -72,4 +73,4 @@ If you only specify 3 values for a color, it is assumed that the alpha component
 
 Other color models (HSL, CMYK) will be supported soon. 
 
-#### previous topic: [Shapes Part Three](SinterpixelsPolygons3.md)  next topic: [Blend Modes](Colors2.md)
+#### previous topic: [Text Shapes](TextShapes.md)  next topic: [Blend Modes](Colors2.md)

@@ -38,7 +38,9 @@ set initialRotation1 to -6.28 / (s1 * 12)
 set initialRotation2 to -6.28 / (s2 * 12)
 
 tell application "SinterPixels"
-	tell document 1
+	set newDoc to make new document with properties {height:300, width:420}
+	tell newDoc
+
 		
 		set p1 to make new polygon with properties {radii:gList}
 		set p2 to make new polygon with properties {radii:fList}

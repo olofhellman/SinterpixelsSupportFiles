@@ -11,6 +11,7 @@ The individual components of the colors of each pixel can be manipulated by a sc
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		set alpha component of every pixel to 1.0
 		set ht to height of canvas
@@ -32,6 +33,7 @@ In the above script we used "every pixel of row h" and "every pixel of column w"
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		set the alpha component of every pixel of the canvas to 1.0
 		set ht to height of canvas
@@ -57,6 +59,7 @@ set {dx, dy} to {0.0, 0.0} -- this is the speed
 set drag to 1.1
 set randList to {-1, -0.7, 0, 0.7, 1.0}
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		set the color of every pixel of the canvas to black
 		set {ht, wt} to {height, width} of canvas

@@ -7,7 +7,9 @@
 <p>Just like position, if we don&#39;t specify a color when making a new circle, colors get chosen automatically. There are two colors involved: there is a <strong>color</strong>, which is used to draw the perimeter of the circle, and there is a <strong>fill color</strong>, which is used to draw the interior of the circle.  Lets see how Sinterpixels specifies colors by running this script:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
+        if not (exists circle 1) then make new circle
         get the fill color of circle 1
     end tell
 end tell</code></pre></div>

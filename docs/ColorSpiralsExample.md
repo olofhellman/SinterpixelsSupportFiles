@@ -19,8 +19,8 @@ set spiralLength to 18
 set shellThickness to 10
 
 tell application "SinterPixels"
-	tell document 1
-		delete every shape
+	set newDoc to make new document with properties {height:300, width:420}
+	tell newDoc
 		repeat with radLoop from 1 to spiralLength
 			set rad to shellThickness * radLoop
 			repeat with angleLoop from 1 to numSpirals

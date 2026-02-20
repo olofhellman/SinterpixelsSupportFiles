@@ -9,6 +9,7 @@ A polygon can be defined by a sequence of radii, so for example, the sequence {5
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		make new polygon with properties {radii:{50, 50, 50}, position:{0, 0}}
 	end tell
@@ -21,6 +22,7 @@ Let's alternate the radii larger and smaller to make a star.  In this case, 5 re
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		make new polygon with properties {radii:{50, 22, 50, 22, 50, 22, 50, 22, 50, 22}, position:{0, 0}}
 	end tell
@@ -33,6 +35,7 @@ Now make the points of the star into teeth by repeating the higher number.  This
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		make new polygon with properties {radii:{50, 50, 22, 50, 50, 22, 50, 50, 22, 50, 50, 22, 50, 50, 22}, position:{0, 0}}
 	end tell
@@ -74,7 +77,8 @@ Now, making a gear is a bit easier:
 ```
 set getRadiiList to gearRadii(7, 50, 12)
 tell application "SinterPixels"
-	tell document 1
+	set newDoc to make new document with properties {height:300, width:420}
+	tell newDoc
 		make new polygon with properties {radii:getRadiiList, position:{0, 0}}
 	end tell
 end tell

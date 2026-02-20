@@ -1,0 +1,28 @@
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="SinterpixelsPolygons3.html">Part 3: Irregular Vertices</a>  next topic:  <a href="Colors1.html">Specifying Colors</a></h4>
+
+<h2 id="toc_2">Text Shapes</h2>
+
+<p>Text shapes draw text.  They have the same color, position, fill color, color and line width properties as other shapes</p>
+
+<p>Like polygons, they have a rotation. </p>
+
+<p>Unique to text shapes are the <strong>contents</strong>, the <strong>font</strong>, and <strong>font size</strong> properties.</p>
+
+<p>run the following script to make a &quot;Hello World&quot; document</p>
+
+<p><img src="../images/HelloWorld.png" alt="image" title="Hello World text shapes"> </p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    set d to make new document with properties {height:300, width:420}
+    tell d
+        make new text shape with properties {position:{-40, 32}, font:&quot;Futura&quot;, contents:&quot;Hello&quot;, font size:72, fill color:green, line width:0}
+        make new text shape with properties {position:{40, -32}, font:&quot;Futura&quot;, contents:&quot;World&quot;, font size:72, fill color:clear, line width:2, color:blue}
+        repeat with n from 1 to 360
+            set rotation of every text shape to n
+        end repeat
+    end tell
+end tell</code></pre></div>
+
+<h4 id="toc_3">previous topic: <a href="SinterpixelsPolygons3.html">Part 3: Irregular Vertices</a>)  next topic:  <a href="Colors1.html">Specifying Colors</a> )</h4>

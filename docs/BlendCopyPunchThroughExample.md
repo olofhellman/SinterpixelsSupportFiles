@@ -12,7 +12,8 @@ By default, the new layer is created with the same size as the base canvas.
 
 ```
 tell application "SinterPixels"
-	tell document 1
+	set newDoc to make new document with properties {height:300, width:420}
+	tell newDoc
 		set aLayer to make new layer 
 		set red component of every pixel of aLayer to 0.2
 		set alpha component of every pixel of aLayer to 0.75

@@ -7,6 +7,7 @@ Lets explore what properties are available for pixels:
 
 ```
 tell application "SinterPixels"
+	if not (exists document 1) then make new document
 	tell document 1
 		get properties of pixel {1,1}
 	end tell

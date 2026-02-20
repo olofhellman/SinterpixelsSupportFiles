@@ -11,6 +11,7 @@
 <p><a href="PixelGradientExample.html">Pixel Gradient Example</a></p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         set alpha component of every pixel to 1.0
         set ht to height of canvas
@@ -30,6 +31,7 @@ end tell</code></pre></div>
 <p>In the above script we used &quot;every pixel of row h&quot; and &quot;every pixel of column w&quot; to set the color of many pixels at the same time.  We can also set the colors of the pixels individually like this:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         set the alpha component of every pixel of the canvas to 1.0
         set ht to height of canvas
@@ -52,6 +54,7 @@ end tell</code></pre></div>
 set drag to 1.1
 set randList to {-1, -0.7, 0, 0.7, 1.0}
 tell application &quot;SinterPixels&quot;
+    if not (exists document 1) then make new document
     tell document 1
         set the color of every pixel of the canvas to black
         set {ht, wt} to {height, width} of canvas
