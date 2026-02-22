@@ -67,6 +67,8 @@ The colors of the circles, from left to right: black, red, green, blue, cyan, ma
 ![image](../images/plusDarker.png "plusDarker")
 ![image](../images/plusLighter.png "plusLighter") 
 
+Some of these blend modes don't look very interesting here, but they are much more interesting when the circles or the backgrounds have alpha values of less than one.  See [More Blend Modes](MoreBlendModes.md) for an exhaustive set of images.
+
 A particularly interesting blend mode is **blendCopy** when used with a shape with a clear fill color.  This can be used to create transparent regions in an image or in a layer.
  
 See the [Punch Though a Layer Example](BlendCopyPunchThrough.md) for a trick on using a blend mode to get a different effect when drawing a circle.
