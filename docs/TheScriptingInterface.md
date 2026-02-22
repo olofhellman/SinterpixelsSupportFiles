@@ -1,5 +1,5 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Opening a File](OpeningAFile.md)  next topic: [Shapes](SinterpixelsShapes.md)
+#### previous topic: [Opening a File](OpeningAFile.md)  next topic: next topic: [Shapes](SinterpixelsShapes.md)
 
 ## Using the Scripting Interface
 
@@ -18,7 +18,7 @@ If you open the Script Editor application, you should be able to create an empty
 Let's write a very simple script.  Type the following in the script editor window:
 
 ```
-tell app "Sinterpixels"
+tell app "SinterPixels"
     count documents
 end 
 ```
@@ -39,7 +39,7 @@ All of these are signs that Script Editor was able to successfully compile the s
 
 Now it is time to run the script.
 
-Tap the run button in the toolbar.  That's the triangle next to the "Compile" button. When the script runs, it communicates with the "Sinterpixels" application and asks it how many documents it currently has open.  "Sinterpixels" responds and the result is displayed in the bottom half of the Script Editor window.  
+Tap the run button in the toolbar.  That's the triangle next to the "Compile" button. When the script runs, it communicates with the "SinterPixels" application and asks it how many documents it currently has open.  "SinterPixels" responds and the result is displayed in the bottom half of the Script Editor window.  
 
 If you've been following along and have already opened a file, the result of the script shown there should be 1, or more if you've opened more than one file.
 
@@ -50,29 +50,35 @@ If you haven't yet opened a file, do that now and run the script again, so that 
 Now lets try getting some information from the document.  try the following scripts:
 
 ```
-tell app "Sinterpixels"
+tell app "SinterPixels"
     get name of document 1
 end 
 ```
 
 ```
-tell app "Sinterpixels"
+tell app "SinterPixels"
     make new circle in document 1
 end 
 ```
 
 ```
-tell app "Sinterpixels"
+tell app "SinterPixels"
     count circles of document 1
 end 
 ```
 
 ```
-tell app "Sinterpixels"
+tell app "SinterPixels"
     get {radius, color} of circle 2 of document 1
 end 
 ```
 
+```
+tell app "SinterPixels"
+    make new document with properties {height: 600, width: 800}
+end
+```
+
 If you successfully get the data you were expecting as results from these scripts, you are ready to explore shapes.
 
-#### previous topic: [Opening a File](OpeningAFile.md)  next topic: [Shapes](SinterpixelsShapes.md)
+#### previous topic: [Opening a File](OpeningAFile.md)  next topic: next topic: [Shapes](SinterpixelsShapes.md)

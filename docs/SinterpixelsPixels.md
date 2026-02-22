@@ -36,7 +36,7 @@ And, to make things slightly more complicated, images are usually indexed with t
 Each pixel does have x and y coordinates, which is the pixel position.  So, if we have a canvas of with a width of 640 and a height of 480, and we run this script:
 
 ```
-tell app "Sinterpixels"
+tell app "SinterPixels"
      get position of pixel id {1,1} of canvas of document 1
 end tell
 ```
@@ -49,7 +49,7 @@ the result should be
 
 try for yourself:
 ```
-tell app "Sinterpixels"
+tell app "SinterPixels"
     set myDoc to make new document with properties {height: 480, width: 640}
     get position of pixel id {1,1} of canvas of myDoc
 end tell

@@ -20,7 +20,7 @@ You can refer to most objects by name.  Using 'document "My Clock"' will always 
 Many objects don't usually have a name, but can have one.  For example, you are free to assign a name to a shape if you'd like, and once you do, it can be used to reference the shape by name:
 
 ```
-tell application "Sinterpixels"
+tell application "SinterPixels"
 	set the name of circle 2 to "Eric"
 	set the radius of shape "Eric" to 10
 end tell
@@ -32,7 +32,7 @@ end tell
 You can also refer to most objects by id.  Run this script to find out the document ids you can use:
 
 ```
-tell application "Sinterpixels"
+tell application "SinterPixels"
 	get id of every document
 end tell
 ```
@@ -65,7 +65,7 @@ WARNING: The id of each object might change if you close a document and reopen i
 "every" is used to create another kind of reference. One can use "every" as a way to apply a command to may objects at the same time:
 
 ```
-tell application "Sinterpixels"
+tell application "SinterPixels"
 	set the radius of every circle of every document to 12
 end tell
 ``` 
@@ -75,7 +75,7 @@ end tell
 "some" means to pick a random object in a collection:
 
 ```
-tell application "Sinterpixels"
+tell application "SinterPixels"
 	delete some shape of doument 1
 end tell
 ``` 

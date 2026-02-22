@@ -9,7 +9,7 @@ Select the "Open Scripts Folder" menu item to open the scripts menu folder in th
 
 It works hierarchically as well - Users can organize their scripts in different folders under the scripts menu.
 
-Scripts that are run from the scripts menu have a performance advantage.  Because the communication happens within the "Sinterpixels" applications, and not between two different applications, the time involved in processing the command is lower.
+Scripts that are run from the scripts menu have a performance advantage.  Because the communication happens within the "SinterPixels" applications, and not between two different applications, the time involved in processing the command is lower.
 
 
 #### next topic: [Scripting In Depth C: References](UsingReferences.md)
