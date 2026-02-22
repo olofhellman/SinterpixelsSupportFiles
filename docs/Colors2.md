@@ -35,6 +35,37 @@ One more property that all shapes have is **blend mode**, The blend mode determi
 - **plusDarker** : R = MAX(0, 1 - ((1 - D) + (1 - S)))
 - **plusLighter** : R = MIN(1, S + D)
 
+Shown below are the results of drawing circles with different blend modes.  The background is stripes of different colors, from top to bottom the colors are black, red, green, blue, white, black, dark gray, gray, light gray, white, black, cyan, magenta, yellow, white.
+
+The colors of the circles, from left to right: black, red, green, blue, cyan, magenta, yellow, white
+
+![image](../images/paintOver.png "paintOver")
+![image](../images/multiply.png "multiply")
+![image](../images/screen.png "screen")
+![image](../images/overlay.png "overlay")
+![image](../images/darken.png "darken")
+![image](../images/lighten.png "lighten")
+![image](../images/colorDodge.png "colorDodge")
+![image](../images/colorBurn.png "colorBurn")
+![image](../images/softLight.png "softLight")
+![image](../images/hardLight.png "hardLight")
+![image](../images/difference.png "difference")
+![image](../images/hue.png "hue blend")
+![image](../images/saturation.png "saturation blend")
+![image](../images/sourceColor.png "sourceColor")
+![image](../images/luminosity.png "luminosity blend")
+![image](../images/blendClear.png "blendClear")
+![image](../images/blendCopy.png "blendCopy")
+![image](../images/sourceIn.png "sourceIn")
+![image](../images/sourceOut.png "sourceOut")
+![image](../images/sourceAtop.png "sourceAtop")
+![image](../images/destinationOver.png "destinationOver")
+![image](../images/destinationIn.png "destinationOut")
+![image](../images/destinationIn.png "destinationIn")
+![image](../images/destinationAtop.png "destinationAtop")
+![image](../images/xor.png "xor")
+![image](../images/plusDarker.png "plusDarker")
+![image](../images/plusLighter.png "plusLighter") 
 
 A particularly interesting blend mode is **blendCopy** when used with a shape with a clear fill color.  This can be used to create transparent regions in an image or in a layer.
  
