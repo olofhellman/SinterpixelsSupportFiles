@@ -18,10 +18,10 @@ One more property that all shapes have is **blend mode**, The blend mode determi
 - **hardLight** : CGBlendMode.hardLight
 - **difference** : CGBlendMode.difference
 - **exclusion** : similar to difference, but with lower contrast.
-- **hue** : Uses the luminance and saturation values of the background with the hue of the source image.
-- **saturation** : Uses the luminance and hue values of the background with the saturation of the source image.
+- **blendHue** : Uses the luminance and saturation values of the background with the hue of the source image.
+- **blendSaturation** : Uses the luminance and hue values of the background with the saturation of the source image.
 - **sourceColor** : Uses the luminance values of the background with the hue and saturation values of the source image.
-- **luminosity** : Uses the hue and saturation of the background with the luminance of the source image.
+- **blendLuminosity** : Uses the hue and saturation of the background with the luminance of the source image.
 - **blendClear** : erases the destination
 - **blendCopy** : replaces destination with source - CGBlendMode.copy
 - **sourceIn** : result is source * destination alpha, i.e. R = S*Da
@@ -50,10 +50,10 @@ The colors of the circles, from left to right: black, red, green, blue, cyan, ma
 ![image](../images/softLight.png "softLight")
 ![image](../images/hardLight.png "hardLight")
 ![image](../images/difference.png "difference")
-![image](../images/hue.png "hue blend")
-![image](../images/saturation.png "saturation blend")
+![image](../images/hue.png "blendHue")
+![image](../images/saturation.png "blendSaturation")
 ![image](../images/sourceColor.png "sourceColor")
-![image](../images/luminosity.png "luminosity blend")
+![image](../images/luminosity.png "blendLuminosity")
 ![image](../images/blendClear.png "blendClear")
 ![image](../images/blendCopy.png "blendCopy")
 ![image](../images/sourceIn.png "sourceIn")
