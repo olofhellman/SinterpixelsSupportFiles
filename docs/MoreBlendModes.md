@@ -37,7 +37,36 @@ In the first set, the alpha values of all the circles is 0.5:
 ![image](../images/plusDarkerCHalf.png "plusDarker")
 ![image](../images/plusLighterCHalf.png "plusLighter") 
 
- 
+And in this set, the canvas is painted with stripes of alpha 0.5, and the circles have alpha 1.0:
+
+![image](../images/paintOverSHalf.png "paintOver")
+![image](../images/multiplySHalf.png "multiply")
+![image](../images/screenSHalf.png "screen")
+![image](../images/overlaySHalf.png "overlay")
+![image](../images/darkenSHalf.png "darken")
+![image](../images/lightenSHalf.png "lighten")
+![image](../images/colorDodgeSHalf.png "colorDodge")
+![image](../images/colorBurnSHalf.png "colorBurn")
+![image](../images/softLightSHalf.png "softLight")
+![image](../images/hardLightSHalf.png "hardLight")
+![image](../images/differenceSHalf.png "difference")
+![image](../images/hueSHalf.png "hue blend")
+![image](../images/saturationSHalf.png "saturation blend")
+![image](../images/sourceColorSHalf.png "sourceColor")
+![image](../images/luminositySHalf.png "luminosity blend")
+![image](../images/blendClearSHalf.png "blendClear")
+![image](../images/blendCopySHalf.png "blendCopy")
+![image](../images/sourceInSHalf.png "sourceIn")
+![image](../images/sourceOutSHalf.png "sourceOut")
+![image](../images/sourceAtopSHalf.png "sourceAtop")
+![image](../images/destinationOverSHalf.png "destinationOver")
+![image](../images/destinationInSHalf.png "destinationOut")
+![image](../images/destinationInSHalf.png "destinationIn")
+![image](../images/destinationAtopSHalf.png "destinationAtop")
+![image](../images/xorSHalf.png "xor")
+![image](../images/plusDarkerSHalf.png "plusDarker")
+![image](../images/plusLighterSHalf.png "plusLighter") 
+
  
 
 #### parent topic: [Blend Modes](Colors2.md)  
