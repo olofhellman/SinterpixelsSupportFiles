@@ -3,6 +3,8 @@
 
 ## Text Shapes
 
+(Text shapes are new in version 26.2.3)
+
 Text shapes draw text.  They have the same color, position, fill color, color and line width properties as other shapes
 
 Like polygons, they have a rotation. 
