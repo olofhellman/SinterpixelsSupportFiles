@@ -1,7 +1,7 @@
 ## Sinterpixels User Documentation - Table of Contents
 
 - [About the Name](AboutTheName.md)
-- [Opening a File](OpeningAFile.md)
+- [Opening a Document: Graphical Interface](OpeningAFile.md)
 - [Using the Scripting Interface](TheScriptingInterface.md)
 - Shapes
     * [Part 1: Basics](SinterpixelsShapes.md)
@@ -22,6 +22,10 @@
     * [Part 3: Setting Colors](SinterpixelsPixels3.md)
 - [Layers](SinterpixelsLayers.md)
 - [Exporting Movies](Movies.md)
+- File Manipulation
+    * [Making a New Document via Script](NewDocument.md)
+    * [Opening a Document via Script](OpeningAFile2.md)
+    * [Saving a Document](SavingADocument.md)
 - AppleScript In Depth
     * [Script Editor](ScriptEditor.md)
     * [Scripts Menu](ScriptsMenu.md)
