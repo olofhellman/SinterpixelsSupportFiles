@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UsingReferences</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 <h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
 
 <h4 id="toc_1">previous topic: <a href="ScriptsMenu.html">Scripting In Depth B: Scripts Menu</a></h4>
@@ -20,7 +27,7 @@
 
 <p>Many objects don&#39;t usually have a name, but can have one.  For example, you are free to assign a name to a shape if you&#39;d like, and once you do, it can be used to reference the shape by name:</p>
 
-<div><pre><code class="language-none">tell application &quot;Sinterpixels&quot;
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
     set the name of circle 2 to &quot;Eric&quot;
     set the radius of shape &quot;Eric&quot; to 10
 end tell</code></pre></div>
@@ -29,7 +36,7 @@ end tell</code></pre></div>
 
 <p>You can also refer to most objects by id.  Run this script to find out the document ids you can use:</p>
 
-<div><pre><code class="language-none">tell application &quot;Sinterpixels&quot;
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
     get id of every document
 end tell</code></pre></div>
 
@@ -57,7 +64,7 @@ as a reference. You can refer to multiple objects this way.  Running this script
 
 <p>&quot;every&quot; is used to create another kind of reference. One can use &quot;every&quot; as a way to apply a command to may objects at the same time:</p>
 
-<div><pre><code class="language-none">tell application &quot;Sinterpixels&quot;
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
     set the radius of every circle of every document to 12
 end tell</code></pre></div>
 
@@ -65,7 +72,7 @@ end tell</code></pre></div>
 
 <p>&quot;some&quot; means to pick a random object in a collection:</p>
 
-<div><pre><code class="language-none">tell application &quot;Sinterpixels&quot;
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
     delete some shape of doument 1
 end tell</code></pre></div>
 
@@ -78,3 +85,6 @@ end tell</code></pre></div>
 <p>is valid.</p>
 
 <h4 id="toc_9">next topic: <a href="ScriptingOtherApps.html">Scripting In Depth D: Communicating with Other Apps</a></h4>
+
+</body>
+</html> 

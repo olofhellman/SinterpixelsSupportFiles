@@ -9,7 +9,7 @@ if the phrase "document 1" is used in a script, that means "the front document",
 
 ### Absolute index
 
-"document 1" is an example of a reference by absolute index. When using absolute index values that are positive, it means "count from the beginning".  In a Sinterpixels document, shapes are drawn in the order from beginning to end.
+"document 1" is an example of a reference by absolute index. When using absolute index values that are positive, it means "count from the beginning".  In a SinterPixels document, shapes are drawn in the order from beginning to end.
 
 It is possible to use a negative index, in which case that means "count from the end" So, "circle -1 of document -1"  means the last circle of the last document.
 

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SavingADocument</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="Movies.html">Exporting Movies</a>    next topic: <a href="ScriptEditor.html">Scripting In Depth A: Script Editor</a></h4>
+
+<h2 id="toc_2">Saving A Document</h2>
+
+<p>SinterPixels supports the traditional way of saving a file -- choose &quot;Save...&quot; from the File menu to get to the traditional save panel.  Using Apple&#39;s Save Panel allows SinterPixels access to anywhere in your storage that you choose.</p>
+
+<p><img src="../images/SavePanel.png" alt="image" title="The traditional Save Panel"></p>
+
+<p>Saving is of course also supported via the scripting interface.  However, because of Apple&#39;s strict guardrails for an application&#39;s access to your disk, this is sometimes not straightforward.</p>
+
+<p>If the file is already saved to disk, that likely means that SinterPixels already has permissions for that location, so the following script will work without any user interaction:</p>
+
+<p>tell application &quot;Sinterpixels&quot;
+    save document 1
+end tell</p>
+
+<p>If, however, there is no existing file for the document, that script will put up a save dialog asking for one.  Even if you specify a file location like this:</p>
+
+<p>tell application &quot;SinterPixels&quot;
+    save document 1 in file &quot;Macintosh HD:users:olof:Documents:My file.sinterpixels&quot;
+end tell</p>
+
+<p>SinterPixels may need to put up a dialog asking for your permission to access that location on disk.</p>
+
+<h2 id="toc_3">The library</h2>
+
+<p>(support for this feature is in version 26.2.3)</p>
+
+<p>However, there are a few places that SinterPixels will always be allowed to access, and one of those is its application support folder. Sinterpixels create a special folder there called &quot;Library&quot;, and if files are placed there they can always be access, either opened or saved.</p>
+
+<p>A file in this special folder can be opened with a script like this:</p>
+
+<p>tell application &quot;SinterPixels&quot;
+    open file &quot;My Filename&quot; of the library
+end tell</p>
+
+<p>To save a file in this folder, one can use</p>
+
+<p>tell application &quot;Sinterpixels&quot;
+    save document 1 in the library filename &quot;Any filename&quot;
+end tell</p>
+
+<h4 id="toc_4">previous topic: <a href="Movies.html">Exporting Movies</a>   next topic: <a href="ScriptEditor.html">Scripting In Depth A: Script Editor</a></h4>
+
+</body>
+</html> 

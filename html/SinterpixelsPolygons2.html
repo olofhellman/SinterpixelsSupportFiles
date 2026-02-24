@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SinterpixelsPolygons2</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 <h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
 
 <h4 id="toc_1">previous topic: <a href="SinterpixelsPolygons1.html">Polygons Part One</a>  next topic:  <a href="SinterpixelsPolygons3.html">Polygons Part Three</a></h4>
@@ -57,7 +64,7 @@ end tell</code></pre></div>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
     tell document 1
-        set p to make new polygon with properties {position: {0, 0}, vertex count 10, radius 50}
+        set p to make new polygon with properties {position: {0, 0}, vertex count: 10, radius: 50}
         set the radius of vertices {2,4,6,8,10} of p to 28
     end tell
 end tell</code></pre></div>
@@ -74,7 +81,7 @@ end tell</code></pre></div>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
     tell document 1
-        set p to make new polygon with properties {position: {0, 0}, vertex count 10, radius 50}
+        set p to make new polygon with properties {position: {0, 0}, vertex count: 10, radius: 50}
         set the radius of vertices {2,4,6,8,10} of p to 28
         delete vertex 1 of p
     end tell
@@ -85,3 +92,6 @@ end tell</code></pre></div>
 <p><img src="../images/Polygons-StarWithDeletedVertex.png" alt="image" title="The star without one vertex"></p>
 
 <h4 id="toc_3">previous topic: <a href="SinterpixelsPolygons1.html">Polygons Part One</a>  next topic: <a href="SinterpixelsPolygons3.html">Polygons Part Three</a></h4>
+
+</body>
+</html> 

@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pentastar</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 <h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
 
 <h4 id="toc_1">Containing topic: <a href="AllExamples.html">All Examples</a></h4>
@@ -21,9 +28,9 @@ end tell</code></pre></div>
 
 <p>Please note that the five vertices of the pentagon are the same vertices we need to draw a star, but when we draw a star, we hit the vertices in a different order.  That is, if the pentagon is a polygon ABCDE, to draw a star, we want to draw the polygon ACEBD.  All we need to is move the vertices into a different order.</p>
 
-<p>lets give our vertices names by running this script:</p>
+<p>Lets give our vertices names by running this script:</p>
 
-<div><pre><code class="language-none"> tell application &quot;SinterPixels&quot;
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
     tell polygon 1 of document 1
         set name of vertex 1 to &quot;A&quot;
         set name of vertex 2 to &quot;B&quot;
@@ -31,18 +38,15 @@ end tell</code></pre></div>
         set name of vertex 4 to &quot;D&quot;
         set name of vertex 5 to &quot;E&quot;
     end tell
-end tell
-```
- 
- So, starting with ABCDE, lets move the B vertex (&#39;vertex 2&#39;) to after the E vertex by running this script:
- </code></pre></div>
+end tell</code></pre></div>
 
-<p>tell application &quot;SinterPixels&quot;
+<p>So, starting with ABCDE, lets move the B vertex (&#39;vertex 2&#39;) to after the E vertex by running this script:</p>
+
+<div><pre><code class="language-none"> tell application &quot;SinterPixels&quot;
     tell polygon 1 of document 1
         move vertex &quot;B&quot; to after vertex &quot;E&quot;
     end tell
-end tell
-```</p>
+end tell</code></pre></div>
 
 <p>The result is this ACDEB pentagon:</p>
 
@@ -54,11 +58,13 @@ end tell
     tell polygon 1 of document 1
         move vertex &quot;D&quot; to after vertex &quot;B&quot;
     end tell
-end tell
-```
+end tell</code></pre></div>
 
-And we have our result, a ACEBD pentagon that makes the shape of a perfect five-pointed star
+<p>And we have our result, a ACEBD pentagon that makes the shape of a perfect five-pointed star</p>
 
-![image](../images/PentastarC.png &quot;The ACEBD five pointed star&quot;)
+<p><img src="../images/PentastarC.png" alt="image" title="The ACEBD five pointed star"></p>
 
-#### Containing topic: [All Examples](AllExamples.html) </code></pre></div>
+<h4 id="toc_3">Containing topic: <a href="AllExamples.html">All Examples</a></h4>
+
+</body>
+</html> 

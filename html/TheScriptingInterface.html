@@ -1,6 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TheScriptingInterface</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 <h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
 
-<h4 id="toc_1">previous topic: <a href="OpeningAFile.html">Opening a File</a>  next topic: <a href="SinterpixelsShapes.html">Shapes</a></h4>
+<h4 id="toc_1">previous topic: <a href="OpeningAFile.html">Opening a File</a>  next topic: next topic: <a href="SinterpixelsShapes.html">Shapes</a></h4>
 
 <h2 id="toc_2">Using the Scripting Interface</h2>
 
@@ -18,7 +25,7 @@
 
 <p>Let&#39;s write a very simple script.  Type the following in the script editor window:</p>
 
-<div><pre><code class="language-none">tell app &quot;Sinterpixels&quot;
+<div><pre><code class="language-none">tell app &quot;SinterPixels&quot;
     count documents
 end </code></pre></div>
 
@@ -40,7 +47,7 @@ end </code></pre></div>
 
 <p>Now it is time to run the script.</p>
 
-<p>Tap the run button in the toolbar.  That&#39;s the triangle next to the &quot;Compile&quot; button. When the script runs, it communicates with the &quot;Sinterpixels&quot; application and asks it how many documents it currently has open.  &quot;Sinterpixels&quot; responds and the result is displayed in the bottom half of the Script Editor window.  </p>
+<p>Tap the run button in the toolbar.  That&#39;s the triangle next to the &quot;Compile&quot; button. When the script runs, it communicates with the &quot;SinterPixels&quot; application and asks it how many documents it currently has open.  &quot;SinterPixels&quot; responds and the result is displayed in the bottom half of the Script Editor window.  </p>
 
 <p>If you&#39;ve been following along and have already opened a file, the result of the script shown there should be 1, or more if you&#39;ve opened more than one file.</p>
 
@@ -50,22 +57,29 @@ end </code></pre></div>
 
 <p>Now lets try getting some information from the document.  try the following scripts:</p>
 
-<div><pre><code class="language-none">tell app &quot;Sinterpixels&quot;
+<div><pre><code class="language-none">tell app &quot;SinterPixels&quot;
     get name of document 1
 end </code></pre></div>
 
-<div><pre><code class="language-none">tell app &quot;Sinterpixels&quot;
+<div><pre><code class="language-none">tell app &quot;SinterPixels&quot;
     make new circle in document 1
 end </code></pre></div>
 
-<div><pre><code class="language-none">tell app &quot;Sinterpixels&quot;
+<div><pre><code class="language-none">tell app &quot;SinterPixels&quot;
     count circles of document 1
 end </code></pre></div>
 
-<div><pre><code class="language-none">tell app &quot;Sinterpixels&quot;
+<div><pre><code class="language-none">tell app &quot;SinterPixels&quot;
     get {radius, color} of circle 2 of document 1
 end </code></pre></div>
 
+<div><pre><code class="language-none">tell app &quot;SinterPixels&quot;
+    make new document with properties {height: 600, width: 800}
+end</code></pre></div>
+
 <p>If you successfully get the data you were expecting as results from these scripts, you are ready to explore shapes.</p>
 
-<h4 id="toc_3">previous topic: <a href="OpeningAFile.html">Opening a File</a>  next topic: <a href="SinterpixelsShapes.html">Shapes</a></h4>
+<h4 id="toc_3">previous topic: <a href="OpeningAFile.html">Opening a File</a>  next topic: next topic: <a href="SinterpixelsShapes.html">Shapes</a></h4>
+
+</body>
+</html> 

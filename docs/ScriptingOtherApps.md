@@ -8,7 +8,7 @@ An AppleScript can be used to share data between different applications.  For ex
 Or, you may want to take images generated with SinterPixels and process them with a different app, like [RetroBatch](https://www.flyingmeat.com/retrobatch)
 
 
-Here's a script that opens the contents of a Sinterpixels document in [Acorn](https://www.flyingmeat.com/acorn)
+Here's a script that opens the contents of a SinterPixels document in [Acorn](https://www.flyingmeat.com/acorn)
 
 ```
 tell application "SinterPixels"

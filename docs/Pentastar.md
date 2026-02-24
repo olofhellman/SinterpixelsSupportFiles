@@ -20,12 +20,12 @@ tell application "SinterPixels"
 end tell
 ```
 
- Please note that the five vertices of the pentagon are the same vertices we need to draw a star, but when we draw a star, we hit the vertices in a different order.  That is, if the pentagon is a polygon ABCDE, to draw a star, we want to draw the polygon ACEBD.  All we need to is move the vertices into a different order.
+Please note that the five vertices of the pentagon are the same vertices we need to draw a star, but when we draw a star, we hit the vertices in a different order.  That is, if the pentagon is a polygon ABCDE, to draw a star, we want to draw the polygon ACEBD.  All we need to is move the vertices into a different order.
  
- lets give our vertices names by running this script:
+Lets give our vertices names by running this script:
  
- ```
- tell application "SinterPixels"
+```
+tell application "SinterPixels"
 	tell polygon 1 of document 1
 		set name of vertex 1 to "A"
 		set name of vertex 2 to "B"
@@ -36,9 +36,9 @@ end tell
 end tell
 ```
  
- So, starting with ABCDE, lets move the B vertex ('vertex 2') to after the E vertex by running this script:
+So, starting with ABCDE, lets move the B vertex ('vertex 2') to after the E vertex by running this script:
  
- ```
+```
  tell application "SinterPixels"
 	tell polygon 1 of document 1
 		move vertex "B" to after vertex "E"
@@ -46,13 +46,13 @@ end tell
 end tell
 ```
  
- The result is this ACDEB pentagon:
+The result is this ACDEB pentagon:
  
 ![image](../images/PentastarB.png "The ACDEB pentagon")
 
 Now move vertex D to after vertex B by running this script:
 
- ```
+```
  tell application "SinterPixels"
 	tell polygon 1 of document 1
 		move vertex "D" to after vertex "B"

@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Colors2</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 <h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
 
 <h4 id="toc_1">previous topic: <a href="Colors1.html">Specifying Colors</a>  next topic: <a href="SinterpixelsPixels.html">Pixels Part 1</a></h4>
@@ -19,10 +26,10 @@
 <li><strong>hardLight</strong> : CGBlendMode.hardLight</li>
 <li><strong>difference</strong> : CGBlendMode.difference</li>
 <li><strong>exclusion</strong> : similar to difference, but with lower contrast.</li>
-<li><strong>hue</strong> : Uses the luminance and saturation values of the background with the hue of the source image.</li>
-<li><strong>saturation</strong> : Uses the luminance and hue values of the background with the saturation of the source image.</li>
+<li><strong>blendHue</strong> : Uses the luminance and saturation values of the background with the hue of the source image.</li>
+<li><strong>blendSaturation</strong> : Uses the luminance and hue values of the background with the saturation of the source image.</li>
 <li><strong>sourceColor</strong> : Uses the luminance values of the background with the hue and saturation values of the source image.</li>
-<li><strong>luminosity</strong> : Uses the hue and saturation of the background with the luminance of the source image.</li>
+<li><strong>blendLuminosity</strong> : Uses the hue and saturation of the background with the luminance of the source image.</li>
 <li><strong>blendClear</strong> : erases the destination</li>
 <li><strong>blendCopy</strong> : replaces destination with source - CGBlendMode.copy</li>
 <li><strong>sourceIn</strong> : result is source * destination alpha, i.e. R = S*Da</li>
@@ -37,8 +44,45 @@
 <li><strong>plusLighter</strong> : R = MIN(1, S + D)</li>
 </ul>
 
+<p>Shown below are the results of drawing circles with different blend modes.  The background is stripes of different colors, from top to bottom the colors are black, red, green, blue, white, black, dark gray, gray, light gray, white, black, cyan, magenta, yellow, white.</p>
+
+<p>The colors of the circles, from left to right: black, red, green, blue, cyan, magenta, yellow, white</p>
+
+<p><img src="../images/paintOver.png" alt="image" title="paintOver">
+<img src="../images/multiply.png" alt="image" title="multiply">
+<img src="../images/screen.png" alt="image" title="screen">
+<img src="../images/overlay.png" alt="image" title="overlay">
+<img src="../images/darken.png" alt="image" title="darken">
+<img src="../images/lighten.png" alt="image" title="lighten">
+<img src="../images/colorDodge.png" alt="image" title="colorDodge">
+<img src="../images/colorBurn.png" alt="image" title="colorBurn">
+<img src="../images/softLight.png" alt="image" title="softLight">
+<img src="../images/hardLight.png" alt="image" title="hardLight">
+<img src="../images/difference.png" alt="image" title="difference">
+<img src="../images/hue.png" alt="image" title="blendHue">
+<img src="../images/saturation.png" alt="image" title="blendSaturation">
+<img src="../images/sourceColor.png" alt="image" title="sourceColor">
+<img src="../images/luminosity.png" alt="image" title="blendLuminosity">
+<img src="../images/blendClear.png" alt="image" title="blendClear">
+<img src="../images/blendCopy.png" alt="image" title="blendCopy">
+<img src="../images/sourceIn.png" alt="image" title="sourceIn">
+<img src="../images/sourceOut.png" alt="image" title="sourceOut">
+<img src="../images/sourceAtop.png" alt="image" title="sourceAtop">
+<img src="../images/destinationOver.png" alt="image" title="destinationOver">
+<img src="../images/destinationIn.png" alt="image" title="destinationOut">
+<img src="../images/destinationIn.png" alt="image" title="destinationIn">
+<img src="../images/destinationAtop.png" alt="image" title="destinationAtop">
+<img src="../images/xor.png" alt="image" title="xor">
+<img src="../images/plusDarker.png" alt="image" title="plusDarker">
+<img src="../images/plusLighter.png" alt="image" title="plusLighter"> </p>
+
+<p>Some of these blend modes don&#39;t look very interesting here, but they are much more interesting when the circles or the backgrounds have alpha values of less than one.  See <a href="MoreBlendModes.html">More Blend Modes</a> for an exhaustive set of images.</p>
+
 <p>A particularly interesting blend mode is <strong>blendCopy</strong> when used with a shape with a clear fill color.  This can be used to create transparent regions in an image or in a layer.</p>
 
 <p>See the <a href="BlendCopyPunchThrough.html">Punch Though a Layer Example</a> for a trick on using a blend mode to get a different effect when drawing a circle.</p>
 
 <h4 id="toc_3">previous topic: <a href="Colors1.html">Specifying Colors</a>  next topic: <a href="SinterpixelsPixels.html">Pixels Part 1</a></h4>
+
+</body>
+</html> 

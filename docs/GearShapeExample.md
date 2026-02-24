@@ -75,6 +75,19 @@ Now, making a gear is a bit easier:
 
 
 ```
+to gearRadii(numberOfTeeth, rad, depth)
+	set gList to {}
+	repeat with s from 1 to numberOfTeeth
+		set gList to gList & rad
+		set gList to gList & rad
+		set gList to gList & (rad - depth)
+		set gList to gList & (rad - depth)
+		set gList to gList & (rad - depth)
+		set gList to gList & rad
+		set gList to gList & rad
+	end repeat
+	return gList
+end gearRadii
 set getRadiiList to gearRadii(7, 50, 12)
 tell application "SinterPixels"
 	set newDoc to make new document with properties {height:300, width:420}

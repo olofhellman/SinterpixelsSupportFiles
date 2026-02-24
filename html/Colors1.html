@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Colors1</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 <h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
 
 <h4 id="toc_1">previous topic: <a href="TextShapes.html">Text Shapes</a>  next topic: <a href="Colors2.html">Blend Modes</a></h4>
@@ -20,6 +27,7 @@
     set hsbColor to {hue:0.6, saturation:1.0, brightness:0.8}
     if not (exists document 1) then make new document
     tell document 1
+        if not (exists circle 1) then make new circle
         set the fill color of circle 1 to hsbColor
     end tell
 end tell</code></pre></div>
@@ -63,3 +71,6 @@ end tell</code></pre></div>
 <p>Other color models (HSL, CMYK) will be supported soon. </p>
 
 <h4 id="toc_7">previous topic: <a href="TextShapes.html">Text Shapes</a>  next topic: <a href="Colors2.html">Blend Modes</a></h4>
+
+</body>
+</html> 

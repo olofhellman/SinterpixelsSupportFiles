@@ -3,7 +3,7 @@
 
 ## Shapes Part Two: Colors
 
-Just like position, if we don't specify a color when making a new circle, colors get chosen automatically. There are two colors involved: there is a **color**, which is used to draw the perimeter of the circle, and there is a **fill color**, which is used to draw the interior of the circle.  Lets see how Sinterpixels specifies colors by running this script:
+Just like position, if we don't specify a color when making a new circle, colors get chosen automatically. There are two colors involved: there is a **color**, which is used to draw the perimeter of the circle, and there is a **fill color**, which is used to draw the interior of the circle.  Lets see how SinterPixels specifies colors by running this script:
 
 ```
 tell application "SinterPixels"
@@ -34,7 +34,7 @@ tell application "SinterPixels"
 end tell
 ```
 
-Sinterpixels also allows other ways of specifying color  See [Specifying Colors](Colors1.md) for an overview
+SinterPixels also allows other ways of specifying color  See [Specifying Colors](Colors1.md) for an overview
 
 
 To summarize:

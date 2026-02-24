@@ -3,7 +3,7 @@
 
 ## Shapes Part One: position
 
-There are currently two kinds of shapes in Sinterpixels: the circle and the polygon
+There are currently two kinds of shapes in SinterPixels: the circle and the polygon
 
 Circles and polygons have a few properties in common.  These examples use circles, which are a bit simpler, but feel free to substitute "polygon" for circle" if you'd like. We;ll start by making a new circle with the following script, and if there's no document, this script will make one for you as well:
 
@@ -16,7 +16,7 @@ tell application "SinterPixels"
 end tell
 ```
 
-Because we didn't specify any information about the circle's color or position, these properties were chosen at random. Let's find out how Sinterpixels understands a shape's position by running the following script:
+Because we didn't specify any information about the circle's color or position, these properties were chosen at random. Let's find out how SinterPixels understands a shape's position by running the following script:
 
 ```
 tell application "SinterPixels"
@@ -38,7 +38,7 @@ In this example, the position is returned as
 
 This is an AppleScript **record**.  Enclosed in curly braces is a sequence of key-value pairs.  Here, "y coordinate" is a key and 85.145322779688 is its value. "x coordinate" is another key and 76.631601651293 is its value.
 
-In the Script Editor result, you'll notice "x coordinate" and "y coordinate" appear in blue.  This is a hint that these words are part of the Sinterpixels vocabulary.
+In the Script Editor result, you'll notice "x coordinate" and "y coordinate" appear in blue.  This is a hint that these words are part of the SinterPixels vocabulary.
 
 In your example, you likely have different values for these coordinates, as they were chosen at random.
 
@@ -53,7 +53,7 @@ end tell
 ```
 
 What should happen is that the circle will move to the center of the document.
-Coordinates in Sinterpixels are measured from the center of the canvas.  negative x values are toward the left.  negative y values are toward the bottom.
+Coordinates in SinterPixels are measured from the center of the canvas.  negative x values are toward the left.  negative y values are toward the bottom.
 
 Now lets try using a specific position when making  some new circles.  Run the following script:
  
