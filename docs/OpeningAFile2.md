@@ -3,8 +3,17 @@
 
 ## Opening a File via Script
 
-After launching the app, Choose "Open" from the file menu and choose a file in either the .jpeg or .png formats. A new document will open with the canvas background of the image filled in with the file you've chose, and the size of the canvas matching the size of the image
+(support for this feature is in progress)
 
-Alternatively, choose "New" from the file menu to open an empty file. You'll be prompted to choose the dimensions of your empty canvas. 
+Because macOS has strict access controls on what files an app is allowed to access, opening a file may be less straightforward than you may think.
+
+To work around this limitation, SinterPixels works with a special folder that it is always allowed access to.  This is called the **library** and it is a folder that lives next to the scripts folder in the application support folder.
+
+A file in this special folder can be opened with 
+
+tell application "Sinterpixels"
+    open file "My Filename" of the library
+end tell
+ 
 
 #### previous topic: [Exporting Movies](Movies.md)  next topic: [Scripting In Depth A: Script Editor](ScriptEditor.md)

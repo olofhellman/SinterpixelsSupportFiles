@@ -22,6 +22,7 @@ tell application "SinterPixels"
     set hsbColor to {hue:0.6, saturation:1.0, brightness:0.8}
 	if not (exists document 1) then make new document
 	tell document 1
+	    if not (exists circle 1) then make new circle
 		set the fill color of circle 1 to hsbColor
 	end tell
 end tell

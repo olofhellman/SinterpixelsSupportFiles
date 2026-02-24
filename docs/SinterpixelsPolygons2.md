@@ -68,7 +68,7 @@ So, to make a star, one would want to set the radius of every other vertex to be
 ```
 tell application "SinterPixels"
 	tell document 1
-		set p to make new polygon with properties {position: {0, 0}, vertex count 10, radius 50}
+		set p to make new polygon with properties {position: {0, 0}, vertex count: 10, radius: 50}
 		set the radius of vertices {2,4,6,8,10} of p to 28
 	end tell
 end tell
@@ -90,7 +90,7 @@ Now, you might understand why it doesn't make as much sense to change the vertex
 ```
 tell application "SinterPixels"
 	tell document 1
-		set p to make new polygon with properties {position: {0, 0}, vertex count 10, radius 50}
+		set p to make new polygon with properties {position: {0, 0}, vertex count: 10, radius: 50}
 		set the radius of vertices {2,4,6,8,10} of p to 28
 		delete vertex 1 of p
 	end tell

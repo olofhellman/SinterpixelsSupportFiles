@@ -17,7 +17,7 @@ end tell
 
 If, however, there is no existing file for the document, that script will put up a save dialog asking for one.  Even if you specify a file location like this:
 
-tell application "Sinterpixels"
+tell application "SinterPixels"
     save document 1 in file "Macintosh HD:users:olof:Documents:My file.sinterpixels"
 end tell
 
@@ -25,21 +25,20 @@ SinterPixels may need to put up a dialog asking for your permission to access th
 
 ## The library
 
+(support for this feature is in version 26.2.3)
 
-(support for this feature is in progress)
+However, there are a few places that SinterPixels will always be allowed to access, and one of those is its application support folder. Sinterpixels create a special folder there called "Library", and if files are placed there they can always be access, either opened or saved.
 
-However, there are a fewe places that SinterPixels will always be allowed to access, and one of those is its application support folder. Sinterpixels create a special folder there called "Library", and if files are placed there they can always be access, either opened or saved.
+A file in this special folder can be opened with a script like this:
 
-A file in this special folder can be opened with 
-
-tell application "Sinterpixels"
+tell application "SinterPixels"
     open file "My Filename" of the library
 end tell
  
 To save a file in this folder, one can use
 
 tell application "Sinterpixels"
-    save document 1 in (get library) filename "Any filename"
+    save document 1 in the library filename "Any filename"
 end tell
 
 
