@@ -3,14 +3,11 @@
 
 ## A Catalog of many of the examples and where to find them  
 
-![image](../images/ColorSpiral.png "Color Spirals")
-[Color Spirals](ColorSpiralsExample.md)   
+![image](../images/ColorSpiral.png "Color Spirals")  [Color Spirals](ColorSpiralsExample.md)   
  
-![image](../images/PenroseTenSubdivisions.png "A Penrose Tiling")
-[A Penrose Tiling](PenroseTiling.md)   
+![image](../images/PenroseTenSubdivisions.png "A Penrose Tiling")  [A Penrose Tiling](PenroseTiling.md)   
 
-![image](../images/AnimatedGears.mov "movie with two gears")
-[Animated Gears](AnimatedGearExample.md)   
+![image](../images/AnimatedGears.mov "movie with two gears")  [Animated Gears](AnimatedGearExample.md)   
 
 ![image](../images/Simple7ToothGear.png "A gear with seven teeth")
 [A Gear Shape](GearShapeExample.md)   
