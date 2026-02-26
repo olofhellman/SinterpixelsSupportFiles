@@ -5,7 +5,7 @@
 
 ![image](../images/PenroseTiling.png "A penrose tiling")
 
-Penrose tilings are a periodic -- they do not have translational symmetry.
+Penrose tilings are aperiodic -- that is, they do not have translational symmetry.
 
 There are patterns that repeat locally, but there are infinite variations so they never really repeat themselves.  Here's how the algorithm works:
 
@@ -36,7 +36,7 @@ Each of the original triangles is now five tall triangles and three flat triangl
 ![image](../images/PenroseTwelveSubdivisions.png "Twelve sibdivisions- the tall triangles are lighter color and the flat triangles are darker")
 
 Each of the original triangles is now 233 tall triangles and 144 flat triangles.
-It is no coincidence that 144 and 233 are the twelfth and thirteenth Fibbonacci numbers.
+It is no coincidence that 144 and 233 are the twelfth and thirteenth Fibbonacci numbers (This is the first step in a proof that the Penrose tiling never repeats).
 
 Here's the script that implements the drawing:
 The numDivisions parameter controls how many subdivisions will be done.
