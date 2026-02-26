@@ -7,7 +7,7 @@
 
 Penrose tilings are aperiodic -- that is, they do not have translational symmetry.
 
-There are patterns that repeat locally, but there are infinite variations so they never really repeat themselves.  Here's how the algorithm works:
+There are patterns in them that repeat locally, but there are infinite variations so they never repeat themselves over any significant distance.  Here's how the algorithm works to make one:
 
 First, we draw two triangles, each of which have angles of 72-72-36:
 
