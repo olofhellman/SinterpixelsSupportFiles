@@ -3,32 +3,25 @@
 
 ## A Catalog of many of the examples and where to find them  
 
-![image](../images/ColorSpiral.png "Color Spirals")  [Color Spirals](ColorSpiralsExample.md)   
+[![Color Spirals](../images/ColorSpiral.png "Color Spirals")](ColorSpiralsExample.md)   
  
-![image](../images/PenroseTenSubdivisions.png "A Penrose Tiling")  [A Penrose Tiling](PenroseTiling.md)   
+[![A Penrose Tiling](../images/PenroseTenSubdivisions.png "A Penrose Tiling")  [A Penrose Tiling](PenroseTiling.md)   
 
-![image](../images/AnimatedGears.mov "movie with two gears")  [Animated Gears](AnimatedGearExample.md)   
+[![Animated Gears](../images/AnimatedGears.mov "movie with two gears")  [](AnimatedGearExample.md)   
 
-![image](../images/Simple7ToothGear.png "A gear with seven teeth")
-[A Gear Shape](GearShapeExample.md)   
+[![A Gear Shape](../images/Simple7ToothGear.png "A gear with seven teeth")](GearShapeExample.md)   
 
-![image](../images/RedTintLayerWithPunchHoleSmall.png "Punch through of a tint layer") 
-[Punch Though a Layer](BlendCopyPunchThrough.md)   
+[![Punch Though a Layer](../images/RedTintLayerWithPunchHoleSmall.png "Punch through of a tint layer")](BlendCopyPunchThrough.md)   
 
-![image](../images/HelloWorld.png "Hello World text shapes") 
-[Hello World text](TextShapes.md)
+[![Hello World text](../images/HelloWorld.png "Hello World text shapes")](TextShapes.md)
 
-![image](../images/PentastarC.png "A ACEBD pentagon") 
-[A star thats really just a pentagon](Pentastar.md)
+[![A star thats really just a pentagon](../images/PentastarC.png "A ACEBD pentagon")](Pentastar.md)
 
-![image](../images/GreenMagentaGradient.png "A green and magenta gradient on the canvas")
-[Pixel Gradient](PixelGradientExample.md)   
+[![Pixel Gradient](../images/GreenMagentaGradient.png "A green and magenta gradient on the canvas")](PixelGradientExample.md)   
 
-![image](../images/ChalkHorseInCircles.jpg "Image distorted by drawing only shapes")
-[Distorted Image: Part of the Pixels Part 2: Getting Colors](SinterpixelsPixels2.md)   
+[![Distorted Image: Part of the Pixels Part 2: Getting Colors](../images/ChalkHorseInCircles.jpg "Image distorted by drawing only shapes")](SinterpixelsPixels2.md)   
 
-![image](../images/RandomWalk.jpg "Random Walk")
-[Random Walk: Pixels Part 3: Setting Colors](SinterpixelsPixels3.md)   
+[![Random Walk: Pixels Part 3: Setting Colors](../images/RandomWalk.jpg "Random Walk")](SinterpixelsPixels3.md)   
 
 
 ####  [Table of Contents](TableOfContents.md)   
