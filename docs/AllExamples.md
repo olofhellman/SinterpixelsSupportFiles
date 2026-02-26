@@ -6,6 +6,9 @@
 ![image](../images/ColorSpiral.png "Color Spirals")
 [Color Spirals](ColorSpiralsExample.md)   
  
+![image](../images/PenroseTenSubdivisions "A Penrose Tiling")
+[Animated Gears](PenroseTiling.md)   
+
 ![image](../images/AnimatedGears.mov "movie with two gears")
 [Animated Gears](AnimatedGearExample.md)   
 

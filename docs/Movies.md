@@ -4,7 +4,7 @@
 
 ## Movies
 
-Sinterpixels supports exporting a sequence of images taken from a graphics window as a QuickTime movie -- the .mov format
+SinterPixels supports exporting a sequence of images taken from a graphics window as a QuickTime movie -- the .mov format
 
 This is accomplished using the scripting interface.  There are three basic commands.
 
@@ -46,7 +46,7 @@ when we issue the "stop filming" command, we also supply a parameter for "saving
 
 To get the path to the documents folder, the script uses another application, "System Events" which knows about such things.
 
-However, if this script is run, the file may not actually be saved in the Documents folder, because of the file permissions protections of macOS.  If the "app sandbox" is enabled, the app doesn't actually have permissions to write to your Documents folder, so Sinterpixels will put up a Save Panel to get your permission to save it, like this:
+However, if this script is run, the file may not actually be saved in the Documents folder, because of the file permissions protections of macOS.  If the "app sandbox" is enabled, the app doesn't actually have permissions to write to your Documents folder, so SinterPixels will put up a Save Panel to get your permission to save it, like this:
 
 ![image](../images/movieSavePanel.png "Save panel when saving a movie")
 

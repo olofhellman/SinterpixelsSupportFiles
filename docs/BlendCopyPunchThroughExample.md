@@ -5,7 +5,7 @@
 
 Here's an example of how to create a layer with a "hole" in it to see through to the layer below.  Lets start out by opening a file, in this case an aeriel view of the [Uffington Chalk Horse](https://commons.wikimedia.org/wiki/File:Aerial_view_from_Paramotor_of_Uffington_White_Horse_-_geograph.org.uk_-_305467.jpg), a Creative Commons image by Dave Price
 
-![image](../images/UffingtonChalkHorse.png "After opening the file in Sinterpixels")
+![image](../images/UffingtonChalkHorse.png "After opening the file in SinterPixels")
 
 Now, this script creates a red tinted layer on top of the base canvas:
 By default, the new layer is created with the same size as the base canvas.

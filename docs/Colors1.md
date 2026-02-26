@@ -5,7 +5,7 @@
 
 ### The default: RGBA
 
-Sinterpixels allows multiple ways of specifying color, but the default way is to use red, green, blue and alpha components like this:
+SinterPixels allows multiple ways of specifying color, but the default way is to use red, green, blue and alpha components like this:
 
 ```
 {red component:0.5, green component:0.5, blue component:0, alpha component:1.0}
@@ -13,7 +13,7 @@ Sinterpixels allows multiple ways of specifying color, but the default way is to
 
 ### Hue, Saturation, and Brightness
 
-Hue, Saturation, and Brightness is the [HSV color model](https://en.wikipedia.org/wiki/HSL_and_HSV).  Sinterpixels uses *brightness* instead of *value* because the word *value* is used in other places and *brightness* is less confusing
+Hue, Saturation, and Brightness is the [HSV color model](https://en.wikipedia.org/wiki/HSL_and_HSV).  SinterPixels uses *brightness* instead of *value* because the word *value* is used in other places and *brightness* is less confusing
 
 To use HSB, you can write a script like this:
 
@@ -33,7 +33,7 @@ See the [Color Spirals Example](ColorSpiralsExample.md) for a lesson how HSB is 
 
 ### Enumerations
 
-The names of many simply colors, like *blue*, *black*, *green* are understood by Sinterpixels:
+The names of many simply colors, like *blue*, *black*, *green* are understood by SinterPixels:
 
 ```
 tell application "SinterPixels"

@@ -8,16 +8,14 @@ Script Editor is a fairly simple app, but there are some features which are usef
 
 ### Recording
 
-Sinterpixels supports a feature called AppleScript recording, but there is currently an issue where trying to record a script breaks almost everything in the application.
-
-So, please do not open a ScriptEditor document press the record button.  I am working to resolve this issue.
+SinterPixels _almost_ supports a feature called AppleScript recording, but there is currently an issue where enabling recording actually causes macOS to send events twice. Perhaps this feature can be enabled in the future.
 
 
 ### App Dictionaries
 
-The terminology understood by each application is presented in its scripting dictionary.  To open an app's dictionary, choose "Open Dictionary..." from Script Editor's File menu, and select the app you want to inspect.  Sinterpixels's dictionary looks like this
+The terminology understood by each application is presented in its scripting dictionary.  To open an app's dictionary, choose "Open Dictionary..." from Script Editor's File menu, and select the app you want to inspect.  SinterPixels's dictionary looks like this
 
-![image](../images/ScriptingDictionary.png "The Sinterpixels scripting dictionary open in Script Editor")
+![image](../images/ScriptingDictionary.png "The SinterPixels scripting dictionary open in Script Editor")
 
 Most helpfully, the scripting dictionary documents the various properties available for each object type, and defines the various parameters available for each command.
 

@@ -11,7 +11,7 @@ To work around this limitation, SinterPixels works with a special folder that it
 
 A file in this special folder can be opened with 
 
-tell application "Sinterpixels"
+tell application "SinterPixels"
     open file "My Filename" of the library
 end tell
  
