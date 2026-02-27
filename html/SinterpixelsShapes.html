@@ -11,7 +11,7 @@
 
 <h2 id="toc_2">Shapes Part One: position</h2>
 
-<p>There are currently two kinds of shapes in Sinterpixels: the circle and the polygon</p>
+<p>There are currently two kinds of shapes in SinterPixels: the circle and the polygon</p>
 
 <p>Circles and polygons have a few properties in common.  These examples use circles, which are a bit simpler, but feel free to substitute &quot;polygon&quot; for circle&quot; if you&#39;d like. We;ll start by making a new circle with the following script, and if there&#39;s no document, this script will make one for you as well:</p>
 
@@ -22,7 +22,7 @@
     end tell
 end tell</code></pre></div>
 
-<p>Because we didn&#39;t specify any information about the circle&#39;s color or position, these properties were chosen at random. Let&#39;s find out how Sinterpixels understands a shape&#39;s position by running the following script:</p>
+<p>Because we didn&#39;t specify any information about the circle&#39;s color or position, these properties were chosen at random. Let&#39;s find out how SinterPixels understands a shape&#39;s position by running the following script:</p>
 
 <div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
     tell document 1
@@ -40,7 +40,7 @@ end tell</code></pre></div>
 
 <p>This is an AppleScript <strong>record</strong>.  Enclosed in curly braces is a sequence of key-value pairs.  Here, &quot;y coordinate&quot; is a key and 85.145322779688 is its value. &quot;x coordinate&quot; is another key and 76.631601651293 is its value.</p>
 
-<p>In the Script Editor result, you&#39;ll notice &quot;x coordinate&quot; and &quot;y coordinate&quot; appear in blue.  This is a hint that these words are part of the Sinterpixels vocabulary.</p>
+<p>In the Script Editor result, you&#39;ll notice &quot;x coordinate&quot; and &quot;y coordinate&quot; appear in blue.  This is a hint that these words are part of the SinterPixels vocabulary.</p>
 
 <p>In your example, you likely have different values for these coordinates, as they were chosen at random.</p>
 
@@ -53,7 +53,7 @@ end tell</code></pre></div>
 end tell</code></pre></div>
 
 <p>What should happen is that the circle will move to the center of the document.
-Coordinates in Sinterpixels are measured from the center of the canvas.  negative x values are toward the left.  negative y values are toward the bottom.</p>
+Coordinates in SinterPixels are measured from the center of the canvas.  negative x values are toward the left.  negative y values are toward the bottom.</p>
 
 <p>Now lets try using a specific position when making  some new circles.  Run the following script:</p>
 
