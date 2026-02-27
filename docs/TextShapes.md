@@ -9,7 +9,7 @@ Text shapes draw text.  They have the same color, position, fill color, color an
 
 Like polygons, they have a rotation. 
 
-Unique to text shapes are the **contents**, the **font**, and **font size** properties.
+Unique to text shapes are the **contents**, the **font**, **font size** and **size** properties.
 
 run the following script to make a "Hello World" document
 
@@ -27,5 +27,27 @@ tell application "SinterPixels"
 	end tell
 end tell
 ```
+ 
+(size is a new property of text shapes in Sinterpixels version 26.3.1)
+**size** is a read-only property. It can be useful in cases where you want to have two text shapes next to each other but not overlapping.
+Here is a script that creates two text shapes and separates them by 20 pixels:
+
+```
+tell application "SinterPixels"
+	set theDoc to make new document with properties {height:240, wigth:320}
+	tell theDoc
+		set helloShape to make new text shape with properties {contents:"Hello", fill color:blue, font size:36}
+		set helloWidth to width of size of helloShape
+		set position of helloShape to {-10 - helloWidth / 2, 0}
+		set worldShape to make new text shape with properties {contents:"World", fill color:blue, font size:36}
+		set worldWidth to width of size of worldShape
+		set position of worldShape to {10 + worldWidth / 2, 0}
+	end tell
+end tell
+``` 
+
+Note that the script had to create the text shape first, then get the size, then reset the position of the text based on that size.
+
+
  
 #### previous topic: [Part 3: Irregular Vertices](SinterpixelsPolygons3.md))  next topic:  [Specifying Colors](Colors1.md) )
