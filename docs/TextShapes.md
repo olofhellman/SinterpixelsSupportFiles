@@ -39,7 +39,7 @@ tell application "SinterPixels"
 		set helloShape to make new text shape with properties {contents:"Hello", fill color:blue, font size:36}
 		set helloWidth to width of size of helloShape
 		set position of helloShape to {-10 - helloWidth / 2, 0}
-		set worldShape to make new text shape with properties {contents:"World", fill color:blue, font size:36}
+		set worldShape to make new text shape with properties {contents:"World", fill color:green, font size:36}
 		set worldWidth to width of size of worldShape
 		set position of worldShape to {10 + worldWidth / 2, 0}
 	end tell
