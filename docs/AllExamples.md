@@ -25,5 +25,7 @@ Click on the images to go to the page with the example:
 
 [![Random Walk: Pixels Part 3: Setting Colors](../images/RandomWalk.jpg "Random Walk")](SinterpixelsPixels3.md)   
 
+[![Karaoke Lyrics](../images/TMOTTBGKaraoke.mov "Take Me Out to the Ball Game")](Karaoke.md)   
+
 
 ####  [Table of Contents](TableOfContents.md)   

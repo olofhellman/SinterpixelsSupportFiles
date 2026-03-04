@@ -40,5 +40,8 @@
     * [Random Walk: Pixels Part 3: Setting Colors](SinterpixelsPixels3.md)   
     * [A star thats really just a pentagon](Pentastar.md)
     * [Pixel Gradient](PixelGradientExample.md)   
+- Advanced Examples]
+    * [Penrose Tiling](PenroseTiling.md)
+    * [Karaoke](Karaoke.md)
 
  
