@@ -3,7 +3,9 @@
 
 ##   Karaoke Lyrics
 
-![Karaoke Lyrics](../images/TMOTTBGFirstHalf.mov "Take Me Out to the Ball Game")  
+![Karaoke Lyrics](../images/TMOTTBGKaraoke.png "Take Me Out to the Ball Game")  
+
+![Whole movie](../images/TMOTTBGKaraoke.mov "Take Me Out to the Ball Game")  
 
 This a fairly involved example on how to generate a video with lyrics to a song as you would want for singing Karaoke.
 
