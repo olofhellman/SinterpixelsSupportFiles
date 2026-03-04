@@ -171,20 +171,20 @@ set fadingWordIDs to {}
 set waxingWordData to {}
 set lineCount to count allLines
 tell application "SinterPixels"
-	set theDoc to make new document with properties {height:240, width:600}
+	set theDoc to make new document with properties {height:112, width:600}
 	tell theDoc
 		start filming
 		set numLoops to (lineCount + 1) / 2
 		set topLine to item 1 of allLines
-		set topLineLayout to my layoutLine(topLine, 0, theDoc, {0.5, 0.5, 0.5, 1.0})
+		set topLineLayout to my layoutLine(topLine, 28, theDoc, {0.5, 0.5, 0.5, 1.0})
 		set bottomLine to item 2 of allLines
-		set bottomLineLayout to my layoutLine(bottomLine, -40, theDoc, {0.5, 0.5, 0.5, 1.0})
+		set bottomLineLayout to my layoutLine(bottomLine, -28, theDoc, {0.5, 0.5, 0.5, 1.0})
 		
 		repeat with nthLoop from 1 to numLoops
 			set nextTopLineIndex to (2 * nthLoop + 1)
 			if (lineCount ≥ nextTopLineIndex) then
 				set nextTopLine to item nextTopLineIndex of allLines
-				set nextTopLineLayout to my layoutLine(nextTopLine, 0, theDoc, {0.5, 0.5, 0.5, 0.0})
+				set nextTopLineLayout to my layoutLine(nextTopLine, 28, theDoc, {0.5, 0.5, 0.5, 0.0})
 				set waxingWordData to my fillNewWaxingWordData(waxingWordData, nextTopLineLayout)
 			else
 				set nextTopLine to {}
@@ -214,7 +214,7 @@ tell application "SinterPixels"
 			set nextBottomLineIndex to (2 * nthLoop + 2)
 			if (lineCount ≥ nextBottomLineIndex) then
 				set nextBottomLine to item nextBottomLineIndex of allLines
-				set nextBottomLineLayout to my layoutLine(nextBottomLine, -60, theDoc, {0.5, 0.5, 0.5, 0.0})
+				set nextBottomLineLayout to my layoutLine(nextBottomLine, -28, theDoc, {0.5, 0.5, 0.5, 0.0})
 				set waxingWordData to my fillNewWaxingWordData(waxingWordData, nextBottomLineLayout)
 			else
 				set nextBottomLineLayout to {}
