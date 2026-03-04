@@ -33,7 +33,7 @@
     * [Communicating with Other Apps](ScriptingOtherApps.md)
 - [Examples](AllExamples.md)
     * [Color Spirals](ColorSpiralsExample.md)   
-    * [Animated Gears](AnimatedGearExample.md)   
+    * [Animated Gears](AnimatedGearsExample.md)   
     * [A Gear Shape](GearShapeExample.md)   
     * [Punch Though a Layer](BlendCopyPunchThrough.md)   
     * [Hello World text](TextShapes.md)
