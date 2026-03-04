@@ -30,7 +30,7 @@ set allLines to { ¬
   {{"Buy", "me", "some", "pea", ".nuts", "and", "crack", ".er", "jack"}, ¬
            {1, 1, 1, 1, 1, 1, 2, 1, 3}}, ¬
   {{"I", "don't", "care", "if", "I", "ev", ".er", "get", "back"}, ¬
-           {2, 1, 1, 1, 1, 1, 1, 1, 3}}, ¬
+           {2, 1, 1, 1, 1, 1, 1, 1, 1}}, ¬
   {{"'cause", "it's", "root", "root", "root", "for", "the", "Phil", ".lies"}, ¬
            {1, 1, 2, 1, 1, 1, 1, 3, 2}}, ¬
   {{"If", "they", "don't", "win", "it's", "a", "shame"}, ¬
@@ -45,12 +45,14 @@ There are a few words that are broken up so that different parts of the word can
 
 The script uses the alpha component of the fill color of the text to fade the shapes in and out.
 
+Note that "Take Me Out To the Ball Game" is in 3/4 time, and if each line corresponded to four bars, the numbers in each line should add up to 12.  This is true for the first three lines, but because the fifth, sixth, seventh and eight lines all start early the pattern is broken.
+
 Here's the complete script:
 ```
 set allLines to {{{"Take", "me", "out", "to", "the", "ball", "game"}, {2, 1, 1, 1, 1, 3, 3}}, ¬
 	{{"Take", "me", "out", "with", "the", "crowd"}, {2, 1, 1, 1, 1, 6}}, ¬
 	{{"Buy", "me", "some", "pea", ".nuts", "and", "crack", ".er", "jack"}, {1, 1, 1, 1, 1, 1, 2, 1, 3}}, ¬
-	{{"I", "don't", "care", "if", "I", "ev", ".er", "get", "back"}, {2, 1, 1, 1, 1, 1, 1, 1, 3}}, ¬
+	{{"I", "don't", "care", "if", "I", "ev", ".er", "get", "back"}, {2, 1, 1, 1, 1, 1, 1, 1, 1}}, ¬
 	{{"'cause", "it's", "root", "root", "root", "for", "the", "Phil", ".lies"}, {1, 1, 2, 1, 1, 1, 1, 3, 2}}, ¬
 	{{"If", "they", "don't", "win", "it's", "a", "shame"}, {1, 2, 1, 1, 1, 1, 4}}, ¬
 	{{"For", "it's", "1", "2", "3", "strikes", "you're", "out"}, {1, 1, 3, 3, 1, 1, 1, 1}}, ¬
