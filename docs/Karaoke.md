@@ -7,7 +7,7 @@
 
 This a fairly involved example on how to generate a video with lyrics to a song as you would want for singing Karaoke. In this case, it uses the Ability to position a text shape in a document, set its color (including alpha), and record a movie.  So, very little of this script is calls to SinterPixels.  Rather, most of it is organizing the data -- the song lyrics and the SinterPixels objects that correspond to the lyrics -- so that a karaoke-ish video is generated.
 
-See the complete movie (../images/TMOTTBGKaraoke.mov)[here] 
+See the complete movie [here](../images/TMOTTBGKaraoke.mov)
 
 The input data for such a video are the individual words, of course, but also how much time each word should highlighted in the video, so as to capture the rhythm of the song.
 
