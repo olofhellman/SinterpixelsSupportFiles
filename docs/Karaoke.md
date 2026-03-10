@@ -41,7 +41,7 @@ set allLines to { ¬
            {1, 1, 3, 3, 6}}}
 ```
 
-There are a few words that are broken up so that different parts of the word can be emphasized separately -- "peanuts", "ever" and "Phillies" (Sorry, Mets fans, "Mets" doesn't quite fit the rhythm of the song.)  In these cases, they are entered as separate words, each with a corresponding note length in the second list.  However, we don't want to actually put a space between these words, so the second half of these words are marked with a "." in the beginning of the word -- the script looks for those and knows both that the period should be stripped before making the text shape, and it knows not to put in word spacing.
+There are a few words that are broken up so that different parts of the word can be emphasized separately -- "peanuts", "ever" and "Phillies" (Sorry, Mets fans, "Metsies" just doesn't sound right.)  In these cases, they are entered as separate words, each with a corresponding note length in the second list.  However, we don't want to actually put a space between these words, so the second half of these words are marked with a "." in the beginning of the word -- the script looks for those and knows both that the period should be stripped before making the text shape, and it knows not to put in word spacing.
 
 The script uses the alpha component of the fill color of the text to fade the shapes in and out.
 
