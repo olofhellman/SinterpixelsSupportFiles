@@ -27,5 +27,7 @@ Click on the images to go to the page with the example:
 
 [![Karaoke Lyrics](../images/TMOTTBGKaraoke.png "Take Me Out to the Ball Game")](Karaoke.md)   
 
+[![Square Tiles](../images/TileMosaic.png "A tile mosaic")](SinterpixelsLayers.md)   
+
 
 ####  [Table of Contents](TableOfContents.md)   
