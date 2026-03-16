@@ -47,9 +47,7 @@ The first document with the 48 x 48 tile looks like this:
 The mosaic of 80 separate tiles, each with a random rotation, looks like this:
 ![image](../images/TileMosaic.png "80 tiles in a grid, each with a random rotation")
 
-
-This can be used to define a layer for use as a "sprite" in an animation.
- 
+Another use case for layers might be as a "sprite" for an animation.  The position and rotation of the layer would be adjusted between movie frames, making a smooth animation of a set of pixels.
  
 Examples: 
 [Using blendCopy to punch through a layer](BlendCopyPunchThroughExample.md) 
