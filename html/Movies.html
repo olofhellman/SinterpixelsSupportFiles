@@ -61,9 +61,12 @@ end tell</code></pre></div>
 
 <p>When filming a sequence, it is sometimes useful to pause for a bit to let the app catch up before proceeding.  In this case, some drawing commands can be done asynchronously, so that the app can continue working while a drawing operation is in progress.  Without the delay, it is possible the app will already be trying to apply the next rotation before the previous one is finished, and in this case, it is uncertain which view will be captured when a movie frame is recorded. </p>
 
+<p>New in SinterPixels 26.3.2, the <strong>record movie frame</strong> command has a <strong>duration</strong> parameter. So, if there is a pause or slowdown desired in an animation -- maybe a frame by frame replay of something, a single movie frame can be made to last longer, rather than needing to call the <strong>record movie frame</strong> command multiple times with the same image.</p>
+
 <p>Examples:</p>
 
-<p><a href="AnimatedGearsExample.html">Animated Gears</a>  </p>
+<p><a href="AnimatedGearsExample.html">Animated Gears</a><br>
+<a href="Karaoke.html">Karaoke</a>  </p>
 
 <h4 id="toc_4">previous topic: <a href="SinterpixelsLayers.html">Layers</a>   next topic: <a href="ScriptEditor.html">Scripting In Depth A: Script Editor</a></h4>
 
