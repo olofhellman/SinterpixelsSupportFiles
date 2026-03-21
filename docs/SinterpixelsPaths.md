@@ -1,5 +1,5 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Shapes Part 3](SinterpixelsShapes3.md)  next topic:  [Polygons Part One](SinterpixelsPolygons1.md)
+#### previous topic: [Text Shapes 3](TextShapes.md)  next topic:  [Paths Part 2](SlopesAndTangents.md)
 
 ## Paths
 
@@ -38,5 +38,4 @@ Paths can be filled.  By default, the **fill color** of a path is clear.  To fil
 [Pentabubble](Pentabubble.md)
 
 
- 
-#### previous topic: [Shapes Part 3](SinterpixelsShapes3.md)  next topic:  [Polygons Part One](SinterpixelsPolygons1.md)
+#### previous topic: [Text Shapes 3](TextShapes.md)  next topic:  [Paths Part 2](SlopesAndTangents.md)

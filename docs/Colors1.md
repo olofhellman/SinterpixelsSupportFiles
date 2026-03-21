@@ -1,5 +1,5 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Text Shapes](TextShapes.md)  next topic: [Blend Modes](Colors2.md)
+#### previous topic: [Paths Part 3: Path Details](PathDetails.md)  next topic: [Blend Modes](Colors2.md)
 
 ## Colors Part 1: Specifying Colors
 
@@ -74,4 +74,4 @@ If you only specify 3 values for a color, it is assumed that the alpha component
 
 Other color models (HSL, CMYK) will be supported soon. 
 
-#### previous topic: [Text Shapes](TextShapes.md)  next topic: [Blend Modes](Colors2.md)
+#### previous topic: [Paths Part 3: Path Details](PathDetails.md)  next topic: [Blend Modes](Colors2.md)
