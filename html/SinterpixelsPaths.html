@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SinterpixelsPaths</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="TextShapes.html">Text Shapes 3</a>  next topic:  <a href="SlopesAndTangents.html">Paths Part 2</a></h4>
+
+<h2 id="toc_2">Paths</h2>
+
+<p><strong>path</strong> shapes are a new feature in SinterPixels 26.3.4</p>
+
+<p>Paths are represented by a sequence of points, each of which has a <strong>position</strong> and a <strong>tangent</strong>.</p>
+
+<p>The tangent can be specified in a few different ways, but the default is to specify an angle in degrees.  A tangent of zero is horizontal (pointing right), and a tangent of 90 is vertical (pointing up).</p>
+
+<p>For example, a wavy line might be three points, each with a tangent of 0:</p>
+
+<p><img src="../images/SimpleWave.png" alt="image" title="a path defined by three points"> </p>
+
+<p>which is made by this script:</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    tell document 1
+        set a1 to {position:{-100, 0}, tangent:0}
+        set a2 to {position:{0, 50}, tangent:0}
+        set a3 to {position:{100, 0}, tangent:0}        
+        set thePath to make new path with properties {anchor data:{a1, a2, a3}, position:{0, 0}, line width:5}  
+    end tell
+end tell</code></pre></div>
+
+<p>In this case, the first point is the beginning of the path on the left, the second point is the middle of the path, and the third point is the end of the path on the right.</p>
+
+<p>Paths have a <strong>closed</strong> property.  If closed is true, the beginning and the end of the path are connected.</p>
+
+<p>Paths can be filled.  By default, the <strong>fill color</strong> of a path is clear.  To fill a path, set the fill color to a non-clear color.</p>
+
+<h2 id="toc_3">Path Examples</h2>
+
+<p><img src="../images/Pentabubble.png" alt="image" title="a shape defines by a five-anchor path"> 
+<a href="Pentabubble.html">Pentabubble</a></p>
+
+<h4 id="toc_4">previous topic: <a href="TextShapes.html">Text Shapes 3</a>  next topic:  <a href="SlopesAndTangents.html">Paths Part 2</a></h4>
+
+</body>
+</html> 

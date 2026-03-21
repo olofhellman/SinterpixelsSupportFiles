@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TangentsAndSlopes</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="SinterpixelsPaths.html">Paths Part 1</a>  next topic:  <a href="PathDetails.html">Paths Part 3</a></h4>
+
+<h2 id="toc_2">Tangents and Slopes</h2>
+
+<p><strong>path</strong> shapes are a new feature in SinterPixels 26.3.4</p>
+
+<p>Each path anchor has a <strong>tangent</strong> property -- that&#39;s the angle at which the path passes through that anchor point.  The default units for tangent is an angle in degrees.</p>
+
+<p>However, sometimes it may be more convenient to specify the tangent in terms of the slope at that point. Sinterpixels allows this in two different ways.  The simplest is to specify a floating point value for the slope traditionally the rise over the run.  Here&#39;s a wavy line defined using that method, just eight points along the x axis with slopes alternating between 1 and -1:</p>
+
+<p><img src="../images/AlternatingSlopes.png" alt="image" title="a path defined by eight points with slopes alternating between 1 and -1"> </p>
+
+<p>tell application &quot;SinterPixels&quot;
+    set anchorData to {}
+    repeat with n from -2 to 1
+        set nextAnchor to {position:{n * 100, 0}, slope:1}
+        set anchorData to anchorData &amp; {nextAnchor}
+        set nextAnchor to {position:{n * 100 + 50, 0}, slope:-1}
+        set anchorData to anchorData &amp; {nextAnchor}
+    end repeat
+    tell document 1
+        set thePath to make new path with properties {closed:false, anchor data:anchorData, position:{0, 0}, line width:5, color:{0.2, (1.0 - n * 0.1), (0.2 + n * 0.1)}, fill color:clear} 
+    end tell
+end tell</p>
+
+<p>Of course, a point with a vertical tangent has an infinite slope, so this can cause problems if one isn&#39;t careful.  SinterPixels deals with this in two different ways.  In one method, the constants <strong>infinity</strong> and <strong>negative infinity</strong> can be used:</p>
+
+<p><img src="../images/AlternatingSlopes.png" alt="image" title="a path defined by eight points with slopes alternating between infinity and negative infinity"> </p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    set anchorData to {}
+    repeat with n from -2 to 1
+        set nextAnchor to {position:{n * 100, 0}, slope:infinity}
+        set anchorData to anchorData &amp; {nextAnchor}
+        set nextAnchor to {position:{n * 100 + 50, 0}, slope:negative infinity}
+        set anchorData to anchorData &amp; {nextAnchor}
+    end repeat
+    tell document 1
+        set thePath to make new path with properties {closed:false, anchor data:anchorData, position:{0, 0}, line width:5, color:{0.2, (1.0 - n * 0.1), (0.2 + n * 0.1)}, fill color:clear}
+    end tell
+end tell</code></pre></div>
+
+<p>A slope can also be specified using a special record type containing a delta and a deltay value: </p>
+
+<div><pre><code class="language-none"> tell application &quot;SinterPixels&quot;
+    set anchorData to {}
+    repeat with n from -2 to 1
+        set nextAnchor to {position:{n * 100, 0}, slope:{deltax:1, deltay:2}}
+        set anchorData to anchorData &amp; {nextAnchor}
+        set nextAnchor to {position:{n * 100 + 50, 0}, slope:{deltax:1, deltay:-2}}
+        set anchorData to anchorData &amp; {nextAnchor}
+    end repeat
+    tell document 1
+        set thePath to make new path with properties {closed:false, anchor data:anchorData, position:{0, 0}, line width:5, color:{0.2, (1.0 - n * 0.1), (0.2 + n * 0.1)}, fill color:clear}
+    end tell
+end tell
+```
+
+#### previous topic: [Paths Part 1](SinterpixelsPaths.html)  next topic:  [Paths Part 3](PathDetails.html)</code></pre></div>
+
+</body>
+</html> 

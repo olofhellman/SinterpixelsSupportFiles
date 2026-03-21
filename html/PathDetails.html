@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PathDetails</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="TangentsAndSlopes.html">Paths Part 2</a>  next topic:  <a href="Colors1.html">Colors One</a></h4>
+
+<h2 id="toc_2">Path Details</h2>
+
+<p><strong>path</strong> shapes are a new feature in SinterPixels 26.3.4</p>
+
+<p>Each path has a set of anchor points, and each anchor point has a position and a tangent.  But you may be curious about how SinterPixels determines the exact arc that the path should take in between the points.</p>
+
+<p>SinterPixels draws a cubic bezier curve from each point to the next. Cubic Bezier curves are defined by two control points in addition to the anchor points.  The position of the control points is determined as follows:</p>
+
+<p><img src="../images/BezierSchematic.png" alt="image" title="Determining the Bezier control points"></p>
+
+<p>The two control points used are on the tangents of each anchor. The distance along the tangents is the same for both control points -- The distance is determined as a function of the distance between the anchors by this equation:</p>
+
+<div><pre><code class="language-none">D = S * sqrt(2) / 4</code></pre></div>
+
+<p>where S is the distance between A and B, and D is the distance between S and C1, and also the distance between B and C2.</p>
+
+<h2 id="toc_3">The tangent inertia</h2>
+
+<p>Although the default behavior for determining the control points works well in many cases, you may find cases where the shape of the arc isn&#39;t quite right. It is always possible to add more control points, but there is an additional tweak that SinterPixels allows.</p>
+
+<p>To increase or decrease the distance of the control point away from the anchor point, each anchor has an additional property <strong>inertia</strong>  The default value is 1.0. If you specify a value for this property, the equation above is calculated separately for each control point and becomes</p>
+
+<div><pre><code class="language-none">Da = Ia * S * sqrt(2) / 4
+Db = Ib * S * sqrt(2) / 4</code></pre></div>
+
+<p>where Ia is the inertia for a anchor A and Ib is the inertia for anchor B.  Specifying large values for the inertia can produce paths that deviate quite far from the anchor points themselves.  Specifying inertia values of zero makes the anchor points behave like vertices of a polygon.</p>
+
+<p>As an example, here&#39;s a path defines by a sequence of points on the x axis, each with infinite slope:</p>
+
+<p><img src="../images/InfiniteSlopesB.png" alt="image" title="A path defined by a sequence of points with infinite slope"></p>
+
+<p>However, the path does not protrude very far in the y direction.  To increase the magnitude of the wave, the <strong>inertia</strong> property can be increased.  Here&#39;s a sequence of 20 paths, varying the inertia from 1 to 20, and changing the color at each step as well:</p>
+
+<p><img src="../images/20InfiniteSlopes.png" alt="image" title="Increasing the inertia of the control points increases the size of the wave"></p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    set anchorData to {}
+    repeat with n from -4 to 4
+        set nextAnchor to {position:{n * 75, 0}, slope:infinity}
+        set anchorData to anchorData &amp; {nextAnchor}
+    end repeat
+    tell document 1
+        repeat with n from 1 to 1
+            set thePath to make new path with properties {closed:false, anchor data:anchorData, position:{0, 0}, line width:2, color:{0.2, (1.0 - n * 0.05), n * 0.05}, fill color:clear}
+            set the inertia of every anchor of thePath to n
+        end repeat
+    end tell
+end tell</code></pre></div>
+
+<h4 id="toc_4">previous topic: <a href="TangentsAndSlopes.html">Paths Part 2</a>  next topic:  <a href="Colors1.html">Colors One</a></h4>
+
+</body>
+</html> 
