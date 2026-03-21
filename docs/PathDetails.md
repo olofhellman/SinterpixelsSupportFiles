@@ -1,42 +1,23 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Shapes Part 3](SinterpixelsShapes3.md)  next topic:  [Polygons Part One](SinterpixelsPolygons1.md)
+#### previous topic: [Paths Part 2](TangentsAndSlopes.md)  next topic:  [Colors One](Colors1.md)
 
-## Paths
+## Path Details
 
 **path** shapes are a new feature in SinterPixels 26.3.4
 
-Paths are represented by a sequence of points, each of which has a **position** and a **tangent**.
+Each path has a set of anchor points, and each anchor point has a position and a tangent.  But you may be curious about how SinterPixels determines the exact arc that the path should take in between the points.
 
-The tangent can be specified in a few different ways, but the default is to specify an angle in degrees.  A tangent of zero is horizontal (pointing right), and a tangent of 90 is vertical (pointing up).
+SinterPixels draws a cubic bezier curve from each point to the next. Cubic Bezier curves are defined by two control points in addition to the anchor points.  The position of the control points is determined as follows:
 
-For example, a wavy line might be three points, each with a tangent of 0:
+![image](../images/BezierSchematic.png "Determining the Bezier control points")
 
-![image](../images/SimpleWave.png "a path defined by three points") 
+The two control points used are on the tangents of each anchor. The distance along the tangents is the same for both control points -- The distance is determined as a function of the distance between the anchors by this equation:
 
-which is made by this script:
-
-```
-tell application "SinterPixels"
-	tell document 1
-		set a1 to {position:{-100, 0}, tangent:0}
-		set a2 to {position:{0, 50}, tangent:0}
-		set a3 to {position:{100, 0}, tangent:0}		
-		set thePath to make new path with properties {anchor data:{a1, a2, a3}, position:{0, 0}, line width:5}	
-	end tell
-end tell
-```
-
-In this case, the first point is the beginning of the path on the left, the second point is the middle of the path, and the third point is the end of the path on the right.
+    D = S * sqrt(2) / 4
  
-Paths have a **closed** property.  If closed is true, the beginning and the end of the path are connected.
- 
-Paths can be filled.  By default, the **fill color** of a path is clear.  To fill a path, set the fill color to a non-clear color.
+where S is the distance between A and B, and D is the distance between S and C1, and also the distance between B and C2.
 
-##Path Examples
-
-![image](../images/Pentabubble.png "a shape defines by a five-anchor path") 
-[Pentabubble](Pentabubble.md)
+An enhancement is planned for future versions for more precise placement of control points
 
 
- 
-#### previous topic: [Shapes Part 3](SinterpixelsShapes3.md)  next topic:  [Polygons Part One](SinterpixelsPolygons1.md)
+#### previous topic: [Paths Part 2](TangentsAndSlopes.md)  next topic:  [Colors One](Colors1.md)
