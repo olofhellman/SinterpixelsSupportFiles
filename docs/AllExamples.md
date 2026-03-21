@@ -29,5 +29,8 @@ Click on the images to go to the page with the example:
 
 [![Square Tiles](../images/TileMosaic.png "A tile mosaic")](SinterpixelsLayers.md)   
 
+[![Pentabubble](../images/Pentabubble.png "a shape defines by a five-anchor path")](Pentabubble.md)   
+
+
 
 ####  [Table of Contents](TableOfContents.md)   
