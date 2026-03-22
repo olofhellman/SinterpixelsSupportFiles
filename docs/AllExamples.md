@@ -31,6 +31,8 @@ Click on the images to go to the page with the example:
 
 [![Pentabubble](../images/Pentabubble.png "a shape defines by a five-anchor path")](Pentabubble.md)   
 
+[![Parametric Loop](../images/ParametricLoop.png "a path defined by a parametric equation")](ParametricLoop.md)   
+
 
 
 ####  [Table of Contents](TableOfContents.md)   
