@@ -34,8 +34,11 @@ Paths can be filled.  By default, the **fill color** of a path is clear.  To fil
 
 ##Path Examples
 
-![image](../images/Pentabubble.png "a shape defines by a five-anchor path") 
+![image](../images/Pentabubble.png "a shape defined by a five-anchor path") 
 [Pentabubble](Pentabubble.md)
+
+![image](../images/ParametricLoop.png "a path defined by a parametric equation") 
+[Parametric Loop](ParametricLoop.md) 
 
 
 #### previous topic: [Text Shapes 3](TextShapes.md)  next topic:  [Paths Part 2](SlopesAndTangents.md)
