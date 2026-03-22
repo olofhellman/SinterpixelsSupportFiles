@@ -62,7 +62,9 @@ tell application "SinterPixels"
 	end repeat
 ```
 
-this depends on another helper function that calculates the slope of our function based on the value of the function at small deltas above and below the point:
+To define the tangent at each point, we calculate the slope of the function at that point by calculating the value at t + dt and t - dt, and using the rise over run formulation dy/dx.
+
+This depends on another helper function that calculates the slope of our function based on the value of the function at small deltas above and below the point:
 
 ```
 to slopeFromPoints(p1, p2)
