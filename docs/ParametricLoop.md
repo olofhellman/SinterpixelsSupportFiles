@@ -13,8 +13,8 @@ This curve is defined by the parametric equation
 
 ```
    r(t) = sin(t) * 100
-   x(t) = cos(3t)) * 100
-   y(t) = sin(3t)) * 
+   x(t) = cos(3t)) * r
+   y(t) = sin(3t)) * r
 ```
 over the interval t from 0 to pi 
 
