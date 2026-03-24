@@ -28,7 +28,7 @@ To increase or decrease the distance of the control point away from the anchor p
 
 where Ia is the inertia for a anchor A and Ib is the inertia for anchor B.  Specifying large values for the inertia can produce paths that deviate quite far from the anchor points themselves.  Specifying inertia values of zero makes the anchor points behave like vertices of a polygon.
 
-As an example, here's a path defines by a sequence of points on the x axis, each with infinite slope:
+As an example, here's a path defined by a sequence of points on the x axis, each with infinite slope:
 
 ![image](../images/InfiniteSlopesB.png "A path defined by a sequence of points with infinite slope")
 
