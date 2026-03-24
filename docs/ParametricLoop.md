@@ -3,7 +3,7 @@
 
 ##  A Path defined by a parametric equation
 
-Here;s a path that is drawn with a parametric equation:
+Here's a path that is drawn with a parametric equation:
 
 ![image](../images/ParametricLoop.png "A Path defined by a parametric equation")
 
@@ -18,7 +18,7 @@ This curve is defined by the parametric equation
 ```
 over the interval t from 0 to pi 
 
-So, first let's define some math helper functions for sin(x) and cos(x):
+So, first let's define some math helper functions for sine and cosine using some JavaScript callouts:
 
 ```
 on math(f, x)
@@ -34,7 +34,7 @@ on cos(x)
 end cos
 ```
 
-Then, first the script defines the parametric equation:
+Then, implement a handler 'on coord(t)' that defines the parametric equation:
 
 ```
 on coord(t)
@@ -62,7 +62,7 @@ tell application "SinterPixels"
 	end repeat
 ```
 
-To define the tangent at each point, we calculate the slope of the function at that point by calculating the value at t + dt and t - dt, and using the rise over run formulation dy/dx.
+To define the tangent at each point, we calculate the slope of the function at that point by calculating the value at t + dt (that's nthp) and t - dt (that's nthm), and define the slope nthSlope using the rise over run formulation dy/dx.
 
 This depends on another helper function that calculates the slope of our function based on the value of the function at small deltas above and below the point:
 
