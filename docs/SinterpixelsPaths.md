@@ -1,5 +1,5 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Text Shapes 3](TextShapes.md)  next topic:  [Paths Part 2](SlopesAndTangents.md)
+#### previous topic: [Text Shapes 3](TextShapes.md)  next topic:  [Paths Part 2](TangentsAndSlopes.md))
 
 ## Paths
 
@@ -41,4 +41,4 @@ Paths can be filled.  By default, the **fill color** of a path is clear.  To fil
 [Parametric Loop](ParametricLoop.md) 
 
 
-#### previous topic: [Text Shapes 3](TextShapes.md)  next topic:  [Paths Part 2](SlopesAndTangents.md)
+#### previous topic: [Text Shapes 3](TextShapes.md)  next topic:  [Paths Part 2](TangentsAndSlopes.md)
