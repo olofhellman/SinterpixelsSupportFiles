@@ -21,22 +21,24 @@ copying the PNG data can be useful for initializing a layer, as in this example,
 
 ![image](../images/CircularMoire.png "moire pattern of offset circles") 
  
-First, the script makes 30 concentric circles, slightly offset to the left of the image.  Then the PNG data for a 400 by 400 region is copied, and used as the image data when creating a new layer, which is placed to overlay exactly its original. Then the layer slides over pixel by pixel, creating a interesting interference pattern as it moves.
+First, the script makes 30 concentric circles, slightly offset to the left of the image.  Then the PNG data for a 380 by 380 region is copied, and used as the image data when creating a new layer, which is placed to overlay almost exactly its original. Then the layer slides over pixel by pixel, creating a interesting interference pattern as it moves.
 
 Here's the whole script:
  
 ```
 tell application "SinterPixels"
-	set circleMoireDoc to make new document with properties {height:400, width:500}
+	set circleMoireDoc to make new document with properties {height:382, width:424}
 	tell circleMoireDoc
 		repeat with n from 1 to 30
-			make new circle with properties {position:{-50, 0}, radius:n * 6, fill color:clear, line width:3, color:blue}
+			make new circle with properties {position:{-20, 0}, radius:n * 6, fill color:clear, line width:3, color:blue}
 		end repeat
+		
 		delay 1
-		set myPng to get PNG data of subrect id {400, 0, 0, 400}
-		set layerA to make new layer with properties {image data:myPng, position:{-50, 0}}
-		repeat with n from 1 to 100
-			set x coordinate of layerA to n - 50
+		set myPng to get PNG data of subrect id {380, 0, 0, 380}
+		set layerA to make new layer with properties {image data:myPng, position:{-20, 0}}
+		
+		repeat with n from 1 to 40
+			set x coordinate of layerA to n - 20
 		end repeat
 	end tell
 end tell
