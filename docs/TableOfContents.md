@@ -25,6 +25,7 @@
     * [Part 2: Getting Colors](SinterpixelsPixels2.md)
     * [Part 3: Setting Colors](SinterpixelsPixels3.md)
 - [Layers](SinterpixelsLayers.md)
+- [Subrects](Subrects.md)
 - [Exporting Movies](Movies.md)
 - File Manipulation
     * [Making a New Document via Script](NewDocument.md)
