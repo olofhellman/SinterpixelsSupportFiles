@@ -1,5 +1,5 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Subrects](Subrects.md)   next topic: [Scripting In Depth A: Script Editor](ScriptEditor.md)
+#### previous topic: [Subrects](Subrects.md)   next topic: [Copying a Shape](DuplicateVerb.md)
 
 
 ## Movies
@@ -64,4 +64,4 @@ Examples:
 [Animated Gears](AnimatedGearsExample.md)  
 [Karaoke](Karaoke.md)  
 
-#### previous topic: [Subrects](Subrects.md)   next topic: [Scripting In Depth A: Script Editor](ScriptEditor.md)
+#### previous topic: [Subrects](Subrects.md)    next topic: [Copying a Shape](DuplicateVerb.md)

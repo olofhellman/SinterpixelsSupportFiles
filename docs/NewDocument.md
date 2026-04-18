@@ -1,5 +1,5 @@
 ####  [Table of Contents](TableOfContents.md) 
-#### previous topic: [Exporting Movies](Movies.md)    next topic: [Scripting In Depth A: Script Editor](ScriptEditor.md)
+#### previous topic: [Making a Mirror Image](ReflectVerb.md)    next topic: [Scripting In Depth A: Script Editor](ScriptEditor.md)
 
 ## Creating a document via script
 
@@ -38,4 +38,4 @@ Using **with saving** might require user interaction if the document doesn't alr
 see the section [Saving a Document](SavingADocument.md) for more details on saving a document and the limitations around specifying a save location.
 
 
-#### previous topic: [Exporting Movies](Movies.md)    next topic: [Scripting In Depth A: Script Editor](ScriptEditor.md)
+#### previous topic: [Making a Mirror Image](ReflectVerb.md)    next topic: [Scripting In Depth A: Script Editor](ScriptEditor.md)

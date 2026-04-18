@@ -27,6 +27,10 @@
 - [Layers](SinterpixelsLayers.md)
 - [Subrects](Subrects.md)
 - [Exporting Movies](Movies.md)
+- [Shape Manipulation]
+    * [Part 1: Duplicating a Shape](DuplicateVerb.md)
+    * [Part 2: Making a Mirror Image](ReflectVerb.md)
+- [Reflecting a Shape](Duplicate.md)
 - File Manipulation
     * [Making a New Document via Script](NewDocument.md)
     * [Opening a Document via Script](OpeningAFile2.md)
