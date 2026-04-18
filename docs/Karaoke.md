@@ -90,7 +90,7 @@ to layoutLine(karaokeLine, yPos, theDoc, wordColor)
 		end if
 		tell application "SinterPixels"
 			tell theDoc
-				set wthWord to make new text shape with properties {contents:displayText, position:{0, yPos}, fill color:wordColor, font size:32}
+				set wthWord to make new text shape with properties {text content:displayText, position:{0, yPos}, fill color:wordColor, font size:32}
 				set wthSize to size of wthWord
 				set totalSize to totalSize + (width of wthSize) + additionalSpace
 				set lineLayout to lineLayout & {wthWord}

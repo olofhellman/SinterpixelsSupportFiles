@@ -20,6 +20,7 @@ Here's a script that illustrates using the reflect action on a text shape:
 
 ![image](../images/ReflectedText.png "Reflected Text")
 
+```
 tell application "SinterPixels"
 	set doc1 to make new document with properties {height:300, width:500}
 	tell doc1
@@ -30,6 +31,7 @@ tell application "SinterPixels"
 		reflect t mirror direction {0, 1}
 	end tell
 end tell
+```
 
 A reflect action can also include a **mirror point** parameter.  This parameter specifies a point on the line which acts as a mirror, allowing the exact position of a mirror to be specified.  By default, the mirror point is {0, 0}
 
@@ -37,7 +39,26 @@ Here's a script which uses reflections in two different mirrors to create a set 
 
 ![image](../images/Reflections.png "Shapes reflected in two mirrors")
 
-
+```
+to makeReflections(s)
+	tell application "SinterPixels"
+		set dupeA to duplicate s
+		reflect dupeA mirror point {50, 0} mirror direction {1, 1}
+		set dupeB to duplicate s
+		reflect dupeB mirror point {50, 0} mirror direction {-1, 1}
+		set dupeC to duplicate dupeA
+		reflect dupeC mirror point {50, 0} mirror direction {-1, 1}
+	end tell
+end makeReflections
+tell application "SinterPixels"
+	tell document 1
+		repeat 25 times
+			set newPoly to make new polygon with properties {radius:20}
+			my makeReflections(newPoly)
+		end repeat
+	end tell
+end tell
+```
 
  
 #### previous topic: [Copying a Shape](DuplicateVerb.md)   next topic: [Creating a Document](NewDocument.md)

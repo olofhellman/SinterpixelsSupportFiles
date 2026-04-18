@@ -9,7 +9,7 @@ Text shapes draw text.  They have the same color, position, fill color, color an
 
 Like polygons, they have a rotation. 
 
-Unique to text shapes are the **contents**, the **font**, **font size** and **size** properties.
+Unique to text shapes are the **text content**, the **font**, **font size** and **size** properties.
 
 run the following script to make a "Hello World" document
 
@@ -19,8 +19,8 @@ run the following script to make a "Hello World" document
 tell application "SinterPixels"
 	set d to make new document with properties {height:300, width:420}
 	tell d
-		make new text shape with properties {position:{-40, 32}, font:"Futura", contents:"Hello", font size:72, fill color:green, line width:0}
-		make new text shape with properties {position:{40, -32}, font:"Futura", contents:"World", font size:72, fill color:clear, line width:2, color:blue}
+		make new text shape with properties {position:{-40, 32}, font:"Futura", text content:"Hello", font size:72, fill color:green, line width:0}
+		make new text shape with properties {position:{40, -32}, font:"Futura", text content:"World", font size:72, fill color:clear, line width:2, color:blue}
 		repeat with n from 1 to 360
 			set rotation of every text shape to n
 		end repeat
@@ -36,10 +36,10 @@ Here is a script that creates two text shapes and separates them by 20 pixels:
 tell application "SinterPixels"
 	set theDoc to make new document with properties {height:240, wigth:320}
 	tell theDoc
-		set helloShape to make new text shape with properties {contents:"Hello", fill color:blue, font size:36}
+		set helloShape to make new text shape with properties {text content:"Hello", fill color:blue, font size:36}
 		set helloWidth to width of size of helloShape
 		set position of helloShape to {-10 - helloWidth / 2, 0}
-		set worldShape to make new text shape with properties {contents:"World", fill color:green, font size:36}
+		set worldShape to make new text shape with properties {text content:"World", fill color:green, font size:36}
 		set worldWidth to width of size of worldShape
 		set position of worldShape to {10 + worldWidth / 2, 0}
 	end tell
