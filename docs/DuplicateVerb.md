@@ -9,6 +9,7 @@ SinterPixels shapes understand the **duplicate** action. Any shape can be duplic
  
 ![image](../images/Duplicates.png "Image of the result of running the Duplicates example script")
 
+```
 tell application "SinterPixels"
 	tell document 1
 		repeat 10 times
@@ -24,5 +25,6 @@ tell application "SinterPixels"
 		end repeat
 	end tell
 end tell
+```
 
 #### previous topic: [Exporting Movies](Movies.md)   [Making a Mirror Image](ReflectVerb.md)
