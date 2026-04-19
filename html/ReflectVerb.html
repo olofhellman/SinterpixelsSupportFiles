@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ReflectVerb</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="DuplicateVerb.html">Copying a Shape</a>   next topic: <a href="NewDocument.html">Creating a Document</a></h4>
+
+<h2 id="toc_2">Making a Mirror Image of a Shape</h2>
+
+<p>Reflection is a new feature in version 26.4.3</p>
+
+<p>SinterPixels shapes understand the <strong>reflect</strong> action.  This transforms the shape into a mirror image of itself.</p>
+
+<p>Along with the reflect command, a <strong>mirror direction</strong> parameter is required. This direction specifies the direction of the line that acts as a mirror for the reflection operation.  For example, if you specify </p>
+
+<div><pre><code class="language-none">mirror direction {0, 1}</code></pre></div>
+
+<p>The shape will be reflected across the y axis.</p>
+
+<p>Here&#39;s a script that illustrates using the reflect action on a text shape:</p>
+
+<p><img src="../images/ReflectedText.png" alt="image" title="Reflected Text"></p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    set doc1 to make new document with properties {height:300, width:500}
+    tell doc1
+        set t to make new text shape with properties {position:{-80, 50}, font:&quot;Futura&quot;, text content:&quot;Original&quot;, font size:72, fill color:blue, line width:0}
+        set dupe to duplicate t
+        set text content of t to &quot;Reflection&quot;
+        set position of t to {-80, -50}
+        reflect t mirror direction {0, 1}
+    end tell
+end tell</code></pre></div>
+
+<p>A reflect action can also include a <strong>mirror point</strong> parameter.  This parameter specifies a point on the line which acts as a mirror, allowing the exact position of a mirror to be specified.  By default, the mirror point is {0, 0}</p>
+
+<p>Here&#39;s a script which uses reflections in two different mirrors to create a set of randomly positioned shapes and three duplicates of each shape, thus creating a arrangemnt of shapes with some symmetry.</p>
+
+<p><img src="../images/Reflections.png" alt="image" title="Shapes reflected in two mirrors"></p>
+
+<div><pre><code class="language-none">to makeReflections(s)
+    tell application &quot;SinterPixels&quot;
+        set dupeA to duplicate s
+        reflect dupeA mirror point {50, 0} mirror direction {1, 1}
+        set dupeB to duplicate s
+        reflect dupeB mirror point {50, 0} mirror direction {-1, 1}
+        set dupeC to duplicate dupeA
+        reflect dupeC mirror point {50, 0} mirror direction {-1, 1}
+    end tell
+end makeReflections
+tell application &quot;SinterPixels&quot;
+    tell document 1
+        repeat 25 times
+            set newPoly to make new polygon with properties {radius:20}
+            my makeReflections(newPoly)
+        end repeat
+    end tell
+end tell</code></pre></div>
+
+<h4 id="toc_3">previous topic: <a href="DuplicateVerb.html">Copying a Shape</a>   next topic: <a href="NewDocument.html">Creating a Document</a></h4>
+
+</body>
+</html> 

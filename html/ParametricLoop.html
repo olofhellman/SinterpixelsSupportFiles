@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ParametricLoop</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">Containing topic: <a href="AllExamples.html">All Examples</a></h4>
+
+<h2 id="toc_2">A Path defined by a parametric equation</h2>
+
+<p>Here&#39;s a path that is drawn with a parametric equation:</p>
+
+<p><img src="../images/ParametricLoop.png" alt="image" title="A Path defined by a parametric equation"></p>
+
+<p>The script to generate this shape is below.  We&#39;ll walk through step by step:</p>
+
+<p>This curve is defined by the parametric equation</p>
+
+<div><pre><code class="language-none">   r(t) = sin(t) * 100
+   x(t) = cos(3t)) * r
+   y(t) = sin(3t)) * r</code></pre></div>
+
+<p>over the interval t from 0 to pi </p>
+
+<p>So, first let&#39;s define some math helper functions for sine and cosine using some JavaScript callouts:</p>
+
+<div><pre><code class="language-none">on math(f, x)
+    return run script &quot;Math.&quot; &amp; f &amp; &quot;(&quot; &amp; x &amp; &quot;)&quot; in &quot;JavaScript&quot;
+end math
+
+on sin(x)
+    math(&quot;sin&quot;, x)
+end sin
+
+on cos(x)
+    math(&quot;cos&quot;, x)
+end cos</code></pre></div>
+
+<p>Then, implement a handler &#39;on coord(t)&#39; that defines the parametric equation:</p>
+
+<div><pre><code class="language-none">on coord(t)
+    set rad to (my sin(t)) * 100
+    set x to (my cos(3 * t)) * rad
+    set y to (my sin(3 * t)) * rad
+    return {x, y}
+end coord</code></pre></div>
+
+<p>Now, we&#39;ll build up 18 anchor points, proceeding in 18 steps from 0 to pi like this:</p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    set anchorData to {}
+    
+    repeat with a from 0 to 18
+        set t to a * 3.14158 / 18.0
+        
+        set nthPos to my coord(t)
+        set nthm to my coord(t - 0.1)
+        set nthp to my coord(t + 0.1)
+        set nthSlope to my slopeFromPoints(nthm, nthp)
+        set anchorData to anchorData &amp; {{position:nthPos, slope:nthSlope}}
+    end repeat</code></pre></div>
+
+<p>To define the tangent at each point, we calculate the slope of the function at that point by calculating the value at t + dt (that&#39;s nthp) and t - dt (that&#39;s nthm), and define the slope nthSlope using the rise over run formulation dy/dx.</p>
+
+<p>This depends on another helper function that calculates the slope of our function based on the value of the function at small deltas above and below the point:</p>
+
+<div><pre><code class="language-none">to slopeFromPoints(p1, p2)
+    using terms from application &quot;SinterPixels&quot;
+        set dx to (item 1 of p2) - (item 1 of p1)
+        set dy to (item 2 of p2) - (item 2 of p1)
+        return {deltax:dx, deltay:dy}
+    end using terms from
+end slopeFromPoints</code></pre></div>
+
+<p>Lastly, the script makes a path from the points:</p>
+
+<div><pre><code class="language-none">    tell document 1
+        set thePath to make new path with properties {anchor data:anchorData, position:{0, 0}, closed: true, line width:10, color:blue, fill color:{0.5, 0.5, 1.0, 0.2}}
+    end tell</code></pre></div>
+
+<p>Here&#39;s the full script:
+```
+on math(f, x)
+    return run script &quot;Math.&quot; &amp; f &amp; &quot;(&quot; &amp; x &amp; &quot;)&quot; in &quot;JavaScript&quot;
+end math</p>
+
+<p>on sin(x)
+    math(&quot;sin&quot;, x)
+end sin</p>
+
+<p>on cos(x)
+    math(&quot;cos&quot;, x)
+end cos</p>
+
+<p>to slopeFromPoints(p1, p2)
+    using terms from application &quot;SinterPixels&quot;
+        set dx to (item 1 of p2) - (item 1 of p1)
+        set dy to (item 2 of p2) - (item 2 of p1)
+        return {deltax:dx, deltay:dy}
+    end using terms from
+end slopeFromPoints</p>
+
+<p>on coord(t)
+    set rad to (my sin(t)) * 100
+    set x to (my cos(3 * t)) * rad
+    set y to (my sin(3 * t)) * rad
+    return {x, y}
+end coord</p>
+
+<p>tell application &quot;SinterPixels&quot;
+    set anchorData to {}</p>
+
+<div><pre><code class="language-none">repeat with a from 0 to 18
+    set t to a * 3.14158 / 18.0
+    set nthPos to my coord(t)
+    set nthm to my coord(t - 0.1)
+    set nthp to my coord(t + 0.1)
+    set nthSlope to my slopeFromPoints(nthm, nthp)
+    set anchorData to anchorData &amp; {{position:nthPos, slope:nthSlope}}
+end repeat
+
+tell document 1
+    set thePath to make new path with properties {anchor data:anchorData, position:{0, 0}, line width:10, color:blue, fill color:{0.5, 0.5, 1.0, 0.2}}
+end tell</code></pre></div>
+
+<p>end tell
+```</p>
+
+<h4 id="toc_3">Containing topic: <a href="AllExamples.html">All Examples</a></h4>
+
+</body>
+</html> 

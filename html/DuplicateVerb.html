@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DuplicateVerb</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h4 id="toc_0"><a href="TableOfContents.html">Table of Contents</a></h4>
+
+<h4 id="toc_1">previous topic: <a href="Movies.html">Exporting Movies</a>   <a href="ReflectVerb.html">Making a Mirror Image</a></h4>
+
+<h2 id="toc_2">Making a Copy of a Shape</h2>
+
+<p>Duplication is a new feature in version 26.4.3</p>
+
+<p>SinterPixels shapes understand the <strong>duplicate</strong> action. Any shape can be duplicated.  Here&#39;s a script which creates some polygons and circles, then duplicates each one, moving the duplicate a small bit, and then sets the fill color of the original to clear, making an interesting effect:</p>
+
+<p><img src="../images/Duplicates.png" alt="image" title="Image of the result of running the Duplicates example script"></p>
+
+<div><pre><code class="language-none">tell application &quot;SinterPixels&quot;
+    tell document 1
+        repeat 10 times
+            make new polygon with properties {radius:30}
+            make new circle with properties {radius:25}
+        end repeat
+        
+        repeat with s in (get every shape)
+            set dupe to duplicate s
+            set oldX to x coordinate of s
+            set x coordinate of dupe to oldX + 12
+            set fill color of s to clear
+        end repeat
+    end tell
+end tell</code></pre></div>
+
+<h4 id="toc_3">previous topic: <a href="Movies.html">Exporting Movies</a>   <a href="ReflectVerb.html">Making a Mirror Image</a></h4>
+
+</body>
+</html> 
