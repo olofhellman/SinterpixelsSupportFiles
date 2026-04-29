@@ -11,6 +11,7 @@ However, sometimes it may be more convenient to specify the tangent in terms of 
 
 ![image](../images/AlternatingSlopes.png "a path defined by eight points with slopes alternating between 1 and -1") 
 
+```
 tell application "SinterPixels"
 	set anchorData to {}
 	repeat with n from -2 to 1
@@ -23,6 +24,7 @@ tell application "SinterPixels"
 		set thePath to make new path with properties {closed:false, anchor data:anchorData, position:{0, 0}, line width:5, color:{0.2, (1.0 - n * 0.1), (0.2 + n * 0.1)}, fill color:clear}	
 	end tell
 end tell
+```
 
 Of course, a point with a vertical tangent has an infinite slope, so this can cause problems if one isn't careful.  SinterPixels deals with this in two different ways.  In one method, the constants **infinity** and **negative infinity** can be used:
 
