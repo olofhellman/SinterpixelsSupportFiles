@@ -4,8 +4,6 @@
 
 ## Making a Mirror Image of a Shape
 
-Reflection is a new feature in version 26.4.3
-
 SinterPixels shapes understand the **reflect** action.  This transforms the shape into a mirror image of itself.
 
 Along with the reflect command, a **mirror direction** parameter is required. This direction specifies the direction of the line that acts as a mirror for the reflection operation.  For example, if you specify 

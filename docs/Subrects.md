@@ -3,8 +3,6 @@
 
 ## Subrects
 
-(Subrects are a new feature in version 26.4.3)
-
 One may want to copy the data for just a portion of a document.  In this case, it can be useful to refer to a **subrect**
 
 A subrect is not an object on its own, but rather refers to a rectangular region of the document.  One can refer to one like this:

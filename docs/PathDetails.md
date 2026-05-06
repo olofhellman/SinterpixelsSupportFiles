@@ -3,8 +3,6 @@
 
 ## Path Details
 
-**path** shapes are a new feature in SinterPixels 26.3.4
-
 Each path has a set of anchor points, and each anchor point has a position and a tangent.  But you may be curious about how SinterPixels determines the exact arc that the path should take in between the points.
 
 SinterPixels draws a cubic bezier curve from each point to the next. Cubic Bezier curves are defined by two control points in addition to the anchor points.  The position of the control points is determined as follows:

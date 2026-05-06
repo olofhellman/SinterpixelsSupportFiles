@@ -3,8 +3,6 @@
 
 ## Tangents and Slopes
 
-**path** shapes are a new feature in SinterPixels 26.3.4
-
 Each path anchor has a **tangent** property -- that's the angle at which the path passes through that anchor point.  The default units for tangent is an angle in degrees.
 
 However, sometimes it may be more convenient to specify the tangent in terms of the slope at that point. Sinterpixels allows this in two different ways.  The simplest is to specify a floating point value for the slope traditionally the rise over the run.  Here's a wavy line defined using that method, just eight points along the x axis with slopes alternating between 1 and -1:

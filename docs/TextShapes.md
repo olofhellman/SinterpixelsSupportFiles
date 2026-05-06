@@ -3,8 +3,6 @@
 
 ## Text Shapes
 
-(Text shapes are new in version 26.2.3)
-
 Text shapes draw text.  They have the same color, position, fill color, color and line width properties as other shapes
 
 Like polygons, they have a rotation. 
@@ -28,7 +26,6 @@ tell application "SinterPixels"
 end tell
 ```
  
-(size is a new property of text shapes in Sinterpixels version 26.3.1)
 **size** is a read-only property. It can be useful in cases where you want to have two text shapes next to each other but not overlapping.
 Here is a script that creates two text shapes and separates them by 20 pixels:
 

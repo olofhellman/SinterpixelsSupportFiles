@@ -61,7 +61,7 @@ We also adjust the initial rotation so that the teeth are aligned.
 			set rotation of p2 to initialRotation2 - (n / (s2 * 4))
 			record movie frame
 		end repeat
-		stop filming saving in "AnimatedGears.mov"
+		stop filming filename "AnimatedGears.mov"
 end tell
 ```
 

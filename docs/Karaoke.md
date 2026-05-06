@@ -249,7 +249,7 @@ tell application "SinterPixels"
 			set fadingWordIDs to my fade(fadingWordIDs, theDoc)
 		end repeat
 		
-		stop filming
+		stop filming filename "KaraokeMovie.mov"
 	end tell
 end tell
 ```

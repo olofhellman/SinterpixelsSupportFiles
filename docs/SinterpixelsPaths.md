@@ -3,8 +3,6 @@
 
 ## Paths
 
-**path** shapes are a new feature in SinterPixels 26.3.4
-
 Paths are represented by a sequence of points, each of which has a **position** and a **tangent**.
 
 The tangent can be specified in a few different ways, but the default is to specify an angle in degrees.  A tangent of zero is horizontal (pointing right), and a tangent of 90 is vertical (pointing up).

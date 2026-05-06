@@ -3,8 +3,6 @@
 
 ## Making a Copy of a Shape
 
-Duplication is a new feature in version 26.4.3
-
 SinterPixels shapes understand the **duplicate** action. Any shape can be duplicated.  Here's a script which creates some polygons and circles, then duplicates each one, moving the duplicate a small bit, and then sets the fill color of the original to clear, making an interesting effect:
  
 ![image](../images/Duplicates.png "Image of the result of running the Duplicates example script")
