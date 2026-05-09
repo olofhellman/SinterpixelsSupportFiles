@@ -9,6 +9,8 @@ Click on the images to go to the page with the example:
  
 [![A Penrose Tiling](../images/PenroseTenSubdivisions.png "A Penrose Tiling")](PenroseTiling.md)   
 
+[![The SinterPixels App Icon](../images/AppIcon128.png "App Icon")](AppIconScript.md)     
+
 [![Animated Gears](../images/AnimatedGears.mov "movie with two gears")](AnimatedGearExample.md)   
 
 [![A Gear Shape](../images/Simple7ToothGear.png "A gear with seven teeth")](GearShapeExample.md)   
