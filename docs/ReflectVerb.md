@@ -12,9 +12,13 @@ Along with the reflect command, a **mirror direction** parameter is required. Th
 mirror direction {0, 1}
 ```
 
-The shape will be reflected across the y axis.
+The shape will be reflected across the y axis. If you specify 
 
-Here's a script that illustrates using the reflect action on a text shape:
+```
+mirror direction {2, -1}
+```
+
+The shape will be reflected across a line defined by the two points {x:0, y:0} and {x:2, y:-1}. Here's a script that illustrates using the reflect action on a text shape:
 
 ![image](../images/ReflectedText.png "Reflected Text")
 
