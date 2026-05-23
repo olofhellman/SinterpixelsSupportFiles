@@ -39,6 +39,5 @@ end tell
  
 Try adjusting the parameters at the top -- especially numSpirals and twirliness -- to get different results
 
-![image](../images/Simple7ToothGear.png "A gear with seven teeth")
 
 #### Containing topic: [Shapes](SinterpixelsShapes.md) 
